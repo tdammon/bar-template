@@ -20,7 +20,7 @@ class MobileServices extends Component {
            <div className={style.contentOne}></div>
         </div>
         </div>
-        {/*<div className={style.pageOne}>
+        <div className={style.pageOne}>
         <div className={style.mobileHeader}> 
           <div className={style.logoBox}>
             Logo Here
@@ -32,7 +32,7 @@ class MobileServices extends Component {
         <div className={style.mainContent}>
           <div className={style.contentTwo}></div>
         </div>
-        </div> */}
+        </div>
       </div>
     );
   }
