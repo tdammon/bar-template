@@ -1,0 +1,193 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.app {
+    background-color: green;
+    background-size : cover;
+    background-attachment: fixed;
+    height: 170vh;
+}
+
+.appContainer {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.contactField {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    width: 45%;
+}
+
+.contactForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 70%;
+}
+
+.contactHeader {
+    font-size: 3rem;
+    color:white;
+    text-align: center;
+    padding:4rem
+}
+
+.contactInput {
+    background-color: #023c54;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    margin-top: 0.5rem;
+    padding:0.6rem;
+    width:100%;
+}
+
+::placeholder {
+    color: #bac3ca;
+    font-size: 0.9rem;
+    opacity: 1; /* Firefox */
+  }
+
+.contactUs {
+    background-color: #023c54;
+    color: white;
+    height: 70vh;
+    padding-bottom:2rem;
+    width: 100%;
+}
+
+.contactSubmit {
+    align-self: center;
+    background-color:#58500f;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    font-size: 1.6rem;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.contactInput:focus {
+    outline: none !important;
+    outline-offset: none !important;
+}
+
+.headerBar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.messageField {
+    margin-top: 1rem;
+    width: 100%;
+}
+.messageInput {
+    background-color: #023c54;
+    border-style: inset;
+    border-width: 2px;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    padding:0.6rem;
+    width:100%;
+}
+
+.messageInput:focus{
+    outline: none !important;
+    outline-offset: none !important;
+}
+
+.companyName {
+    padding: 4rem;
+    padding-bottom: 0rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.buttonsBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    background: rgba(255,255,255,0.0);
+    padding: 1rem;
+    padding-bottom: 0rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    border-top: 2px black solid; 
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    margin-right: 1rem;
+    cursor:pointer;
+}
+
+.buttonActive {
+    background: rgba(255,255,255,0.0);
+    padding: 1rem;
+    padding-bottom: 0rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    border-top: 5px white solid; 
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    margin-right: 1rem;
+    cursor:pointer;
+}
+
+.button:hover {
+    border-top: 5px white solid; 
+}
+
+.button:focus {
+    outline: none !important;
+    outline-offset: none !important;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-self: center;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 4rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.consultationButton {
+    align-self: center;
+    cursor:pointer;
+    font-size:1.2rem;
+    text-align: center;
+    background-color: #FF8C00;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    /* width: 100%; */
+    text-shadow: 1px 1px  black;
+}
+
+.consultationButton:focus {
+    outline: none !important;
+    outline-offset: none !important;
+}

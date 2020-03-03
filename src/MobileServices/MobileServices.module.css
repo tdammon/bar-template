@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.app {
+    height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+}
+.pageOne {
+    background-color: green;
+    height: 100vh;
+}
+.contactBox {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.contentOne {
+    background-color: blue;
+    display: flex;
+    height: 10rem;
+    width: 100vw;
+}
+.contentTwo {
+    background-color: red;
+    display: flex;
+    height: 10rem;
+    width: 100vw
+}
+
+.logoBox {
+    border: 2px solid white;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.mainContent {
+    flex-grow: 1;
+    display: flex;
+    margin-top: 4rem;
+    height: 10rem;
+    /* overflow: auto; */
+}
+
+.mobileHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.phoneNumberLink {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}

@@ -1,0 +1,27 @@
+.buttonText {
+    font-size: 1rem;
+}
+.NavBar {
+    width:100vw;
+    float: none;
+    display:flex;
+    height: 3rem;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+}
+
+.NavButton {
+    border: 1px solid black;
+    border-radius: 0;
+    float: left;
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 33.33%;
+}
+
+.NavButton:focus {
+    outline: none !important;
+    outline-offset: none !important;
+}

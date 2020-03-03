@@ -7,11 +7,13 @@ import {
 } from 'react-router-dom';
 import {isMobile, isBrowser} from 'react-device-detect';
 import Mobile from "../Mobile/Mobile";
+import MobileServices from "../MobileServices/MobileServices";
+import MobileNavThreeButton from "../MobileNavThreeButton/MobileNavThreeButton";
+import MobileNavFourButton from "../MobileNavFourButton/MobileNavFourButton";
+import MobileNavFiveButton from "../MobileNavFiveButton/MobileNavFiveButton";
 import Desktop from "../Desktop/Desktop";
-import DesktopServices from "../Desktop/DesktopServices";
-import MobileClients from "../Mobile/MobileClients";
-import MobileContacts from "../Mobile/MobileContacts";
-import MobileNav from "../Mobile/MobileNav";
+
+
 
 class App extends Component {
 
@@ -25,8 +27,13 @@ class App extends Component {
           path="/"
           component={Mobile}
         />
+        <Route
+          exact
+          path="/services"
+          component={MobileServices}
+        />  
         </Switch>
-        <MobileNav />
+        <MobileNavThreeButton />
       </Router>)
     } else if(isBrowser) {
       return (
