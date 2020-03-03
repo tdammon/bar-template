@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .app {
@@ -12,7 +12,11 @@ html, body {
     height: 100vh;
     /* width: 100vw; */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+}
+.pageOne {
+    height: 100vh;
+    width: 100vw;
 }
 
 .contactBox {
@@ -45,7 +49,7 @@ html, body {
     display: flex;
     margin-top: 4rem;
     height: 10rem;
-    width: 300vw;
+    width: 100vw;
     overflow: auto;
 }
 
