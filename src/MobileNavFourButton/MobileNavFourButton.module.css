@@ -13,6 +13,7 @@
 
 .NavButton {
     border: 1px solid black;
+    background-color: #dddddd;
     border-radius: 0;
     float: left;
     display: block;
