@@ -11,18 +11,18 @@ const MobileNavFourButton=()=> {
 
     return (
       <div className={style.NavBar}>
-        <button className={style.NavButton} onClick={()=>history.push("/")}>
+        <div className={style.NavButton} onClick={()=>history.push("/")}>
         <HomeIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Home</div>
-        </button>
-        <button className={style.NavButton} onClick={()=>history.push("/contact")}>
+        </div>
+        <div className={style.NavButton} onClick={()=>history.push("/contact")}>
         <MailOutlineIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Contact</div>
-        </button>
-        <button className={style.NavButton} onClick={()=>history.push("/call")}>
+        </div>
+        <div className={style.NavButton} onClick={()=>history.push("/call")}>
         <CallIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Services</div>
-        </button>
-        <button className={style.NavButton} onClick={()=>history.push("/call")}>
+        </div>
+        <div className={style.NavButton} onClick={()=>history.push("/call")}>
         <CallIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Services</div>
-        </button>
+        </div>
       </div>
     );
 }
