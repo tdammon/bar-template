@@ -49,8 +49,9 @@ html, body {
     display: flex;
     margin-top: 4rem;
     height: 10rem;
-    width: 100vw;
-    overflow: auto;
+    /* width: 100vw; */
+    overflow-x: scroll;
+    position: fixed;
 }
 
 .mobileHeader {
