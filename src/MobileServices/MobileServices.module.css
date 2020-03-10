@@ -31,18 +31,21 @@ html, body {
     display: inline-block;
     height: 19rem;
     width: 100vw;
+    scroll-snap-align: center;
 }
 .contentTwo {
     background-color: red;
     display: inline-block;
     height: 19rem;
     width: 100vw;
+    scroll-snap-align: center;
 }
 .contentThree {
     background-color: yellow;
     display: inline-block;
     height: 19rem;
     width: 100vw;
+    scroll-snap-align: center;
 }
 
 .logoBox {
