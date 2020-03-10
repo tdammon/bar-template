@@ -12,7 +12,7 @@ import MobileNavThreeButton from "../MobileNavThreeButton/MobileNavThreeButton";
 import MobileNavFourButton from "../MobileNavFourButton/MobileNavFourButton";
 import MobileNavFiveButton from "../MobileNavFiveButton/MobileNavFiveButton";
 import Desktop from "../Desktop/Desktop";
-
+import DesignView from "../DesignView/DesignView"
 
 
 class App extends Component {
@@ -32,8 +32,13 @@ class App extends Component {
           path="/services"
           component={MobileServices}
         />  
+        <Route
+          exact
+          path="/designs"
+          component={DesignView}
+        />  
         </Switch>
-        <MobileNavThreeButton />
+        <MobileNavFourButton />
       </Router>)
     } else if(isBrowser) {
       return (

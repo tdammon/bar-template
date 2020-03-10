@@ -1,0 +1,117 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+.app {
+    background-color: green;
+    background-size : cover;
+    height: 100vh;
+}
+.content {
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    scroll-snap-align: center;
+    width: 100vw;
+}
+.header {
+    color: black;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;  
+}
+
+.navOptions {
+    margin-top: 4rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: x mandatory;
+}
+
+.buttonText {
+    font-size: 1rem;
+}
+.NavBar {
+    width:100%;
+    float: none;
+    display:flex;
+    height: 3rem;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+
+.NavButtonFive {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: #dddddd;
+    border-radius: 0;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 20%;
+}
+
+.NavButtonFour {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: #dddddd;
+    border-radius: 0;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 25%;
+}
+
+.NavButtonThree {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: #dddddd;
+    border-radius: 0;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 33%;
+}
+
+.NavButton:focus {
+    outline: none !important;
+    outline-offset: none !important;
+}
+
+.mobileHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.phoneNumberLink {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.logoBox {
+    border: 2px solid white;
+    margin: 1rem;
+    padding: 2rem;
+}
+.contactBox {
+    margin: 1rem;
+    padding: 1rem;
+}

@@ -4,6 +4,7 @@ import style from "./MobileNavFourButton.module.css"
 import HomeIcon from '@material-ui/icons/Home';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import CallIcon from '@material-ui/icons/Call';
+import CreateIcon from '@material-ui/icons/Create';
 
 
 const MobileNavFourButton=()=> {
@@ -17,11 +18,11 @@ const MobileNavFourButton=()=> {
         <div className={style.NavButton} onClick={()=>history.push("/contact")}>
         <MailOutlineIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Contact</div>
         </div>
-        <div className={style.NavButton} onClick={()=>history.push("/call")}>
+        <div className={style.NavButton} onClick={()=>history.push("/services")}>
         <CallIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Services</div>
         </div>
-        <div className={style.NavButton} onClick={()=>history.push("/call")}>
-        <CallIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Services</div>
+        <div className={style.NavButton} onClick={()=>history.push("/designs")}>
+        <CreateIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Designs</div>
         </div>
       </div>
     );

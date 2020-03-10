@@ -17,20 +17,32 @@ class MobileServices extends Component {
           </div>
         </div>
         <div className={style.mainContent}>
-           <div className={style.contentOne}>
-           <div className={style.contentView}>
+           <div className={style.contentOne} id="contentOne">
+            <div className={style.contentView}>
                View One
+            </div>
+            <button className={style.buttonForward} onClick={()=>document.getElementById('contentTwo').scrollIntoView({behavior: "smooth"})} >
+              &#62;
+            </button>
            </div>
-           </div>
-           <div className={style.contentTwo}>
-           <div className={style.contentView}>
+           <div className={style.contentTwo} id="contentTwo">
+            <div className={style.contentView}>
                View Two
+            </div>
+            <button className={style.buttonBack} onClick={()=>document.getElementById('contentOne').scrollIntoView({behavior: "smooth"})} >
+              &#60;
+            </button>
+            <button className={style.buttonForward} onClick={()=>document.getElementById('contentThree').scrollIntoView({behavior: "smooth"})} >
+              &#62;
+            </button>
            </div>
-           </div>
-           <div className={style.contentThree}>
-           <div className={style.contentView}>
+           <div className={style.contentThree} id="contentThree">
+            <div className={style.contentView}>
                <span style={{color: "black"}}>View Three</span>
-           </div>
+            </div>
+            <button className={style.buttonBack} onClick={()=>document.getElementById('contentTwo').scrollIntoView({behavior: "smooth"})} >
+              &#60;
+            </button>
            </div>
         </div>
         </div>
