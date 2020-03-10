@@ -17,8 +17,12 @@ class MobileServices extends Component {
           </div>
         </div>
         <div className={style.mainContent}>
-           <div className={style.contentOne}></div>
-           <div className={style.contentTwo}></div>
+           <div className={style.contentOne}>
+           </div>
+           <div className={style.contentTwo}>
+           </div>
+           <div className={style.contentThree}>
+           </div>
         </div>
         </div>
         {/* <div className={style.pageOne}>
