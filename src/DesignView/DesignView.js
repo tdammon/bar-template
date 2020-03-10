@@ -24,6 +24,9 @@ class DesignView extends Component {
         <div className={style.content} id="contentOne">
           <div className={style.header}>
               5 Button View
+              <button className={style.buttonForward} onClick={()=>document.getElementById('contentTwo').scrollIntoView({behavior: "smooth"})} >
+              &#62;
+            </button>
           </div>
             <div className={style.NavBar}>
                 <div className={style.NavButtonFive} >
@@ -47,6 +50,12 @@ class DesignView extends Component {
             <div className={style.content} id="contentTwo">
             <div className={style.header}>
               4 Button View
+              <button className={style.buttonBack} onClick={()=>document.getElementById('contentOne').scrollIntoView({behavior: "smooth"})} >
+              &#60;
+            </button>
+            <button className={style.buttonForward} onClick={()=>document.getElementById('contentThree').scrollIntoView({behavior: "smooth"})} >
+              &#62;
+            </button>
             </div>
             <div className={style.NavBar}>
                 <div className={style.NavButtonFour} >
@@ -67,6 +76,9 @@ class DesignView extends Component {
             <div className={style.content} id="contentThree">
             <div className={style.header}>
               3 Button View
+              <button className={style.buttonBack} onClick={()=>document.getElementById('contentTwo').scrollIntoView({behavior: "smooth"})} >
+              &#60;
+            </button>
             </div>
             <div className={style.NavBar}>
                 <div className={style.NavButtonThree} >
