@@ -18,10 +18,19 @@ class MobileServices extends Component {
         </div>
         <div className={style.mainContent}>
            <div className={style.contentOne}>
+           <div className={style.contentView}>
+               View One
+           </div>
            </div>
            <div className={style.contentTwo}>
+           <div className={style.contentView}>
+               View Two
+           </div>
            </div>
            <div className={style.contentThree}>
+           <div className={style.contentView}>
+               <span style={{color: "black"}}>View Three</span>
+           </div>
            </div>
         </div>
         </div>

@@ -29,25 +29,31 @@ html, body {
 .contentOne {
     background-color: blue;
     display: inline-block;
-    height: 19rem;
+    height: 50vh;
     width: 100vw;
     scroll-snap-align: center;
 }
 .contentTwo {
     background-color: red;
     display: inline-block;
-    height: 19rem;
+    height: 50vh;
     width: 100vw;
     scroll-snap-align: center;
 }
 .contentThree {
     background-color: yellow;
     display: inline-block;
-    height: 19rem;
+    height: 50vh;
     width: 100vw;
     scroll-snap-align: center;
 }
-
+.contentView {
+    color: white;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    
+}
 .logoBox {
     border: 2px solid white;
     margin: 1rem;
@@ -56,7 +62,7 @@ html, body {
 
 .mainContent {
     margin-top: 4rem;
-    height: 20rem;
+    height: 50vh;
     overflow: auto;
     white-space: nowrap;
     scroll-snap-type: mandatory;
