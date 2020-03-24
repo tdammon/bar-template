@@ -15,7 +15,6 @@ import Desktop from "../Desktop/Desktop";
 import DesignView from "../DesignView/DesignView"
 
 import Amplify, { Analytics } from 'aws-amplify';
-import awsconfig from '../aws-exports';
 import Auth from 'aws-amplify';
 
 const amplifyConfig = {
