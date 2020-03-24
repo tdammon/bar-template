@@ -14,6 +14,38 @@ import MobileNavFiveButton from "../MobileNavFiveButton/MobileNavFiveButton";
 import Desktop from "../Desktop/Desktop";
 import DesignView from "../DesignView/DesignView"
 
+import Amplify, { Analytics } from 'aws-amplify';
+import awsconfig from '../aws-exports';
+import Auth from 'aws-amplify';
+
+const amplifyConfig = {
+  Auth: {
+    identityPoolId: 'COGNITO_IDENTITY_POOL_ID',
+    region: 'us-east-1'
+  }
+}
+//Initialize Amplify
+Auth.configure(amplifyConfig);
+
+const analyticsConfig = {
+  AWSPinpoint: {
+        // Amazon Pinpoint App Client ID
+        appId: 'f1f1394c30bd4725a2a11bd4057fbc82',
+        // Amazon service region
+        region: 'us-east-1',
+        mandatorySignIn: false,
+  }
+}
+
+Analytics.configure(analyticsConfig)
+//Record an event
+Analytics.record('some-event-name');
+
+//Record a custom event
+Analytics.record({
+    name: 'Album',
+    attributes: { genre: 'Rock', year: '1989' }
+});
 
 class App extends Component {
 
