@@ -4,7 +4,6 @@ import Amplify, { Analytics } from 'aws-amplify';
 import Auth from 'aws-amplify';
 import awsconfig from '../aws-exports';
 
-
 Amplify.configure(awsconfig);
 
 class MobileServices extends Component {
