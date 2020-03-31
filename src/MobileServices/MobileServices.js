@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import style from "./MobileServices.module.css"
+import Amplify, { Analytics } from 'aws-amplify';
+import Auth from 'aws-amplify';
+import awsconfig from './aws-exports';
 
+Amplify.configure(awsconfig);
 
 class MobileServices extends Component {
 
@@ -12,6 +16,7 @@ class MobileServices extends Component {
           <div className={style.logoBox}>
             Logo Here
           </div>
+          <button onClick={Analytics.record("button Clicked")}>Click Me</button>
           <div className={style.contactBox}>
           <a className={style.phoneNumberLink} href="tel:+900300400">Contact Us<br></br> 900 300 400</a>
           </div>
