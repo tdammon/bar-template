@@ -14,11 +14,11 @@ import MobileNavFiveButton from "../MobileNavFiveButton/MobileNavFiveButton";
 import Desktop from "../Desktop/Desktop";
 import DesignView from "../DesignView/DesignView"
 
-import Amplify, { Analytics } from 'aws-amplify';
-import Auth from 'aws-amplify';
-import awsconfig from '../aws-exports';
+// import Amplify, { Analytics } from 'aws-amplify';
+// import Auth from 'aws-amplify';
+// import awsconfig from '../aws-exports';
 
-Amplify.configure(awsconfig);
+// Amplify.configure(awsconfig);
 
 // const amplifyConfig = {
 //   Auth: {
