@@ -16,7 +16,7 @@ import DesignView from "../DesignView/DesignView"
 
 import Amplify, { Analytics } from 'aws-amplify';
 import Auth from 'aws-amplify';
-import awsconfig from '../aws-exports';
+import awsconfig from './aws-exports';
 
 Amplify.configure(awsconfig);
 
