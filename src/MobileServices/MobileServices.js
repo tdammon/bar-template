@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import style from "./MobileServices.module.css"
 import Amplify, { Analytics } from 'aws-amplify';
 import Auth from 'aws-amplify';
-import awsconfig from './aws-exports';
+import awsconfig from '../aws-exports';
 
 
 Amplify.configure(awsconfig);
