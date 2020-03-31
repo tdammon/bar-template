@@ -17,7 +17,7 @@ class MobileServices extends Component {
           <div className={style.logoBox}>
             Logo Here
           </div>
-          <button onClick={Analytics.record("button Clicked")}>Click Me</button>
+          <button onClick={()=>Analytics.record("button Clicked")}>Click Me</button>
           <div className={style.contactBox}>
           <a className={style.phoneNumberLink} href="tel:+900300400">Contact Us<br></br> 900 300 400</a>
           </div>
