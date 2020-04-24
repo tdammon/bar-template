@@ -13,7 +13,7 @@ class MobileServices extends Component {
           <div className={style.logoBox}>
             Logo Here
           </div>
-          <button onClick={()=>axios.post('https://evening-temple-42477.herokuapp.com/api/search/?q=chicken&target=no&source=en', {user: 5})}>Click Me</button>
+          <button onClick={()=>axios.post('http://localhost:5000/analytics', {user: 5})}>Click Me</button>
           <div className={style.contactBox}>
           <a className={style.phoneNumberLink} href="tel:+900300400">Contact Us<br></br> 900 300 400</a>
           </div>
