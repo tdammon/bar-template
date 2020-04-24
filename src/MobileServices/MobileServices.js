@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import style from "./MobileServices.module.css"
-import { API } from 'aws-amplify'
+import Amplify, { API } from 'aws-amplify'
 import axios from 'axios'
+import awsmobile from './aws-exports';
+
+Amplify.configure(awsmobile);
 
 
 class MobileServices extends Component {
