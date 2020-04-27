@@ -17,7 +17,7 @@ class MobileServices extends Component {
           <div className={style.logoBox}>
             Logo Here
           </div>
-          <button onClick={()=>API.post('https://1kdzvsr39a.execute-api.us-east-1.amazonaws.com/amplify/template281a8961-amplify', {user: 5})}>Click Me</button>
+          <button onClick={()=>API.post('template281a8961-amplify', '/amplify', {user: 5})}>Click Me</button>
           <div className={style.contactBox}>
           <a className={style.phoneNumberLink} href="tel:+900300400">Contact Us<br></br> 900 300 400</a>
           </div>
