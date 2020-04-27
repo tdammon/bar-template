@@ -1,5 +1,0 @@
-{
-    "tableName": "dynamofb19d929",
-    "partitionKeyName": "users",
-    "partitionKeyType": "N"
-}
