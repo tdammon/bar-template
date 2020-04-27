@@ -38,6 +38,21 @@
 					]
 				}
 			]
+		},
+		"analyticsfunction": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "storage",
+					"resourceName": "dynamofb19d929",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
 		}
 	},
 	"api": {
@@ -48,6 +63,20 @@
 				{
 					"category": "function",
 					"resourceName": "template281a8961",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		},
+		"analyticsapi": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "analyticsfunction",
 					"attributes": [
 						"Name",
 						"Arn"
