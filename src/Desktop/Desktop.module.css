@@ -3,7 +3,7 @@ html {
   }
 
 .app {
-    background-color: green;
+    background-color: var(--global-color-primary);
     background-size : cover;
     background-attachment: fixed;
     height: 170vh;

@@ -1,0 +1,10 @@
+:root {
+    --global-font-family: Verdana, sans-serif;
+    --global-font-size: 0.8rem;
+    --global-text-color: #222;
+    --global-primary-title-size: 2rem;
+    --global-color-primary: #88498f;
+    --global-color-secondary: #779fa1;
+    --global-color-warning: #e28413;
+    --global-color-danger: #ff6542;
+}

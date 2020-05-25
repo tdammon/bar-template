@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import style from "./MobileServices.module.css"
-import Amplify, { API } from 'aws-amplify'
 import axios from 'axios'
-import awsmobile from '../aws-exports';
-
-Amplify.configure(awsmobile);
-
 
 class MobileServices extends Component {
 
@@ -17,7 +12,6 @@ class MobileServices extends Component {
           <div className={style.logoBox}>
             Logo Here
           </div>
-          <button onClick={()=>API.post('template281a8961-amplify', '/amplify', {user: 5})}>Click Me</button>
           <div className={style.contactBox}>
           <a className={style.phoneNumberLink} href="tel:+900300400">Contact Us<br></br> 900 300 400</a>
           </div>
