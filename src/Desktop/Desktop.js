@@ -3,9 +3,25 @@ import { useHistory } from "react-router-dom";
 import {BrowserView} from "react-device-detect";
 import style from "./Desktop.module.css";
 
+import ReactGA from 'react-ga';
+
+const trackingId = 'UA-167603833-1'; // Replace with your Google Analytics tracking ID
+
+// ReactGA.set({
+//   userId: Math.random(),
+
+// })
+
 const Browser=()=>{
     
     const history = useHistory()
+
+    React.useEffect(()=> {
+        ReactGA.initialize(trackingId, {
+            debug: true
+        });
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    })
 
     return (
       
