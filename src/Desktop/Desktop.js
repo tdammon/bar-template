@@ -5,7 +5,7 @@ import style from "./Desktop.module.css";
 
 import ReactGA from 'react-ga';
 ReactGA.pageview(window.location.pathname + window.location.search);
-const trackingId = "UA-167603833-1"; // Replace with your Google Analytics tracking ID
+const trackingId = 'UA-167603833-1'; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId, {
     debug: true
 });
