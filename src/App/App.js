@@ -14,6 +14,16 @@ import MobileNavFiveButton from "../MobileNavFiveButton/MobileNavFiveButton";
 import Desktop from "../Desktop/Desktop";
 import DesignView from "../DesignView/DesignView"
 
+import ReactGA from 'react-ga';
+ReactGA.pageview(window.location.pathname + window.location.search);
+const trackingId = 'UA-167603833-1'; // Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId, {
+    debug: true
+});
+ReactGA.set({
+  userId: Math.random(),
+
+})
 
 class App extends Component {
 
