@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    /* height: 100% */
+}
+
+.app {
+    /* background-color: green; */
+    background: repeating-linear-gradient(
+    90deg,
+  #aa9557,
+  #aa9557 0.8rem,
+  #6a6a6a 0.8rem,
+  #6a6a6a 1.6rem
+   );
+    background-size : cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+.contactBox {
+    margin: 1rem;
+    text-align: center;
+}
+
+/* .inline {
+    display: inline-block;
+} */
+
+.logoBox {
+    margin: 1rem;
+    max-width: 50%;
+}
+
+.logoPicture {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%
+}
+
+.mainContent {
+    background-color: white;
+    width: 100%
+}
+
+.mobileHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.menuItem {
+    display: flex;
+    padding: 0.5rem;
+}
+
+.menuItemNumber {
+    float: left;
+    padding-right:0.5rem;
+}
+
+.menuItemImage {
+    width: 65%
+}
+
+.menuItemTitle {
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menuItemPrice {
+    float: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menuItemNotes {
+    display: block;
+}
+
+.menuNav {
+    width: 100%
+}
+
+.menuNavButton {
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: #dddddd;
+    display: inline;
+    float: left;
+    font-size: 1rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+    text-align: center;
+    width: 25%;
+}
+
+.phoneNumberLink {
+    color: #d6d6d6;
+    font-size: 1.2rem;
+    text-decoration: none;
+}

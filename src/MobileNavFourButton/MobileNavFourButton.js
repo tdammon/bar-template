@@ -13,16 +13,17 @@ const MobileNavFourButton=()=> {
     return (
       <div className={style.NavBar}>
         <div className={style.NavButton} onClick={()=>history.push("/")}>
-        <HomeIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Home</div>
+        <HomeIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Menu</div>
+        </div>
+        <div className={style.NavButton} onClick={()=>history.push("/specials")}>
+        <MailOutlineIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Specials</div>
+        </div>
+        <div className={style.NavButton} onClick={()=>history.push("/catering")}>
+        <CallIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Catering</div>
         </div>
         <div className={style.NavButton} onClick={()=>history.push("/contact")}>
-        <MailOutlineIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Contact</div>
-        </div>
-        <div className={style.NavButton} onClick={()=>history.push("/services")}>
-        <CallIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Services</div>
-        </div>
-        <div className={style.NavButton} onClick={()=>history.push("/designs")}>
-        <CreateIcon style={{fontSize: "1rem"}}/><div className={style.buttonText}>Designs</div>
+        {/* <CreateIcon style={{fontSize: "1rem"}}/> */}
+        <div className={style.buttonText}>{`Contact & Location`}</div>
         </div>
       </div>
     );

@@ -1,30 +1,34 @@
 import React, { Component } from 'react';
-import style from "./Mobile.module.css"
+import style from "./Mobile.module.css";
+import { useHistory } from "react-router-dom";
+import CallIcon from '@material-ui/icons/Call';
+import homePicture from "../CompanyImages/cheese-and-bread.jpg";
+import companyLogo from "../CompanyImages/FrenchPress.png"
 
 
-class Mobile extends Component {
+const Mobile = ()=> {
+  const history =useHistory()
 
-  render() {
     return (
       <div className={style.app}>
         <div className={style.mobileHeader}>
           <div className={style.logoBox}>
-            Logo Here
+            <img className={style.logoPicture} src={companyLogo} alt="French Press Logo" />
           </div>
           <div className={style.contactBox}>
-          <a className={style.phoneNumberLink} href="tel:+900300400">Contact Us<br></br> 900 300 400</a>
+            <a className={style.phoneNumberLink} href="tel:+900300400">
+              Call Us!
+              <CallIcon style={{fontSize: "3rem"}}/>
+            </a>
           </div>
         </div>
         <div className={style.mainContent}>
-          <div className={style.slogan}>
-            Build<br></br>
-            Better<br></br>
-            Together<br></br>
-          </div>
+        <img className={style.mainImage} src={homePicture} alt="Bread and Cheese" />
+          <button className={style.largeButton} onClick={()=>history.push("/menu")}>View Menu</button>
         </div>
       </div>
     );
-  }
+
 }
 
 export default (Mobile);

@@ -4,7 +4,14 @@ html, body {
 }
 
 .app {
-    background-color: green;
+    /* background-color: green; */
+    background: repeating-linear-gradient(
+    90deg,
+  #aa9557,
+  #aa9557 0.8rem,
+  #6a6a6a 0.8rem,
+  #6a6a6a 1.6rem
+);
     background-size : cover;
     background-attachment: fixed;
     height: 100vh;
@@ -24,7 +31,7 @@ html, body {
 
 .contactBox {
     margin: 1rem;
-    padding: 1rem;
+    text-align: center;
 }
 
 .contactField {
@@ -80,15 +87,40 @@ html, body {
     width: 100%;
 }
 
-.logoBox {
-    border: 2px solid white;
+.largeButton {
+    background-color: #d6d6d6;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-size: 1.25rem;
     margin: 1rem;
-    padding: 2rem;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.logoBox {
+    /* border: 2px solid grey; */
+    margin: 1rem;
+    max-width: 50%;
+}
+
+.logoPicture {
+    /* border: 0.5rem solid grey; */
+    box-sizing: border-box;
+    height: auto;
+    width: 100%
 }
 
 .mainContent {
-    margin-top: 4rem;
+    text-align: center;
     width: 100%
+}
+
+.mainImage {
+    border: 0.5rem solid grey;
+    box-sizing: border-box;
+    height: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 90%
 }
 
 .messageField {
@@ -136,11 +168,9 @@ html, body {
 }
 
 .phoneNumberLink {
-    color: white;
+    color: #d6d6d6;
     font-size: 1.2rem;
     text-decoration: none;
-   
-    
 }
 
 .services {
