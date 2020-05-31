@@ -43,7 +43,6 @@ html, body {
 
 .mainContent {
     background-color: white;
-    margin-bottom: 8rem;
     width: 100%
 }
 
@@ -54,6 +53,7 @@ html, body {
 }
 
 .menu {
+margin-bottom: 3rem;
  width: 100%
 }
 
