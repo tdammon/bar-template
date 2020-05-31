@@ -23,9 +23,12 @@ html, body {
     text-align: center;
 }
 
-/* .inline {
-    display: inline-block;
-} */
+.inline {
+    width: 65%
+}
+.inlineImage {
+   width: 35%;
+}
 
 .logoBox {
     margin: 1rem;
@@ -48,6 +51,11 @@ html, body {
     justify-content: space-between;
     width: 100%;
 }
+
+.menu {
+ width: 100%
+}
+
 .menuItem {
     display: flex;
     padding: 0.5rem;

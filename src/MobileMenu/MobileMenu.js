@@ -31,59 +31,64 @@ const MobileMenu = () => {
             <div className={style.menu}>
              {/* Rework this section to map in items */}
              <div className={style.menuItem}>
-              <div className={style.inline}>
+              <div className={style.inlineImage}>
                 <div className={style.menuItemNumber}>#1</div>
                 <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
               </div>
               <div className={style.inline}>
-                <div className={style.menuItemTitle}>Coffee</div>
-                <div className={style.menuItemPrice}>$3.29</div>
+                <div className={style.menuItemTitle}>Expresso Shot</div>
+                <div className={style.menuItemPrice}>$2.75</div>
                 <div className={style.menuItemNotes}>
-                Our house made tuna salad on whole grain with your choice of Cheddar, American,
-                Pepper Jack or Swiss cheese on whole grain and grilled to gooey perfection
+                Six bean blend, rich and smooth. 
                 </div>
               </div>
              </div>
-            </div>
-            <div className={style.menu}>
-             {/* Rework this section to map in items */}
+
              <div className={style.menuItem}>
-              <div className={style.inline}>
+              <div className={style.inlineImage}>
                 <div className={style.menuItemNumber}>#2</div>
                 <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
               </div>
               <div className={style.inline}>
-                <div className={style.menuItemTitle}>French Press</div>
-                <div className={style.menuItemPrice}>$5.29</div>
+                <div className={style.menuItemTitle}>The French Press</div>
+                <div className={style.menuItemPrice}>$6.95</div>
                 <div className={style.menuItemNotes}>
-                Our house made tuna salad on whole grain with your choice of Cheddar, American,
-                Pepper Jack or Swiss cheese on whole grain and grilled to gooey perfection
+                French pressed full bodied brew. In house only and steeped at your table. Serves 2
                 </div>
               </div>
              </div>
-            </div>
-            <div className={style.menu}>
-             {/* Rework this section to map in items */}
+
              <div className={style.menuItem}>
-              <div className={style.inline}>
+              <div className={style.inlineImage}>
                 <div className={style.menuItemNumber}>#3</div>
                 <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
               </div>
               <div className={style.inline}>
-                <div className={style.menuItemTitle}>Espresso</div>
-                <div className={style.menuItemPrice}>$1.29</div>
+                <div className={style.menuItemTitle}>Fresh Brewed Coffee</div>
+                <div className={style.menuItemPrice}>$2.39</div>
                 <div className={style.menuItemNotes}>
-                Our house made tuna salad on whole grain with your choice of Cheddar, American,
-                Pepper Jack or Swiss cheese on whole grain and grilled to gooey perfection
+                Hand brewed coffee 
                 </div>
               </div>
              </div>
-            </div>
-            <div className={style.menu}>
-             {/* Rework this section to map in items */}
+
              <div className={style.menuItem}>
+              <div className={style.inlineImage}>
+                <div className={style.menuItemNumber}>#4</div>
+                <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
+              </div>
               <div className={style.inline}>
-                <div className={style.menuItemNumber}>#2</div>
+                <div className={style.menuItemTitle}>Americano</div>
+                <div className={style.menuItemPrice}>$3.00 / $5.00</div>
+                <div className={style.menuItemNotes}>
+                Expresso + hot water 
+                </div>
+              </div>
+             </div>
+
+             <div className={style.menuItem}>
+              <div className={style.inlineImage}>
+                <div className={style.menuItemNumber}>#5</div>
                 <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
               </div>
               <div className={style.inline}>
@@ -95,12 +100,10 @@ const MobileMenu = () => {
                 </div>
               </div>
              </div>
-            </div>
-            <div className={style.menu}>
-             {/* Rework this section to map in items */}
+
              <div className={style.menuItem}>
-              <div className={style.inline}>
-                <div className={style.menuItemNumber}>#2</div>
+              <div className={style.inlineImage}>
+                <div className={style.menuItemNumber}>#6</div>
                 <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
               </div>
               <div className={style.inline}>
@@ -112,58 +115,7 @@ const MobileMenu = () => {
                 </div>
               </div>
              </div>
-            </div>
-            <div className={style.menu}>
-             {/* Rework this section to map in items */}
-             <div className={style.menuItem}>
-              <div className={style.inline}>
-                <div className={style.menuItemNumber}>#2</div>
-                <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
-              </div>
-              <div className={style.inline}>
-                <div className={style.menuItemTitle}>French Press</div>
-                <div className={style.menuItemPrice}>$5.29</div>
-                <div className={style.menuItemNotes}>
-                Our house made tuna salad on whole grain with your choice of Cheddar, American,
-                Pepper Jack or Swiss cheese on whole grain and grilled to gooey perfection
-                </div>
-              </div>
-             </div>
-            </div>
-            <div className={style.menu}>
-             {/* Rework this section to map in items */}
-             <div className={style.menuItem}>
-              <div className={style.inline}>
-                <div className={style.menuItemNumber}>#2</div>
-                <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
-              </div>
-              <div className={style.inline}>
-                <div className={style.menuItemTitle}>French Press</div>
-                <div className={style.menuItemPrice}>$5.29</div>
-                <div className={style.menuItemNotes}>
-                Our house made tuna salad on whole grain with your choice of Cheddar, American,
-                Pepper Jack or Swiss cheese on whole grain and grilled to gooey perfection
-                </div>
-              </div>
-             </div>
-            </div>
-            <div className={style.menu}>
-             {/* Rework this section to map in items */}
-             <div className={style.menuItem}>
-              <div className={style.inline}>
-                <div className={style.menuItemNumber}>#2</div>
-                <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
-              </div>
-              <div className={style.inline}>
-                <div className={style.menuItemTitle}>French Press</div>
-                <div className={style.menuItemPrice}>$5.29</div>
-                <div className={style.menuItemNotes}>
-                Our house made tuna salad on whole grain with your choice of Cheddar, American,
-                Pepper Jack or Swiss cheese on whole grain and grilled to gooey perfection
-                </div>
-              </div>
-             </div>
-            </div>
+          </div>
         </div>
       </div>
     );
