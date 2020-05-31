@@ -92,11 +92,10 @@ const MobileMenu = () => {
                 <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
               </div>
               <div className={style.inline}>
-                <div className={style.menuItemTitle}>French Press</div>
-                <div className={style.menuItemPrice}>$5.29</div>
+                <div className={style.menuItemTitle}>Latte with flavor</div>
+                <div className={style.menuItemPrice}>$5.00/$5.50</div>
                 <div className={style.menuItemNotes}>
-                Our house made tuna salad on whole grain with your choice of Cheddar, American,
-                Pepper Jack or Swiss cheese on whole grain and grilled to gooey perfection
+                Espresso + Steamed milk + pump of flavor
                 </div>
               </div>
              </div>
@@ -107,11 +106,10 @@ const MobileMenu = () => {
                 <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
               </div>
               <div className={style.inline}>
-                <div className={style.menuItemTitle}>French Press</div>
-                <div className={style.menuItemPrice}>$5.29</div>
+                <div className={style.menuItemTitle}>Whipped Hot Chocolate</div>
+                <div className={style.menuItemPrice}>$4.50 / $5.50</div>
                 <div className={style.menuItemNotes}>
-                Our house made tuna salad on whole grain with your choice of Cheddar, American,
-                Pepper Jack or Swiss cheese on whole grain and grilled to gooey perfection
+                Whipped milk, cream, semisweet and milk chocolate, sugar and vanilla. Topped with whipped cream
                 </div>
               </div>
              </div>
