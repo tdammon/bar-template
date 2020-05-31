@@ -29,9 +29,8 @@ const MobileMenu = () => {
                 <div className={style.menuNavButton}>Dinner</div>
                 <div className={style.menuNavButton}>Dessert</div>
             </div>
-            <div className={style.menu}>
-                <BreakfastMenu />
-           </div>
+            <BreakfastMenu />
+           
         </div>
       </div>
     );
