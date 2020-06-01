@@ -62,7 +62,6 @@ html, body {
     background-color: blue;
     display: inline-flex;
     flex-direction: column;
-    height: 50vh;
     position: relative;
     scroll-snap-align: center;
     width: 100vw;

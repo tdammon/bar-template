@@ -52,14 +52,44 @@ html, body {
     width: 100%;
 }
 
+
 .menu {
    padding-bottom: 3rem;
    width: 100%
 }
 
+.menuBreakfast {
+    background-color: red;
+    display: inline-flex;  
+    flex-direction: column;  
+    height: 50vh;
+    position: relative;
+    scroll-snap-align: center;
+    width: 100vw;
+}
+
+.menuHolder {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: x mandatory;
+}
+
 .menuItem {
     display: flex;
     padding: 0.5rem;
+}
+
+.menuLunch {
+    background-color: red;
+    display: inline-flex;
+    flex-direction: column;
+    height: 50vh;
+
+    position: relative;
+    scroll-snap-align: center;
+    width: 100vw;
 }
 
 .menuItemNumber {
@@ -95,6 +125,19 @@ html, body {
     border: 1px solid black;
     box-sizing: border-box;
     background-color: #dddddd;
+    display: inline;
+    float: left;
+    font-size: 1rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+    text-align: center;
+    width: 25%;
+}
+
+.menuNavButtonActive {
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: #f0ac4f;
     display: inline;
     float: left;
     font-size: 1rem;

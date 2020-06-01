@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import style from "./MobileServices.module.css"
 import axios from 'axios'
+import BreakFastMenu from "../MobileMenu/BreakfastMenu"
 
 class MobileServices extends Component {
 
@@ -18,9 +19,10 @@ class MobileServices extends Component {
         </div>
         <div className={style.mainContent}>
            <div className={style.contentOne} id="contentOne">
-            <div className={style.contentView}>
+            {/* <div className={style.contentView}>
                View One
-            </div>
+            </div> */}
+            <BreakFastMenu />
             <button className={style.buttonForward} onClick={()=>document.getElementById('contentTwo').scrollIntoView({behavior: "smooth"})} >
               &#62;
             </button>
