@@ -13,6 +13,8 @@ import MobileNavThreeButton from "../MobileNavThreeButton/MobileNavThreeButton";
 import MobileNavFourButton from "../MobileNavFourButton/MobileNavFourButton";
 import MobileNavFiveButton from "../MobileNavFiveButton/MobileNavFiveButton";
 import Desktop from "../Desktop/Desktop";
+import DesktopImage from "../Desktop/DesktopImage";
+
 import DesignView from "../DesignView/DesignView"
 
 import ReactGA from 'react-ga';
@@ -60,7 +62,7 @@ class App extends Component {
           <Route
               exact
               path="/"
-              component={Desktop}
+              component={DesktopImage}
             />
           </Switch>
         </Router>
