@@ -89,7 +89,7 @@ const BreakfastMenu = () => {
                 <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
               </div>
               <div className={style.inline}>
-                <div className={style.menuItemTitle}>Whipped Hot Chocolate</div>
+                <div className={style.menuItemTitle}>Hot Chocolate</div>
                 <div className={style.menuItemPrice}>$4.50 / $5.50</div>
                 <div className={style.menuItemNotes}>
                 Whipped milk, cream, semisweet and milk chocolate, sugar and vanilla. Topped with whipped cream
