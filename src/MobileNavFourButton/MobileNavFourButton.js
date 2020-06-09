@@ -23,7 +23,7 @@ const MobileNavFourButton=()=> {
         </div>
         <div className={style.NavButton} onClick={()=>history.push("/contact")}>
         {/* <CreateIcon style={{fontSize: "1rem"}}/> */}
-        <div className={style.buttonText}>{`Contact & Location`}</div>
+        <div className={style.buttonText} onClick={()=>history.push("/contact")}>{`Contact & Location`}</div>
         </div>
       </div>
     );

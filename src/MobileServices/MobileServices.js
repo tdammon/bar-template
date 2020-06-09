@@ -8,7 +8,8 @@ class MobileServices extends Component {
   render() {
     return (
       <div className={style.app}>
-      <div className={style.pageOne}>
+      <div style={{width: "100%", height: "100%", backgroundColor:"white", padding: "1rem", fontSize:"2.5rem"}}>Under Construction</div>
+      {/* <div className={style.pageOne}>
         <div className={style.mobileHeader}> 
           <div className={style.logoBox}>
             Logo Here
@@ -22,7 +23,7 @@ class MobileServices extends Component {
             {/* <div className={style.contentView}>
                View One
             </div> */}
-            <BreakFastMenu />
+            {/* <BreakFastMenu />
             <button className={style.buttonForward} onClick={()=>document.getElementById('contentTwo').scrollIntoView({behavior: "smooth"})} >
               &#62;
             </button>
@@ -47,7 +48,7 @@ class MobileServices extends Component {
             </button>
            </div>
         </div>
-        </div>
+        </div>  */}
         {/* <div className={style.pageOne}>
         <div className={style.mobileHeader}> 
           <div className={style.logoBox}>

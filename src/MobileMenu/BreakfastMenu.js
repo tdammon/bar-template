@@ -75,7 +75,7 @@ const BreakfastMenu = () => {
                 <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
               </div>
               <div className={style.inline}>
-                <div className={style.menuItemTitle}>Latte with flavor</div>
+                <div className={style.menuItemTitle}>Latte with Flavor</div>
                 <div className={style.menuItemPrice}>$5.00/$5.50</div>
                 <div className={style.menuItemNotes}>
                 Espresso + Steamed milk + pump of flavor

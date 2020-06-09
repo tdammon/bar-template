@@ -6,6 +6,7 @@ import {
   Switch,
 } from 'react-router-dom';
 import {isMobile, isBrowser} from 'react-device-detect';
+import Contact from "../Contact/Contact";
 import Mobile from "../Mobile/Mobile";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import MobileServices from "../MobileServices/MobileServices";
@@ -51,6 +52,11 @@ class App extends Component {
           exact
           path="/catering"
           component={DesignView}
+        />  
+        <Route
+          exact
+          path="/contact"
+          component={Contact}
         />  
         </Switch>
         <MobileNavFourButton />
