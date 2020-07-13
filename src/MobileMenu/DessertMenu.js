@@ -10,14 +10,11 @@ const DessertMenu = () => {
       <div className={style.menu}>
         {/* Rework this section to map in items */}
         <div className={style.menuItem}>
-          <div className={style.inlineImage}>
-            <div className={style.menuItemNumber}>#1</div>
-            <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
-          </div>
-          <div className={style.inline}>
+          <div className={style.menuItemHeader}>
             <div className={style.menuItemTitle}>Cupcakes</div>
             <div className={style.menuItemPrice}>$2.50 each</div>
-            <div className={style.menuItemNotes}>
+          </div>
+          <div className={style.menuItemNotes}>
             <br></br>
             Chocolate<br></br> 
             With a bittersweet chocolate buttercream<br></br><br></br>
@@ -31,19 +28,15 @@ const DessertMenu = () => {
             The classic with coconut pecan frosting<br></br><br></br>
             Cream Cheese Apple<br></br>
             Diced apples and cream cheese topped with maple frosting<br></br><br></br>
-            </div>
           </div>
         </div>
 
         <div className={style.menuItem}>
-          <div className={style.inlineImage}>
-            <div className={style.menuItemNumber}>#2</div>
-            <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
-          </div>
-          <div className={style.inline}>
+          <div className={style.menuItemHeader}>
             <div className={style.menuItemTitle}>Cookies</div>
             <div className={style.menuItemPrice}>$1.50 each</div>
-            <div className={style.menuItemNotes}>
+          </div>
+          <div className={style.menuItemNotes}>
                 <br></br>
                 House made Oreos<br></br> 
                 Rich chocolate cookie with vanilla cream filling<br></br><br></br>
@@ -53,18 +46,14 @@ const DessertMenu = () => {
                 With a vanilla/almond icing and sprinkles<br></br><br></br>
                 Pecan Sandies<br></br>
                 With ground pecans and topped with a pecan half<br></br><br></br>
-            </div>
           </div>
         </div>
 
         <div className={style.menuItem}>
-          <div className={style.inlineImage}>
-            <div className={style.menuItemNumber}>#3</div>
-            <img className={style.menuItemImage} src={homePicture} alt="Bread and Cheese"/>
-          </div>
-          <div className={style.inline}>
+          <div className={style.menuItemHeader}>
             <div className={style.menuItemTitle}>Brownies and Bars</div>
             <div className={style.menuItemPrice}>$2.75 each</div>
+          </div>
             <div className={style.menuItemNotes}>
                 <br></br>
                 The Classic Brownie<br></br> 
@@ -77,7 +66,6 @@ const DessertMenu = () => {
                 Dark chocolate coffee brownie layer topped with cinnamon cream cheese
                 filling and finished with coffee chocolate glaze<br></br><br></br>
             </div>
-          </div>
         </div>
 
       </div>

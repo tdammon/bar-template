@@ -12,10 +12,10 @@ const BreakfastMenu = () => {
       <div className={style.menu}>
         {/* Rework this section to map in items */}
         <div className={style.menuItem}>
-        <div className={style.inline}>
+        <div className={style.menuItemHeader}>
           <div className={style.menuItemTitle}>Expresso Shot</div>
           <div className={style.menuItemPrice}>$2.75</div>
-          </div>
+        </div>
           <div className={style.menuItemNotes}>
           Six bean blend, rich and smooth. 
           </div>
@@ -23,7 +23,7 @@ const BreakfastMenu = () => {
         </div>
 
         <div className={style.menuItem}>
-        <div className={style.inline}>
+        <div className={style.menuItemHeader}>
           <div className={style.menuItemTitle}>The French Press</div>
           <div className={style.menuItemPrice}>$6.95</div>
         </div>
@@ -33,7 +33,7 @@ const BreakfastMenu = () => {
         </div>
 
         <div className={style.menuItem}>
-        <div className={style.inline}>
+        <div className={style.menuItemHeader}>
           <div className={style.menuItemTitle}>Fresh Brewed Coffee</div>
           <div className={style.menuItemPrice}>$2.39</div>
           </div>
@@ -43,7 +43,7 @@ const BreakfastMenu = () => {
         </div>
 
         <div className={style.menuItem}>
-        <div className={style.inline}>
+        <div className={style.menuItemHeader}>
           <div className={style.menuItemTitle}>Americano</div>
           <div className={style.menuItemPrice}>$3.00 / $5.00</div>
         </div>
@@ -53,7 +53,7 @@ const BreakfastMenu = () => {
         </div>
 
         <div className={style.menuItem}>
-        <div className={style.inline}>
+        <div className={style.menuItemHeader}>
           <div className={style.menuItemTitle}>Latte with Flavor</div>
           <div className={style.menuItemPrice}>$5.00/$5.50</div>
           </div>
@@ -63,7 +63,7 @@ const BreakfastMenu = () => {
         </div>
 
         <div className={style.menuItem}>
-        <div className={style.inline}>
+        <div className={style.menuItemHeader}>
           <div className={style.menuItemTitle}>Hot Chocolate</div>
           <div className={style.menuItemPrice}>$4.50 / $5.50</div>
         </div>
