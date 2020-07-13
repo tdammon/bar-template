@@ -4,7 +4,7 @@ import style from "./MobileMenu.module.css";
 const MenuNavigation = ({changeNav, changeMenu}) => {
 
     return (
-      <div style={{backgroundColor: "darkgrey", height: "115vh", width: "100%", position: "absolute", zIndex: "999", padding: "3rem", overflowX: "hidden",}}>
+      <div style={{backgroundColor: "darkgrey", height: "145vh", width: "100%", position: "absolute", zIndex: "999", padding: "3rem", overflowX: "hidden",}}>
         <div>
             <button onClick={()=>{changeMenu('starters');  changeNav()}} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>STARTERS</button>
         </div>
