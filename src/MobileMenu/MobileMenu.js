@@ -29,6 +29,9 @@ const MobileMenu = () => {
         case 'dessert':
         return(<DessertMenu />)
         break;
+        case 'nav':
+        return(null)
+        break;
     }
   }
 
@@ -45,6 +48,9 @@ const MobileMenu = () => {
         break;
         case 'dessert':
         return(<div className={style.menuHeader}><img className={style.menuImage} src={homePicture} alt="Bread and Cheese"/><div className={style.menuBanner}>Dessert</div></div>)
+        break;
+        case 'nav':
+        return(null)
         break;
     }
   }
@@ -72,7 +78,7 @@ const MobileMenu = () => {
           Logo
         </div>
         <div style={{margin: "1.25rem", height: "2.5rem", width: "2.5rem", textAlign: "center"}}>
-        <img className={style.menuImage} src={hamburgerMenu} alt="hamburger menu icon" onClick={()=>setNav(true)}/>
+        <img className={style.menuImage} src={hamburgerMenu} alt="hamburger menu icon" onClick={()=>{setNav(true); setMenu('nav')}}/>
         </div>
         </div>
         <div className={style.mainContent}>
