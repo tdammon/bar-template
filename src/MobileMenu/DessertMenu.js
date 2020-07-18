@@ -11,7 +11,7 @@ const DessertMenu = () => {
         {/* Rework this section to map in items */}
         <div className={style.menuItem}>
           <div className={style.menuItemHeader}>
-            <div className={style.menuItemTitle}>Cupcakes</div>
+            <div className={style.menuItemTitle}>CUPCAKES</div>
             <div className={style.menuItemPrice}>$2.50 each</div>
           </div>
           <div className={style.menuItemNotes}>
@@ -33,7 +33,7 @@ const DessertMenu = () => {
 
         <div className={style.menuItem}>
           <div className={style.menuItemHeader}>
-            <div className={style.menuItemTitle}>Cookies</div>
+            <div className={style.menuItemTitle}>COOKIES</div>
             <div className={style.menuItemPrice}>$1.50 each</div>
           </div>
           <div className={style.menuItemNotes}>
@@ -51,7 +51,7 @@ const DessertMenu = () => {
 
         <div className={style.menuItem}>
           <div className={style.menuItemHeader}>
-            <div className={style.menuItemTitle}>Brownies and Bars</div>
+            <div className={style.menuItemTitle}>BROWNIES AND BARS</div>
             <div className={style.menuItemPrice}>$2.75 each</div>
           </div>
             <div className={style.menuItemNotes}>

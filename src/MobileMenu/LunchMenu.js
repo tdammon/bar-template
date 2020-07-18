@@ -13,7 +13,7 @@ const LunchMenu = () => {
              {/* Rework this section to map in items */}
              <div className={style.menuItem}>
               <div className={style.menuItemHeader}>
-                <div className={style.menuItemTitle}>Meatloaf</div>
+                <div className={style.menuItemTitle}>MEATLOAF</div>
                 <div className={style.menuItemPrice}>$10.95</div>
               </div>
                 <div className={style.menuItemNotes}>
@@ -24,7 +24,7 @@ const LunchMenu = () => {
 
              <div className={style.menuItem}>
               <div className={style.menuItemHeader}>
-                <div className={style.menuItemTitle}>Ugly Burger </div>
+                <div className={style.menuItemTitle}>UGLY BURGER </div>
                 <div className={style.menuItemPrice}>$10.95</div>
               </div>  
                 <div className={style.menuItemNotes}>
@@ -35,7 +35,7 @@ const LunchMenu = () => {
 
              <div className={style.menuItem}>
               <div className={style.menuItemHeader}>
-                <div className={style.menuItemTitle}>Chipotle Black Bean Burger</div>
+                <div className={style.menuItemTitle}>CHIPOTLE BLACK BEAN BURGER</div>
                 <div className={style.menuItemPrice}>$10.95</div>
               </div>
                 <div className={style.menuItemNotes}>
@@ -46,7 +46,7 @@ const LunchMenu = () => {
 
              <div className={style.menuItem}>
               <div className={style.menuItemHeader}>
-                <div className={style.menuItemTitle}>Asian Chicken Wrap</div>
+                <div className={style.menuItemTitle}>ASIAN CHICKEN WRAP</div>
                 <div className={style.menuItemPrice}>$8.95</div>
               </div>
                 <div className={style.menuItemNotes}>
@@ -57,7 +57,7 @@ const LunchMenu = () => {
 
              <div className={style.menuItem}>
               <div className={style.menuItemHeader}>
-                <div className={style.menuItemTitle}>Tarragon Chicken Salad</div>
+                <div className={style.menuItemTitle}>TARRAGON CHICKEN SALAD</div>
                 <div className={style.menuItemPrice}>$9.95</div>
               </div>
                 <div className={style.menuItemNotes}>
@@ -68,7 +68,7 @@ const LunchMenu = () => {
 
              <div className={style.menuItem}>
               <div className={style.menuItemHeader}>
-                <div className={style.menuItemTitle}>BBQ Brisket Sandwich</div>
+                <div className={style.menuItemTitle}>BBQ BRISKET SANDWICH</div>
                 <div className={style.menuItemPrice}>$10.95</div>
               </div>
                 <div className={style.menuItemNotes}>

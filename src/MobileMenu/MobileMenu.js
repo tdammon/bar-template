@@ -72,27 +72,27 @@ const MobileMenu = () => {
             </a>
           </div>
         </div> */}
-        {nav ? <MenuNavigation changeNav={() => setNav(false)} changeMenu={menuPage => setMenu(menuPage)}/> : null}
         <div className={style.mobileHeader}>
-        <div style={{fontFamily: "'Lucida Sans Unicode', Geneva, Verdana, sans-serif", margin: "1rem", height: "3rem", width: "3rem", color: "white", backgroundColor: "rgba(0, 0, 0, 0.9)", alignItems: "center", display: "flex", justifyContent:"center"}}>
-          Logo
+          <div style={{fontFamily: "Montserrat-Thin", margin: "1rem", height: "3rem", width: "3rem", color: "white", backgroundColor: "rgba(0, 0, 0, 0.9)", alignItems: "center", display: "flex", justifyContent:"center"}}>
+            Logo
+          </div>
+          <div style={{margin: "1.25rem", height: "2.5rem", width: "2.5rem", textAlign: "center"}}>
+            <img className={style.menuImage} src={hamburgerMenu} alt="hamburger menu icon" onClick={()=>{setNav(true); setMenu('nav')}}/>
+          </div>
         </div>
-        <div style={{margin: "1.25rem", height: "2.5rem", width: "2.5rem", textAlign: "center"}}>
-        <img className={style.menuImage} src={hamburgerMenu} alt="hamburger menu icon" onClick={()=>{setNav(true); setMenu('nav')}}/>
-        </div>
-        </div>
-        <div className={style.mainContent}>
-            <div className={style.menuNav}>
-              <div>
-                {loadImage()}
+        {nav ? <MenuNavigation changeNav={() => setNav(false)} changeMenu={menuPage => setMenu(menuPage)}/> : 
+              <div className={style.mainContent}>
+              <div className={style.menuNav}>
+                <div>
+                  {loadImage()}
+                </div>
+                  {/* <div className={menu ==='breakfast' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('breakfast')}>Breakfast</div>
+                  <div className={menu ==='lunch' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('lunch')}>Lunch</div>
+                  <div className={menu ==='dinner' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('dinner')}>Dinner</div>
+                  <div className={menu ==='dessert' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('dessert')}>Dessert</div> */}
               </div>
-                {/* <div className={menu ==='breakfast' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('breakfast')}>Breakfast</div>
-                <div className={menu ==='lunch' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('lunch')}>Lunch</div>
-                <div className={menu ==='dinner' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('dinner')}>Dinner</div>
-                <div className={menu ==='dessert' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('dessert')}>Dessert</div> */}
-            </div>
-                {loadMenu()}
-        </div>
+                  {loadMenu()}
+          </div>}
       </div>
     );
 

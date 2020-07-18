@@ -1,5 +1,6 @@
 .buttonText {
-    font-size: 1rem;
+    font-size: 0.75rem;
+    font-family: Montserrat-Light;
 }
 .NavBar {
     width:100%;
@@ -20,7 +21,8 @@
     float: left;
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: Montserrat-Light;
     text-align: center;
     width: 25%;
 }

@@ -11,7 +11,7 @@ const DinnerMenu = () => {
         {/* Rework this section to map in items */}
         <div className={style.menuItem}>
           <div className={style.menuItemHeader}>
-            <div className={style.menuItemTitle}>Shrimp Scampi</div>
+            <div className={style.menuItemTitle}>SHRIMP SCAMPI</div>
             <div className={style.menuItemPrice}>$16.95</div>
           </div>  
             <div className={style.menuItemNotes}>
@@ -21,7 +21,7 @@ const DinnerMenu = () => {
 
         <div className={style.menuItem}>
           <div className={style.menuItemHeader}>
-            <div className={style.menuItemTitle}>Mediterranean Shrimp and Pasta </div>
+            <div className={style.menuItemTitle}>MEDITERRANEAN SHRIMP AND PASTA </div>
             <div className={style.menuItemPrice}>$16.95</div>
           </div>
             <div className={style.menuItemNotes}>
@@ -31,7 +31,7 @@ const DinnerMenu = () => {
 
         <div className={style.menuItem}>
           <div className={style.menuItemHeader}>
-            <div className={style.menuItemTitle}>Pork Loin Stuffed with Fennel and Onions</div>
+            <div className={style.menuItemTitle}>PORK LOIN STUFFED WITH FENNEL AND ONIONS</div>
             <div className={style.menuItemPrice}>$21.95</div>
           </div>
             <div className={style.menuItemNotes}>
@@ -41,7 +41,7 @@ const DinnerMenu = () => {
 
         <div className={style.menuItem}>
           <div className={style.menuItemHeader}>
-            <div className={style.menuItemTitle}>Stuffed Portobello Mushroom Caps</div>
+            <div className={style.menuItemTitle}>STUFFED PORTOBELLO MUSHROOM CAPS</div>
             <div className={style.menuItemPrice}>$19.95</div>
           </div>  
             <div className={style.menuItemNotes}>

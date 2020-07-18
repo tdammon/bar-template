@@ -8,3 +8,18 @@
     --global-color-warning: #e28413;
     --global-color-danger: #ff6542;
 }
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('./Font/Montserrat-Light.ttf')
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('./Font/Montserrat-Thin.ttf')
+}  
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./Font/Montserrat-Regular.ttf')
+}  
