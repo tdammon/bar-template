@@ -1,5 +1,6 @@
 import React from 'react';
 import style from "./MobileMenu.module.css";
+import Header from "../Header/Header"
 import CallIcon from '@material-ui/icons/Call';
 import companyLogo from "../CompanyImages/FrenchPress.png"
 import homePicture from "../CompanyImages/cheese-and-bread.jpg";
@@ -11,9 +12,8 @@ import DessertMenu from "./DessertMenu"
 import MenuNavigation from "./MenuNavigation"
 
 
-const MobileMenu = () => {
-  const [menu, setMenu] = React.useState('breakfast');
-  const [nav, setNav] = React.useState(false)
+const MobileMenu = ({menu, nav, setMenu, setNav}) => {
+
 
   const loadMenu = () => {
     switch(menu) {
@@ -55,10 +55,6 @@ const MobileMenu = () => {
     }
   }
 
-  const changeMenu = list => {
-      setMenu(list)
-  }
-
     return (
       <div className={style.app}>
         {/* <div className={style.mobileHeader}>
@@ -72,14 +68,14 @@ const MobileMenu = () => {
             </a>
           </div>
         </div> */}
-        <div className={style.mobileHeader}>
+        {/* <div className={style.mobileHeader}>
           <div style={{fontFamily: "Montserrat-Thin", margin: "1rem", height: "3rem", width: "3rem", color: "white", backgroundColor: "rgba(0, 0, 0, 0.9)", alignItems: "center", display: "flex", justifyContent:"center"}}>
             Logo
           </div>
           <div style={{margin: "1.25rem", height: "2.5rem", width: "2.5rem", textAlign: "center"}}>
             <img className={style.menuImage} src={hamburgerMenu} alt="hamburger menu icon" onClick={()=>{setNav(true); setMenu('nav')}}/>
           </div>
-        </div>
+        </div> */}
         {nav ? <MenuNavigation changeNav={() => setNav(false)} changeMenu={menuPage => setMenu(menuPage)}/> : 
               <div className={style.mainContent}>
               <div className={style.menuNav}>

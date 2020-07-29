@@ -1,27 +1,31 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 import style from "./MobileMenu.module.css";
 
-const MenuNavigation = ({changeNav, changeMenu}) => {
+const MenuNavigation = ({setNav, setMenu}) => {
+
+    const history = useHistory()
+
 
     return (
       <div style={{boxSizing: "border-box", backgroundColor: "darkgrey", height: "80vh", width: "100%", zIndex: "999", padding: "3rem", overflowX: "hidden",}}>
         <div>
-            <button onClick={()=>{changeMenu('starters');  changeNav()}} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>STARTERS</button>
+            <button onClick={()=>{setMenu('starters');  setNav(false); history.push("/menu") }} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>STARTERS</button>
         </div>
         <div>
-            <button onClick={()=>{changeMenu('breakfast'); changeNav()}} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>BREAKFAST</button>
+            <button onClick={()=>{setMenu('breakfast'); setNav(false); history.push("/menu") }} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>BREAKFAST</button>
         </div>
         <div>
-            <button onClick={()=>{changeMenu('lunch'); changeNav()}} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>LUNCH</button>
+            <button onClick={()=>{setMenu('lunch'); setNav(false); history.push("/menu") }} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>LUNCH</button>
         </div>
         <div>
-            <button onClick={()=>{changeMenu('dinner'); changeNav()}} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>DINNER</button>
+            <button onClick={()=>{setMenu('dinner'); setNav(false); history.push("/menu") }} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>DINNER</button>
         </div>
         <div>
-            <button onClick={()=>{changeMenu('dessert'); changeNav()}} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>DESSERT</button>
+            <button onClick={()=>{setMenu('dessert'); setNav(false); history.push("/menu") }} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>DESSERT</button>
         </div>
         <div>
-            <button onClick={()=>{changeMenu('drinks'); changeNav()}} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>DRINKS</button>
+            <button onClick={()=>{setMenu('drinks'); setNav(false); history.push("/menu") }} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>DRINKS</button>
         </div>
       </div>
     );

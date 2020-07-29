@@ -1,0 +1,32 @@
+.imageContainer {
+    margin: 1.25rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+}
+.mobileHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mobileLogo {
+    font-family: 'Montserrat-Thin';
+    margin: 1rem;
+    height: 3rem;
+    width: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    display: flex;
+    justify-content:center;
+}
+
+.menuImage {
+    height: auto;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
