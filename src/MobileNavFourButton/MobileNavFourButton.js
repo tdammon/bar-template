@@ -24,10 +24,10 @@ const MobileNavFourButton=()=> {
         <div className={style.NavButton} onClick={()=>history.push("/catering")}>
         <StarBorderOutlinedIcon style={{fontSize: "1.25rem"}}/><div className={style.buttonText}>Specials</div>
         </div>
-        <div className={style.NavButton} onClick={()=>history.push("/contact")}>
-        {/* <CreateIcon style={{fontSize: "1.25rem"}}/> */}
-        <PhoneOutlinedIcon style={{fontSize: "1.25rem"}}/><div className={style.buttonText} onClick={()=>history.push("/contact")}>Contact</div>
-        </div>
+        <a className={style.NavButton} href="tel:+900300400" >
+        <PhoneOutlinedIcon style={{fontSize: "1.25rem"}}/>
+        <div className={style.buttonText} >Call Now</div>
+        </a>
       </div>
     );
 }
