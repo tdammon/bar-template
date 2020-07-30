@@ -35,7 +35,7 @@ const App = ()=> {
       return(
       <Router>
         <Header setMenu={setMenu} setNav={setNav} menu={menu} nav={nav}/>
-        
+        <div style={{marginTop:"5rem"}}>
           {nav ? <MenuNavigation setMenu={setMenu} setNav={setNav} menu={menu} nav={nav}/> :
           <Switch>
         <Route
@@ -73,7 +73,7 @@ const App = ()=> {
             <Contact {...props} setMenu={setMenu} setNav={setNav} menu={menu} nav={nav}/>
           )}
         /></Switch>  }
-        
+        </div>
         <MobileNavFourButton />
       </Router>)
     } else if(isBrowser) {

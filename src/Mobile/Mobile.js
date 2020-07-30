@@ -11,7 +11,7 @@ const Mobile = ()=> {
 
     return (
       <div className={style.app}>
-        <div className={style.mobileHeader}>
+        {/* <div className={style.mobileHeader}>
           <div className={style.logoBox}>
             <img className={style.logoPicture} src={companyLogo} alt="French Press Logo" />
           </div>
@@ -21,7 +21,7 @@ const Mobile = ()=> {
               <CallIcon style={{fontSize: "3rem"}}/>
             </a>
           </div>
-        </div>
+        </div> */}
         <div className={style.mainContent}>
         <img className={style.mainImage} src={homePicture} alt="Bread and Cheese" />
           <button className={style.largeButton} onClick={()=>history.push("/menu")}>View Menu</button>

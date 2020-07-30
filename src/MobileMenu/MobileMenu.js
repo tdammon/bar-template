@@ -18,16 +18,16 @@ const MobileMenu = ({menu, nav, setMenu, setNav}) => {
   const loadMenu = () => {
     switch(menu) {
         case 'breakfast':
-        return(<BreakfastMenu />)
+        return(<div style={{paddingTop: "33vh"}}><BreakfastMenu /></div>)
         break;
         case 'lunch':
-        return(<LunchMenu />)
+        return(<div style={{paddingTop: "33vh"}}><LunchMenu /></div>)
         break;
         case 'dinner':
-        return(<DinnerMenu />)
+        return(<div style={{paddingTop: "33vh"}}><DinnerMenu /></div>)
         break;
         case 'dessert':
-        return(<DessertMenu />)
+        return(<div style={{paddingTop: "33vh"}}><DessertMenu /></div>)
         break;
         case 'nav':
         return(null)

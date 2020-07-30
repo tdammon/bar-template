@@ -8,7 +8,7 @@ const MenuNavigation = ({setNav, setMenu}) => {
 
 
     return (
-      <div style={{boxSizing: "border-box", backgroundColor: "darkgrey", height: "80vh", width: "100%", padding: "3rem", position: "fixed", top: "0"}}>
+      <div style={{boxSizing: "border-box", backgroundColor: "darkgrey", height: "80vh", width: "100%", zIndex: "999", padding: "3rem", overflowX: "hidden", position: "fixed"}}>
         <div>
             <button onClick={()=>{setMenu('starters');  setNav(false); history.push("/menu") }} style={{border: "none", backgroundColor: "transparent", fontSize: "2rem", color: "white", padding: "0.5rem 0rem 0.5rem 0rem"}}>STARTERS</button>
         </div>

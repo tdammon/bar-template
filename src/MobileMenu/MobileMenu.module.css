@@ -77,7 +77,8 @@ html, body {
 }
 
 .menuHeader {
-    position: relative;
+    position: fixed;
+    top: 5rem;
     color: white;
     background-color:black;
     height: 30vh;
