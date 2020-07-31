@@ -4,6 +4,10 @@ import Header from "../Header/Header"
 import CallIcon from '@material-ui/icons/Call';
 import companyLogo from "../CompanyImages/FrenchPress.png"
 import homePicture from "../CompanyImages/cheese-and-bread.jpg";
+import Breakfast from "../CompanyImages/Breakfast.jpg";
+import Lunch from "../CompanyImages/Lunch.jpg";
+import Dinner from "../CompanyImages/Dinner.jpg";
+import Dessert from "../CompanyImages/Dessert.jpg";
 import hamburgerMenu from "../CompanyImages/hamburgerMenu.png";
 import BreakfastMenu from "./BreakfastMenu"
 import LunchMenu from "./LunchMenu"
@@ -38,16 +42,16 @@ const MobileMenu = ({menu, nav, setMenu, setNav}) => {
   const loadImage = () => {
     switch(menu) {
         case 'breakfast':
-        return(<div className={style.menuHeader}><img className={style.menuImage} src={homePicture} alt="Bread and Cheese"/><div className={style.menuBanner}>BREAKFAST</div></div>)
+        return(<div className={style.menuHeader}><img className={style.menuImage} src={Breakfast} alt="Bread and Cheese"/><div className={style.menuBanner}>BREAKFAST</div></div>)
         break;
         case 'lunch':
-        return(<div className={style.menuHeader}><img className={style.menuImage} src={homePicture} alt="Bread and Cheese"/><div className={style.menuBanner}>Lunch</div></div>)
+        return(<div className={style.menuHeader}><img className={style.menuImage} src={Lunch} alt="Bread and Cheese"/><div className={style.menuBanner}>LUNCH</div></div>)
         break;
         case 'dinner':
-        return(<div className={style.menuHeader}><img className={style.menuImage} src={homePicture} alt="Bread and Cheese"/><div className={style.menuBanner}>Dinner</div></div>)
+        return(<div className={style.menuHeader}><img className={style.menuImage} src={Dinner} alt="Bread and Cheese"/><div className={style.menuBanner}>DINNER</div></div>)
         break;
         case 'dessert':
-        return(<div className={style.menuHeader}><img className={style.menuImage} src={homePicture} alt="Bread and Cheese"/><div className={style.menuBanner}>Dessert</div></div>)
+        return(<div className={style.menuHeader}><img className={style.menuImage} src={Dessert} alt="Bread and Cheese"/><div className={style.menuBanner}>DESSERT</div></div>)
         break;
         case 'nav':
         return(null)

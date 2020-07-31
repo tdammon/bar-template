@@ -3,7 +3,6 @@ import style from "./MobileMenu.module.css";
 import { useHistory } from "react-router-dom";
 import CallIcon from '@material-ui/icons/Call';
 import companyLogo from "../CompanyImages/FrenchPress.png"
-import homePicture from "../CompanyImages/cheese-and-bread.jpg";
 
 const BreakfastMenu = () => {
   const history = useHistory()

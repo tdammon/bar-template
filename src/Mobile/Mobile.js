@@ -24,7 +24,6 @@ const Mobile = ()=> {
         </div> */}
         <div className={style.mainContent}>
         <img className={style.mainImage} src={homePicture} alt="Bread and Cheese" />
-          <button className={style.largeButton} onClick={()=>history.push("/menu")}>View Menu</button>
         </div>
       </div>
     );

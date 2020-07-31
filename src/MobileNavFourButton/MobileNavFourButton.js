@@ -15,7 +15,7 @@ const MobileNavFourButton=()=> {
 
     return (
       <div className={style.NavBar}>
-        <div className={style.NavButton} onClick={()=>history.push("/")}>
+        <div className={style.NavButton} onClick={()=>history.push("/menu")}>
         <HomeOutlinedIcon style={{fontSize: "1.25rem"}}/><div className={style.buttonText}>Menu</div>
         </div>
         <div className={style.NavButton} onClick={()=>history.push("/specials")}>

@@ -161,6 +161,26 @@ html, body {
     width: 25%;
 }
 
+.navMenu {
+    box-sizing: border-box;
+    background-color: #4b4c4c;
+    height: 80vh;
+    width: 100%;
+    z-index: 999;
+    padding: 3rem;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.navMenuButton {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .menuNavButtonActive {
     border: 1px solid black;
     box-sizing: border-box;
