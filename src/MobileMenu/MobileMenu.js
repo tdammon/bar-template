@@ -8,11 +8,13 @@ import Breakfast from "../CompanyImages/Breakfast.jpg";
 import Lunch from "../CompanyImages/Lunch.jpg";
 import Dinner from "../CompanyImages/Dinner.jpg";
 import Dessert from "../CompanyImages/Dessert.jpg";
+import Drinks from "../CompanyImages/Drinks.jpg";
 import hamburgerMenu from "../CompanyImages/hamburgerMenu.png";
 import BreakfastMenu from "./BreakfastMenu"
 import LunchMenu from "./LunchMenu"
 import DinnerMenu from "./DinnerMenu"
 import DessertMenu from "./DessertMenu"
+import DrinksMenu from "./DrinksMenu"
 import MenuNavigation from "./MenuNavigation"
 
 
@@ -33,6 +35,9 @@ const MobileMenu = ({menu, nav, setMenu, setNav}) => {
         case 'dessert':
         return(<div style={{paddingTop: "33vh"}}><DessertMenu /></div>)
         break;
+        case 'drinks':
+          return(<div style={{paddingTop: "33vh"}}><DrinksMenu /></div>)
+          break;
         case 'nav':
         return(null)
         break;
@@ -52,6 +57,9 @@ const MobileMenu = ({menu, nav, setMenu, setNav}) => {
         break;
         case 'dessert':
         return(<div className={style.menuHeader}><img className={style.menuImage} src={Dessert} alt="Bread and Cheese"/><div className={style.menuBanner}>DESSERT</div></div>)
+        break;
+        case 'drinks':
+        return(<div className={style.menuHeader}><img className={style.menuImage} src={Drinks} alt="Bread and Cheese"/><div className={style.menuBanner}>DRINKS</div></div>)
         break;
         case 'nav':
         return(null)

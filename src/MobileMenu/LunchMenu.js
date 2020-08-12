@@ -7,8 +7,6 @@ import homePicture from "../CompanyImages/cheese-and-bread.jpg";
 const LunchMenu = () => {
 
     return (
-
-        
             <div className={style.menu}>
              {/* Rework this section to map in items */}
              <div className={style.menuItem}>
