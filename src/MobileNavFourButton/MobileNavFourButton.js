@@ -8,6 +8,7 @@ import PhoneOutlinedIcon from "@material-ui/icons/PhoneOutlined";
 import CreateIcon from "@material-ui/icons/Create";
 import RestaurantMenuOutlinedIcon from "@material-ui/icons/RestaurantMenuOutlined";
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
+import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
 
 const MobileNavFourButton = () => {
   const history = useHistory();
@@ -22,7 +23,7 @@ const MobileNavFourButton = () => {
         className={style.NavButton}
         onClick={() => history.push("/specials")}
       >
-        <RestaurantMenuOutlinedIcon style={{ fontSize: "1.25rem" }} />
+        <CalendarTodayIcon style={{ fontSize: "1.25rem" }} />
         <div className={style.buttonText}>Events</div>
       </div>
       <div

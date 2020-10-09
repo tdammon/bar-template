@@ -14,55 +14,55 @@ const MenuNavigation = ({ setNav, setMenu }) => {
         <button
           className={style.navMenuButton}
           onClick={() => {
-            setMenu("breakfast");
+            setMenu("beer");
             setNav(false);
             history.push("/menu");
           }}
         >
-          BREAKFAST
+          BEER
         </button>
       </div>
       <div>
         <button
           className={style.navMenuButton}
           onClick={() => {
-            setMenu("lunch");
+            setMenu("wine");
             setNav(false);
             history.push("/menu");
           }}
         >
-          LUNCH
+          WINE
         </button>
       </div>
       <div>
         <button
           className={style.navMenuButton}
           onClick={() => {
-            setMenu("dinner");
+            setMenu("cocktails");
             setNav(false);
             history.push("/menu");
           }}
         >
-          DINNER
+          COCKTAILS
         </button>
       </div>
       <div>
         <button
           className={style.navMenuButton}
           onClick={() => {
-            setMenu("dessert");
+            setMenu("snacks");
             setNav(false);
             history.push("/menu");
           }}
         >
-          DESSERT
+          SNACKS
         </button>
       </div>
-      <div>
+      {/* <div>
             <button 
             className={style.navMenuButton} 
             onClick={()=>{setMenu('drinks'); setNav(false); history.push("/menu") }}>DRINKS</button>
-        </div>
+        </div> */}
     </div>
   );
 };

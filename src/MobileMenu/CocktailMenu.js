@@ -10,49 +10,44 @@ const DinnerMenu = () => {
       {/* Rework this section to map in items */}
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          <div className={style.menuItemTitle}>SHRIMP SCAMPI</div>
-          <div className={style.menuItemPrice}>$16.95</div>
+          <div className={style.menuItemTitle}>MOSCOW MULE</div>
+          <div className={style.menuItemPrice}>$6.00</div>
         </div>
         <div className={style.menuItemNotes}>
-          Garlicky jumbo shrimp in a lemon butter sauce served over pasta
+          House vodka mixed with ginger beer and lime juice, poured into a
+          copper cup.
         </div>
       </div>
 
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          <div className={style.menuItemTitle}>
-            MEDITERRANEAN SHRIMP AND PASTA{" "}
-          </div>
-          <div className={style.menuItemPrice}>$16.95</div>
+          <div className={style.menuItemTitle}>WHITE RUSSIAN</div>
+          <div className={style.menuItemPrice}>$7.50</div>
         </div>
         <div className={style.menuItemNotes}>
-          Jumbo shrimp, black olives, sun dried tomatoes, wine and lemon juice
-          served over pasta
+          Grey Goose and Kahlua with a splash of cream, served over ice.
         </div>
       </div>
 
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          <div className={style.menuItemTitle}>
-            PORK LOIN STUFFED WITH FENNEL AND ONIONS
-          </div>
-          <div className={style.menuItemPrice}>$21.95</div>
+          <div className={style.menuItemTitle}>TEQUILA SUNRISE</div>
+          <div className={style.menuItemPrice}>$9.00</div>
         </div>
         <div className={style.menuItemNotes}>
-          Butterflied and stuffed, then rolled and roasted
+          Tequila mixed with orange juice, poured into a glass of ice, and
+          topped with grenadine.
         </div>
       </div>
 
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          <div className={style.menuItemTitle}>
-            STUFFED PORTOBELLO MUSHROOM CAPS
-          </div>
-          <div className={style.menuItemPrice}>$19.95</div>
+          <div className={style.menuItemTitle}>MOJITO</div>
+          <div className={style.menuItemPrice}>$7.50</div>
         </div>
         <div className={style.menuItemNotes}>
-          Stuffed with a creamy artichoke, garlic and spinach filling and baked.
-          Serving is 2 large caps
+          White rum mixed with sugar and mint, topped with soda water and a
+          splash of freshly squeezed lime juice.
         </div>
       </div>
     </div>
