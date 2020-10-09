@@ -5,7 +5,7 @@ html, body {
 }
 
 .app {
-    background-color: green;
+    /* background-color: green; */
     background-size : cover;
     height: 100vh;
     position: fixed;
@@ -62,7 +62,6 @@ html, body {
     background-color: blue;
     display: inline-flex;
     flex-direction: column;
-    height: 50vh;
     position: relative;
     scroll-snap-align: center;
     width: 100vw;

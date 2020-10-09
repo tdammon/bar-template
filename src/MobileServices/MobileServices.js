@@ -1,32 +1,29 @@
 import React, { Component } from 'react';
 import style from "./MobileServices.module.css"
-import Amplify, { API } from 'aws-amplify'
-import axios from 'axios'
-import awsmobile from '../aws-exports';
-
-Amplify.configure(awsmobile);
-
+// import axios from 'axios'
+// import BreakFastMenu from "../MobileMenu/BreakfastMenu"
 
 class MobileServices extends Component {
 
   render() {
     return (
       <div className={style.app}>
-      <div className={style.pageOne}>
+      <div style={{width: "100%", height: "100%", backgroundColor:"white", padding: "1rem", fontSize:"2.5rem"}}>Under Construction</div>
+      {/* <div className={style.pageOne}>
         <div className={style.mobileHeader}> 
           <div className={style.logoBox}>
             Logo Here
           </div>
-          <button onClick={()=>API.post('template281a8961-amplify', '/amplify', {user: 5})}>Click Me</button>
           <div className={style.contactBox}>
           <a className={style.phoneNumberLink} href="tel:+900300400">Contact Us<br></br> 900 300 400</a>
           </div>
         </div>
         <div className={style.mainContent}>
            <div className={style.contentOne} id="contentOne">
-            <div className={style.contentView}>
+            {/* <div className={style.contentView}>
                View One
-            </div>
+            </div> */}
+            {/* <BreakFastMenu />
             <button className={style.buttonForward} onClick={()=>document.getElementById('contentTwo').scrollIntoView({behavior: "smooth"})} >
               &#62;
             </button>
@@ -51,7 +48,7 @@ class MobileServices extends Component {
             </button>
            </div>
         </div>
-        </div>
+        </div>  */}
         {/* <div className={style.pageOne}>
         <div className={style.mobileHeader}> 
           <div className={style.logoBox}>

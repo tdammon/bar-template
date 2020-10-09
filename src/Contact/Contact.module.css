@@ -1,0 +1,6 @@
+.app {
+    /* background-color: green; */
+    background-size : cover;
+    position: fixed;
+    height: 100vh;
+}

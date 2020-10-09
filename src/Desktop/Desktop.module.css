@@ -2,8 +2,13 @@ html {
     scroll-behavior: smooth;
   }
 
+.appImage {
+    width: 100vw;
+    height: 100vh;
+}  
+
 .app {
-    background-color: green;
+    background-color: var(--global-color-primary);
     background-size : cover;
     background-attachment: fixed;
     height: 170vh;
