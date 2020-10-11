@@ -10,25 +10,37 @@ import RestaurantMenuOutlinedIcon from "@material-ui/icons/RestaurantMenuOutline
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
 import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
 
-const MobileNavFourButton = () => {
+const MobileNavFourButton = ({ setNav }) => {
   const history = useHistory();
 
   return (
     <div className={style.NavBar}>
-      <div className={style.NavButton} onClick={() => history.push("/menu")}>
+      <div
+        className={style.NavButton}
+        onClick={() => {
+          history.push("/menu");
+          setNav(false);
+        }}
+      >
         <HomeOutlinedIcon style={{ fontSize: "1.25rem" }} />
         <div className={style.buttonText}>Drinks</div>
       </div>
       <div
         className={style.NavButton}
-        onClick={() => history.push("/specials")}
+        onClick={() => {
+          history.push("/specials");
+          setNav(false);
+        }}
       >
         <CalendarTodayIcon style={{ fontSize: "1.25rem" }} />
         <div className={style.buttonText}>Events</div>
       </div>
       <div
         className={style.NavButton}
-        onClick={() => history.push("/catering")}
+        onClick={() => {
+          history.push("/catering");
+          setNav(false);
+        }}
       >
         <StarBorderOutlinedIcon style={{ fontSize: "1.25rem" }} />
         <div className={style.buttonText}>Specials</div>

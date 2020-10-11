@@ -1,22 +1,34 @@
-import React from 'react';
+import React from "react";
 import { useHistory } from "react-router-dom";
 import style from "./Header.module.css";
-import hamburgerMenu from '../CompanyImages/hamburgerMenu.png';
+import hamburgerMenu from "../CompanyImages/hamburgerMenu.png";
 
-const Header = ({setNav, setMenu}) => {
+const Header = ({ setNav, setMenu }) => {
+  const history = useHistory();
 
-  const history = useHistory()
-
-
-    return (         
+  return (
     <div className={style.mobileHeader}>
-        <div className={style.mobileLogo} onClick={()=>history.push('/')}>
-          Logo
-          </div>
-        <div className={style.imageContainer}>
-          <img className={style.menuImage} src={hamburgerMenu} alt="hamburger menu icon" onClick={()=>{setNav(true); setMenu('nav')}}/>
-        </div>
-    </div>);
-}
+      <div
+        className={style.mobileLogo}
+        onClick={() => {
+          history.push("/");
+          setNav(false);
+        }}
+      >
+        Logo
+      </div>
+      <div className={style.imageContainer}>
+        <img
+          className={style.menuImage}
+          src={hamburgerMenu}
+          alt="hamburger menu icon"
+          onClick={() => {
+            setNav(true);
+          }}
+        />
+      </div>
+    </div>
+  );
+};
 
-export default (Header);
+export default Header;
