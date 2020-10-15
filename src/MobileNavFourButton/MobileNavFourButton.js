@@ -9,6 +9,7 @@ import CreateIcon from "@material-ui/icons/Create";
 import RestaurantMenuOutlinedIcon from "@material-ui/icons/RestaurantMenuOutlined";
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
 import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
+import LocalBarIcon from "@material-ui/icons/LocalBar";
 
 const MobileNavFourButton = ({ setNav }) => {
   const history = useHistory();
@@ -19,10 +20,10 @@ const MobileNavFourButton = ({ setNav }) => {
         className={style.NavButton}
         onClick={() => {
           history.push("/menu");
-          setNav(false);
+          setNav(true);
         }}
       >
-        <HomeOutlinedIcon style={{ fontSize: "1.25rem" }} />
+        <LocalBarIcon style={{ fontSize: "1.25rem" }} />
         <div className={style.buttonText}>Drinks</div>
       </div>
       <div
