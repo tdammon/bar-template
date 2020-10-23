@@ -165,7 +165,8 @@ body {
 
 .navMenu {
     box-sizing: border-box;
-    background-color: rgba(29, 30, 30, 0.1);
+    background-color: #4b4c4c;
+    opacity: 0.5;
     height: 100vh;
     width: 100%;
     /* z-index: -999; */
