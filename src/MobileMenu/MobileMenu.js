@@ -146,23 +146,16 @@ const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
             <img className={style.menuImage} src={hamburgerMenu} alt="hamburger menu icon" onClick={()=>{setNav(true); setMenu('nav')}}/>
           </div>
         </div> */}
-      {nav ? (
-        <MenuNavigation
-          changeNav={() => setNav(false)}
-          changeMenu={(menuPage) => setMenu(menuPage)}
-        />
-      ) : (
-        <div className={style.mainContent}>
-          <div className={style.menuNav}>
-            <div>{loadImage()}</div>
-            {/* <div className={menu ==='breakfast' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('breakfast')}>Breakfast</div>
+      <div className={style.mainContent}>
+        <div className={style.menuNav}>
+          <div>{loadImage()}</div>
+          {/* <div className={menu ==='breakfast' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('breakfast')}>Breakfast</div>
                   <div className={menu ==='lunch' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('lunch')}>Lunch</div>
                   <div className={menu ==='dinner' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('dinner')}>Dinner</div>
                   <div className={menu ==='dessert' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('dessert')}>Dessert</div> */}
-          </div>
-          {loadMenu()}
         </div>
-      )}
+        {loadMenu()}
+      </div>
     </div>
   );
 };

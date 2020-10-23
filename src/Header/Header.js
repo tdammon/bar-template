@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import style from "./Header.module.css";
 import hamburgerMenu from "../CompanyImages/hamburgerMenu.png";
 
-const Header = ({ setNav, setMenu }) => {
+const Header = ({ setNav, nav }) => {
   const history = useHistory();
 
   return (
@@ -23,7 +23,7 @@ const Header = ({ setNav, setMenu }) => {
           src={hamburgerMenu}
           alt="hamburger menu icon"
           onClick={() => {
-            setNav(true);
+            setNav(!nav);
           }}
         />
       </div>

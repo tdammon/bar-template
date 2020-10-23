@@ -34,83 +34,82 @@ const App = () => {
     return (
       <Router>
         <Header setMenu={setMenu} setNav={setNav} menu={menu} nav={nav} />
+        {nav ? (
+          <MenuNavigation
+            setMenu={setMenu}
+            setNav={setNav}
+            menu={menu}
+            nav={nav}
+          />
+        ) : null}
         <div style={{ marginTop: "5rem", marginBottom: "3rem" }}>
-          {nav ? (
-            <MenuNavigation
-              setMenu={setMenu}
-              setNav={setNav}
-              menu={menu}
-              nav={nav}
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={(props) => (
+                <Mobile
+                  {...props}
+                  setMenu={setMenu}
+                  setNav={setNav}
+                  menu={menu}
+                  nav={nav}
+                />
+              )}
             />
-          ) : (
-            <Switch>
-              <Route
-                exact
-                path="/"
-                render={(props) => (
-                  <Mobile
-                    {...props}
-                    setMenu={setMenu}
-                    setNav={setNav}
-                    menu={menu}
-                    nav={nav}
-                  />
-                )}
-              />
-              <Route
-                exact
-                path="/menu"
-                render={(props) => (
-                  <MobileMenu
-                    {...props}
-                    setMenu={setMenu}
-                    setNav={setNav}
-                    menu={menu}
-                    nav={nav}
-                  />
-                )}
-              />
-              <Route
-                exact
-                path="/specials"
-                render={(props) => (
-                  <MobileServices
-                    {...props}
-                    setMenu={setMenu}
-                    setNav={setNav}
-                    menu={menu}
-                    nav={nav}
-                  />
-                )}
-              />
-              <Route
-                exact
-                path="/catering"
-                render={(props) => (
-                  <DesignView
-                    {...props}
-                    setMenu={setMenu}
-                    setNav={setNav}
-                    menu={menu}
-                    nav={nav}
-                  />
-                )}
-              />
-              <Route
-                exact
-                path="/contact"
-                render={(props) => (
-                  <Contact
-                    {...props}
-                    setMenu={setMenu}
-                    setNav={setNav}
-                    menu={menu}
-                    nav={nav}
-                  />
-                )}
-              />
-            </Switch>
-          )}
+            <Route
+              exact
+              path="/menu"
+              render={(props) => (
+                <MobileMenu
+                  {...props}
+                  setMenu={setMenu}
+                  setNav={setNav}
+                  menu={menu}
+                  nav={nav}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/specials"
+              render={(props) => (
+                <MobileServices
+                  {...props}
+                  setMenu={setMenu}
+                  setNav={setNav}
+                  menu={menu}
+                  nav={nav}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/catering"
+              render={(props) => (
+                <DesignView
+                  {...props}
+                  setMenu={setMenu}
+                  setNav={setNav}
+                  menu={menu}
+                  nav={nav}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/contact"
+              render={(props) => (
+                <Contact
+                  {...props}
+                  setMenu={setMenu}
+                  setNav={setNav}
+                  menu={menu}
+                  nav={nav}
+                />
+              )}
+            />
+          </Switch>
         </div>
         <MobileNavFourButton setNav={setNav} />
       </Router>

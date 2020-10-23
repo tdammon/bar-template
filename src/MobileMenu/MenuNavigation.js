@@ -19,7 +19,7 @@ const MenuNavigation = ({ setNav, setMenu }) => {
             history.push("/menu");
           }}
         >
-          BEER
+          <div> BEER</div>
         </button>
       </div>
       <div>
