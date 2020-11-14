@@ -19,7 +19,19 @@ const MenuNavigation = ({ setNav, setMenu }) => {
             history.push("/menu");
           }}
         >
-          <div> BEER</div>
+          <div>TAPS</div>
+        </button>
+      </div>
+      <div>
+        <button
+          className={style.navMenuButton}
+          onClick={() => {
+            setMenu("drinks");
+            setNav(false);
+            history.push("/menu");
+          }}
+        >
+          {`BOTTLES & CANS`}
         </button>
       </div>
       <div>
@@ -31,7 +43,7 @@ const MenuNavigation = ({ setNav, setMenu }) => {
             history.push("/menu");
           }}
         >
-          WINE
+          {`WINE & SELTZERS`}
         </button>
       </div>
       <div>
@@ -43,10 +55,22 @@ const MenuNavigation = ({ setNav, setMenu }) => {
             history.push("/menu");
           }}
         >
-          COCKTAILS
+          HAPPY HOUR
         </button>
       </div>
       <div>
+        <button
+          className={style.navMenuButton}
+          onClick={() => {
+            setMenu("extras");
+            setNav(false);
+            history.push("/menu");
+          }}
+        >
+          EXTRAS
+        </button>
+      </div>
+      {/* <div>
         <button
           className={style.navMenuButton}
           onClick={() => {
@@ -57,12 +81,7 @@ const MenuNavigation = ({ setNav, setMenu }) => {
         >
           SNACKS
         </button>
-      </div>
-      {/* <div>
-            <button 
-            className={style.navMenuButton} 
-            onClick={()=>{setMenu('drinks'); setNav(false); history.push("/menu") }}>DRINKS</button>
-        </div> */}
+      </div> */}
     </div>
   );
 };

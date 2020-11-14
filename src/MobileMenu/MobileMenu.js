@@ -10,11 +10,13 @@ import Dinner from "../CompanyImages/Dinner.jpg";
 import Dessert from "../CompanyImages/Dessert.jpg";
 import Drinks from "../CompanyImages/Drinks.jpg";
 import hamburgerMenu from "../CompanyImages/hamburgerMenu.png";
-import BeerMenu from "./BeerMenu";
+import TapsMenu from "./TapsMenu";
 import WineMenu from "./WineMenu";
-import CocktailMenu from "./CocktailMenu";
+import HappyHourMenu from "./HappyHourMenu";
 import SnackMenu from "./SnackMenu";
-import DrinksMenu from "./DrinksMenu";
+import CanMenu from "./CanMenu";
+import ExtrasMenu from "./ExtrasMenu";
+
 import MenuNavigation from "./MenuNavigation";
 
 const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
@@ -23,7 +25,7 @@ const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
       case "beer":
         return (
           <div style={{ paddingTop: "33vh" }}>
-            <BeerMenu />
+            <TapsMenu />
           </div>
         );
         break;
@@ -37,7 +39,7 @@ const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
       case "cocktails":
         return (
           <div style={{ paddingTop: "33vh" }}>
-            <CocktailMenu />
+            <HappyHourMenu />
           </div>
         );
         break;
@@ -48,9 +50,20 @@ const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
           </div>
         );
         break;
-      // case 'drinks':
-      //   return(<div style={{paddingTop: "33vh"}}><DrinksMenu /></div>)
-      //   break;
+      case "drinks":
+        return (
+          <div style={{ paddingTop: "33vh" }}>
+            <CanMenu />
+          </div>
+        );
+        break;
+      case "extras":
+        return (
+          <div style={{ paddingTop: "33vh" }}>
+            <ExtrasMenu />
+          </div>
+        );
+        break;
       case "nav":
         return null;
         break;
@@ -67,7 +80,7 @@ const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
               src={Beer}
               alt="Bread and Cheese"
             />
-            <div className={style.menuBanner}>BEER</div>
+            <div className={style.menuBanner}>TAPS</div>
           </div>
         );
         break;
@@ -91,34 +104,46 @@ const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
               src={Drinks}
               alt="Bread and Cheese"
             />
-            <div className={style.menuBanner}>COCKTAILS</div>
+            <div className={style.menuBanner}>HAPPY HOUR</div>
           </div>
         );
         break;
-      case "snacks":
-        return (
-          <div className={style.menuHeader}>
-            <img
-              className={style.menuImage}
-              src={Dinner}
-              alt="Bread and Cheese"
-            />
-            <div className={style.menuBanner}>SNACKS</div>
-          </div>
-        );
-        break;
-      // case "drinks":
+      // case "snacks":
       //   return (
       //     <div className={style.menuHeader}>
       //       <img
       //         className={style.menuImage}
-      //         src={Drinks}
+      //         src={Dinner}
       //         alt="Bread and Cheese"
       //       />
-      //       <div className={style.menuBanner}>DRINKS</div>
+      //       <div className={style.menuBanner}>SNACKS</div>
       //     </div>
       //   );
       //   break;
+      case "drinks":
+        return (
+          <div className={style.menuHeader}>
+            <img
+              className={style.menuImage}
+              src={Drinks}
+              alt="Bread and Cheese"
+            />
+            <div className={style.menuBanner}>{`BOTTLES & CANS`}</div>
+          </div>
+        );
+        break;
+      case "extras":
+        return (
+          <div className={style.menuHeader}>
+            <img
+              className={style.menuImage}
+              src={Drinks}
+              alt="Bread and Cheese"
+            />
+            <div className={style.menuBanner}>{`EXTRAS`}</div>
+          </div>
+        );
+        break;
       case "nav":
         return null;
         break;

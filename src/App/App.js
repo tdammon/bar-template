@@ -111,7 +111,7 @@ const App = () => {
             />
           </Switch>
         </div>
-        <MobileNavFourButton setNav={setNav} />
+        <MobileNavThreeButton setNav={setNav} setMenu={setMenu} />
       </Router>
     );
   } else if (isBrowser) {
