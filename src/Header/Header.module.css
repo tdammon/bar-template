@@ -19,7 +19,6 @@
     font-family: 'Montserrat-Thin';
     margin: 1rem;
     height: 3rem;
-    width: 3rem;
     color: white;
     align-items: center;
     display: flex;
@@ -28,9 +27,9 @@
 
 .menuImage {
     height: auto;
-    width: 100%;
+
     display: block;
-    max-width: 100%;
+
     max-height: 100%;
     object-fit: cover;
 }
