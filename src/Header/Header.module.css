@@ -4,6 +4,7 @@
     width: 2.5rem;
     text-align: center;
 }
+
 .mobileHeader {
     display: flex;
     justify-content: space-between;
@@ -20,10 +21,9 @@
     height: 3rem;
     width: 3rem;
     color: white;
-    background-color: rgba(0, 0, 0, 0.9);
     align-items: center;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
 .menuImage {

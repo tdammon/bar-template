@@ -2,6 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import style from "./Header.module.css";
 import hamburgerMenu from "../CompanyImages/hamburgerMenu.png";
+import EvolvMobile from "../CompanyImages/EvolvMobile.png";
 
 const Header = ({ setNav, nav }) => {
   const history = useHistory();
@@ -15,7 +16,7 @@ const Header = ({ setNav, nav }) => {
           setNav(false);
         }}
       >
-        Logo
+        <img className={style.menuImage} src={EvolvMobile} alt="company logo" />
       </div>
       <div className={style.imageContainer}>
         <img
