@@ -35,7 +35,7 @@ const MobileNavThreeButton = ({ setNav, setMenu }) => {
       </div>
       <div className={style.NavButton} onClick={() => history.push("/")}>
         <HomeIcon style={{ fontSize: "1.25rem" }} />
-        <div className={style.buttonText}>Home</div>
+        <div className={style.buttonText}>About Us</div>
       </div>
     </div>
   );

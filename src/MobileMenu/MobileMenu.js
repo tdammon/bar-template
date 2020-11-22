@@ -104,7 +104,7 @@ const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
               src={Drinks}
               alt="Bread and Cheese"
             />
-            <div className={style.menuBanner}>HAPPY HOUR</div>
+            <div className={style.menuBanner}>SPECIALS</div>
           </div>
         );
         break;

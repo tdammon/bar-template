@@ -1,14 +1,16 @@
 .buttonText {
     font-size: 1rem;
 }
+
 .NavBar {
-    width:100vw;
+    width: 100vw;
     float: none;
-    display:flex;
+    display: flex;
     height: 3rem;
     overflow: hidden;
     position: fixed;
     bottom: 0;
+    z-index: 999;
 }
 
 .NavButton {

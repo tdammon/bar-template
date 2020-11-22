@@ -9,7 +9,11 @@ const Mobile = () => {
   const history = useHistory();
 
   return (
-    <div className={style.app}>
+    <div
+      className={style.app}
+      style={{ backgroundImage: `url(${homePicture})` }}
+    >
+      {/* <img className={style.mainImage} src={homePicture} alt="Home Logo" /> */}
       {/* <div className={style.mobileHeader}>
           <div className={style.logoBox}>
             <img className={style.logoPicture} src={companyLogo} alt="French Press Logo" />
@@ -22,8 +26,10 @@ const Mobile = () => {
           </div>
         </div> */}
       <div className={style.mainContent}>
-        <img className={style.mainImage} src={homePicture} alt="Home Logo" />
-        <div>
+        <div style={{ color: "white", paddingTop: "2rem", fontSize: "2rem" }}>
+          Welcome to Port 51!
+        </div>
+        {/* <div>
           <p>Monday 1:00PM - 12:00AM</p>
           <p>Tuesday 1:00PM - 12:00AM</p>
           <p>Wednesday 1:00PM - 12:00AM</p>
@@ -31,7 +37,7 @@ const Mobile = () => {
           <p>Friday 1:00PM - 2:00AM</p>
           <p>Saturday 1:00PM - 2:00AM</p>
           <p>Sunday 1:00PM - 12:00AM</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
