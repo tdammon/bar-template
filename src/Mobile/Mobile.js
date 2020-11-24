@@ -26,9 +26,9 @@ const Mobile = () => {
           </div>
         </div> */}
       <div className={style.mainContent}>
-        <div style={{ color: "white", paddingTop: "2rem", fontSize: "2rem" }}>
-          Welcome to Port 51!
-        </div>
+        <div
+          style={{ color: "white", paddingTop: "2rem", fontSize: "2rem" }}
+        ></div>
         {/* <div>
           <p>Monday 1:00PM - 12:00AM</p>
           <p>Tuesday 1:00PM - 12:00AM</p>
