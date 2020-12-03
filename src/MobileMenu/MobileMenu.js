@@ -5,6 +5,9 @@ import CallIcon from "@material-ui/icons/Call";
 import companyLogo from "../CompanyImages/FrenchPress.png";
 import homePicture from "../CompanyImages/cheese-and-bread.jpg";
 import Beer from "../CompanyImages/Beer.jpg";
+import BeerBottle from "../CompanyImages/BeerBottle.jpg";
+import Soda from "../CompanyImages/Soda.jpg";
+
 import Wine from "../CompanyImages/Wine.jpg";
 import Dinner from "../CompanyImages/Dinner.jpg";
 import Dessert from "../CompanyImages/Dessert.jpg";
@@ -125,7 +128,7 @@ const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
           <div className={style.menuHeader}>
             <img
               className={style.menuImage}
-              src={Drinks}
+              src={BeerBottle}
               alt="Bread and Cheese"
             />
             <div className={style.menuBanner}>{`BOTTLES & CANS`}</div>
@@ -137,7 +140,7 @@ const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
           <div className={style.menuHeader}>
             <img
               className={style.menuImage}
-              src={Drinks}
+              src={Soda}
               alt="Bread and Cheese"
             />
             <div className={style.menuBanner}>{`EXTRAS`}</div>

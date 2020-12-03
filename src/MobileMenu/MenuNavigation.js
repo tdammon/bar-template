@@ -19,7 +19,7 @@ const MenuNavigation = ({ setNav, setMenu }) => {
             history.push("/menu");
           }}
         >
-          <div>TAPS</div>
+          TAPS
         </button>
       </div>
       <div>

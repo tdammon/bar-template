@@ -64,7 +64,7 @@ body {
     font-weight: 300;
     width: 100%;
     padding-left: 0.75rem;
-
+    font-family: Montserrat-Regular, Geneva
 }
 
 .menuBreakfast {
@@ -184,6 +184,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     width: 100%;
+    font-family: Montserrat-Regular, Geneva
 }
 
 .menuNavButtonActive {
