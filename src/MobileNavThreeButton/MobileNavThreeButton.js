@@ -19,7 +19,7 @@ const MobileNavThreeButton = ({ setNav, setMenu }) => {
           setNav(true);
         }}
       >
-        <LocalBarIcon style={{ fontSize: "1.25rem" }} />
+        <LocalBarIcon style={{ fontSize: "1.25rem", color: "#000000" }} />
         <div className={style.buttonText}>Drinks</div>
       </div>
       <div
@@ -30,11 +30,13 @@ const MobileNavThreeButton = ({ setNav, setMenu }) => {
           setMenu("cocktails");
         }}
       >
-        <StarBorderOutlinedIcon style={{ fontSize: "1.25rem" }} />
+        <StarBorderOutlinedIcon
+          style={{ fontSize: "1.25rem", color: "#000000" }}
+        />
         <div className={style.buttonText}>Specials</div>
       </div>
       <div className={style.NavButton} onClick={() => history.push("/")}>
-        <HomeIcon style={{ fontSize: "1.25rem" }} />
+        <HomeIcon style={{ fontSize: "1.25rem", color: "#000000" }} />
         <div className={style.buttonText}>About Us</div>
       </div>
     </div>

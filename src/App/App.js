@@ -16,6 +16,7 @@ import MobileNavFourButton from "../MobileNavFourButton/MobileNavFourButton";
 import MobileNavFiveButton from "../MobileNavFiveButton/MobileNavFiveButton";
 import Desktop from "../Desktop/Desktop";
 import DesktopImage from "../Desktop/DesktopImage";
+import { useHistory } from "react-router-dom";
 
 import DesignView from "../DesignView/DesignView";
 
@@ -30,6 +31,8 @@ ReactGA.initialize(trackingId, {
 const App = () => {
   const [menu, setMenu] = React.useState("beer");
   const [nav, setNav] = React.useState(false);
+  const history = useHistory();
+
   if (isMobile) {
     return (
       <Router>
@@ -118,7 +121,14 @@ const App = () => {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={DesktopImage} />
+          {/* <Route exact path="/" component={DesktopImage} /> */}
+          <Route
+            path="/"
+            component={() => {
+              window.location.href = "https://www.facebook.com/Port507/";
+              return null;
+            }}
+          />
         </Switch>
       </Router>
     );

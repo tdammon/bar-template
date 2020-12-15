@@ -10,7 +10,7 @@ const DessertMenu = () => {
       {/* Rework this section to map in items */}
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          <div className={style.menuItemTitle}>{`WINE & SELTZER`}</div>
+          {/* <div className={style.menuItemTitle}>{`WINE & SELTZER`}</div> */}
           {/* <div className={style.menuItemPrice}>$5.00 glass / $18.00 Bottle</div> */}
         </div>
         <div className={style.menuItemNotes}>

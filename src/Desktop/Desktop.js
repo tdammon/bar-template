@@ -17,6 +17,7 @@ const Browser=()=>{
     const history = useHistory()
 
     React.useEffect(()=> {
+        useHistory.push("https://www.facebook.com/Port507/")
         ReactGA.initialize(trackingId, {
             debug: true
         });
