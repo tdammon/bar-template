@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Mobile.module.css";
 import { useHistory } from "react-router-dom";
 import CallIcon from "@material-ui/icons/Call";
-import homePicture from "../CompanyImages/PortLogo.jpg";
+import homePicture from "../CompanyImages/Port507Bar.jpg";
 //import companyLogo from "../CompanyImages/PortLogo.png"
 
 const Mobile = () => {
