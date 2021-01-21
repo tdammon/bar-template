@@ -134,7 +134,7 @@ const App = () => {
           <Route
             path="/"
             render={(props) => (
-              <Desktop
+              <DesktopImage
                 {...props}
                 setMenu={setMenu}
                 setNav={setNav}
