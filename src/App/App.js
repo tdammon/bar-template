@@ -124,17 +124,17 @@ const App = () => {
         <DesktopHeader />
         <Switch>
           {/* <Route exact path="/" component={DesktopImage} /> */}
-          {/* <Route
+          <Route
             path="/"
             component={() => {
               window.location.href = "https://www.facebook.com/Port507/";
               return null;
             }}
-          /> */}
-          <Route
+          />
+          {/* <Route
             path="/"
             render={(props) => (
-              <DesktopImage
+              <Desktop
                 {...props}
                 setMenu={setMenu}
                 setNav={setNav}
@@ -142,7 +142,7 @@ const App = () => {
                 nav={nav}
               />
             )}
-          />
+          /> */}
         </Switch>
       </Router>
     );
