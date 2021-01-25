@@ -55,7 +55,7 @@ const MenuNavigation = ({ setNav, setMenu }) => {
             history.push("/menu");
           }}
         >
-          HAPPY HOUR
+          SPECIALS
         </button>
       </div>
       <div>
