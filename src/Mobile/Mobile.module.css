@@ -199,3 +199,12 @@ body {
     font-size: 4rem;
     text-shadow: 1px 1px 2px black;
 }
+
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.iframe {
+    min-height: 400px;
+}

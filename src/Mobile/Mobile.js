@@ -11,7 +11,11 @@ const Mobile = () => {
   return (
     <div
       className={style.app}
-      style={{ backgroundImage: `url(${homePicture})` }}
+      style={{
+        backgroundImage: `url(${homePicture})`,
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+      }}
     >
       {/* <img className={style.mainImage} src={homePicture} alt="Home Logo" /> */}
       {/* <div className={style.mobileHeader}>
@@ -29,6 +33,7 @@ const Mobile = () => {
         <div
           style={{ color: "white", paddingTop: "2rem", fontSize: "2rem" }}
         ></div>
+ 
         {/* <div>
           <p>Monday 1:00PM - 12:00AM</p>
           <p>Tuesday 1:00PM - 12:00AM</p>

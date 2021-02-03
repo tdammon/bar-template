@@ -102,7 +102,7 @@ const App = () => {
             />
             <Route
               exact
-              path="/contact"
+              path="/directions"
               render={(props) => (
                 <Contact
                   {...props}
@@ -115,7 +115,7 @@ const App = () => {
             />
           </Switch>
         </div>
-        <MobileNavThreeButton setNav={setNav} setMenu={setMenu} />
+        <MobileNavFourButton setNav={setNav} setMenu={setMenu} />
       </Router>
     );
   } else if (isBrowser) {
