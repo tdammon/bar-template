@@ -18,6 +18,7 @@ import Desktop from "../Desktop/Desktop";
 import DesktopHeader from "../Desktop/DesktopHeader";
 import DesktopImage from "../Desktop/DesktopImage";
 import { useHistory } from "react-router-dom";
+import homePicture from "../CompanyImages/Port507Bar.jpg";
 
 import DesignView from "../DesignView/DesignView";
 
@@ -36,75 +37,86 @@ const App = () => {
   if (isMobile) {
     return (
       <Router>
-        <Header setMenu={setMenu} setNav={setNav} menu={menu} nav={nav} />
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={(props) => (
-              <Mobile
-                {...props}
-                setMenu={setMenu}
-                setNav={setNav}
-                menu={menu}
-                nav={nav}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/menu"
-            render={(props) => (
-              <MobileMenu
-                {...props}
-                setMenu={setMenu}
-                setNav={setNav}
-                menu={menu}
-                nav={nav}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/specials"
-            render={(props) => (
-              <MobileServices
-                {...props}
-                setMenu={setMenu}
-                setNav={setNav}
-                menu={menu}
-                nav={nav}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/catering"
-            render={(props) => (
-              <DesignView
-                {...props}
-                setMenu={setMenu}
-                setNav={setNav}
-                menu={menu}
-                nav={nav}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/directions"
-            render={(props) => (
-              <Contact
-                {...props}
-                setMenu={setMenu}
-                setNav={setNav}
-                menu={menu}
-                nav={nav}
-              />
-            )}
-          />
-        </Switch>
-        <MobileNavFourButton setNav={setNav} setMenu={setMenu} />
+        <div
+          style={{
+            backgroundImage: `url(${homePicture})`,
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "fixed",
+            height: "100vh",
+            width: "100vw",
+            backgroundSize: "cover",
+          }}
+        >
+          <Header setMenu={setMenu} setNav={setNav} menu={menu} nav={nav} />
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={(props) => (
+                <Mobile
+                  {...props}
+                  setMenu={setMenu}
+                  setNav={setNav}
+                  menu={menu}
+                  nav={nav}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/menu"
+              render={(props) => (
+                <MobileMenu
+                  {...props}
+                  setMenu={setMenu}
+                  setNav={setNav}
+                  menu={menu}
+                  nav={nav}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/specials"
+              render={(props) => (
+                <MobileServices
+                  {...props}
+                  setMenu={setMenu}
+                  setNav={setNav}
+                  menu={menu}
+                  nav={nav}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/catering"
+              render={(props) => (
+                <DesignView
+                  {...props}
+                  setMenu={setMenu}
+                  setNav={setNav}
+                  menu={menu}
+                  nav={nav}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/directions"
+              render={(props) => (
+                <Contact
+                  {...props}
+                  setMenu={setMenu}
+                  setNav={setNav}
+                  menu={menu}
+                  nav={nav}
+                />
+              )}
+            />
+          </Switch>
+          <MobileNavFourButton setNav={setNav} setMenu={setMenu} />
+        </div>
       </Router>
     );
   } else if (isBrowser) {

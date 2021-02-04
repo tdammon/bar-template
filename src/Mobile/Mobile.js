@@ -11,11 +11,6 @@ const Mobile = () => {
   return (
     <div
       className={style.app}
-      style={{
-        backgroundImage: `url(${homePicture})`,
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
-      }}
     >
       {/* <img className={style.mainImage} src={homePicture} alt="Home Logo" /> */}
       {/* <div className={style.mobileHeader}>
