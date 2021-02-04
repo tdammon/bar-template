@@ -95,23 +95,23 @@ const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
       }}
     >
       {/* <img className={style.textBlock} src={homePicture} /> */}
-      <div
+      {/* <div
         className={style.textBlock}
         style={{
           backgroundImage: `url(${homePicture})`,
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
         }}
-      ></div>
+      ></div> */}
       <div className={style.mobileMenu}>{loadMenu()}</div>
-      <div
+      {/* <div
         className={style.textBlockBottom}
         style={{
           backgroundImage: `url(${homePicture})`,
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
         }}
-      ></div>
+      ></div> */}
     </div>
   );
 };
