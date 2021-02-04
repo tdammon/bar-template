@@ -37,7 +37,7 @@ const App = () => {
   if (isMobile) {
     return (
       <Router>
-        <Header setMenu={setMenu} setNav={setNav} menu={menu} nav={nav} />
+        
         {nav ? (
           <MenuNavigation
             setMenu={setMenu}
@@ -46,7 +46,7 @@ const App = () => {
             nav={nav}
           />
         ) : null}
-        <div style={{ marginTop: "5rem", marginBottom: "3rem" }}>
+        <Header setMenu={setMenu} setNav={setNav} menu={menu} nav={nav} />
           <Switch>
             <Route
               exact
@@ -114,7 +114,6 @@ const App = () => {
               )}
             />
           </Switch>
-        </div>
         <MobileNavFourButton setNav={setNav} setMenu={setMenu} />
       </Router>
     );
