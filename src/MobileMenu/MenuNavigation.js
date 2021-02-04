@@ -6,10 +6,9 @@ const MenuNavigation = ({ setNav, setMenu }) => {
   const history = useHistory();
 
   return (
-    <div className={style.navMenu}>
-      {/* <div>
-            <button className={style.navMenuButton} onClick={()=>{setMenu('starters');  setNav(false); history.push("/menu") }}>STARTERS</button>
-        </div> */}
+    <div
+      className={style.navMenu}
+    >
       <div>
         <button
           className={style.navMenuButton}
@@ -70,18 +69,6 @@ const MenuNavigation = ({ setNav, setMenu }) => {
           EXTRAS
         </button>
       </div>
-      {/* <div>
-        <button
-          className={style.navMenuButton}
-          onClick={() => {
-            setMenu("snacks");
-            setNav(false);
-            history.push("/menu");
-          }}
-        >
-          SNACKS
-        </button>
-      </div> */}
     </div>
   );
 };

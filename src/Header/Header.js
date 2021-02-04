@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import style from "./Header.module.css";
 import hamburgerMenu from "../CompanyImages/hamburgerMenu.png";
 import Port507 from "../CompanyImages/Port507.png";
+import homePicture from "../CompanyImages/Port507Bar.jpg";
 
 const Header = ({ setNav, nav }) => {
   const history = useHistory();

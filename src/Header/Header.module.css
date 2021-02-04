@@ -11,8 +11,10 @@
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: rgba(100, 100, 100, 0.5);
     overflow: hidden;
+    z-index: 999;
+    /* background: inherit; */
+    background-color: rgba(100, 100, 100, 0.8);
 }
 
 .mobileLogo {

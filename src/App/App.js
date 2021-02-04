@@ -22,7 +22,6 @@ import { useHistory } from "react-router-dom";
 import DesignView from "../DesignView/DesignView";
 
 import ReactGA from "react-ga";
-import MenuNavigation from "../MobileMenu/MenuNavigation";
 ReactGA.pageview(window.location.pathname + window.location.search);
 const trackingId = "UA-167603833-1"; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId, {
@@ -37,83 +36,74 @@ const App = () => {
   if (isMobile) {
     return (
       <Router>
-        
-        {nav ? (
-          <MenuNavigation
-            setMenu={setMenu}
-            setNav={setNav}
-            menu={menu}
-            nav={nav}
-          />
-        ) : null}
         <Header setMenu={setMenu} setNav={setNav} menu={menu} nav={nav} />
-          <Switch>
-            <Route
-              exact
-              path="/"
-              render={(props) => (
-                <Mobile
-                  {...props}
-                  setMenu={setMenu}
-                  setNav={setNav}
-                  menu={menu}
-                  nav={nav}
-                />
-              )}
-            />
-            <Route
-              exact
-              path="/menu"
-              render={(props) => (
-                <MobileMenu
-                  {...props}
-                  setMenu={setMenu}
-                  setNav={setNav}
-                  menu={menu}
-                  nav={nav}
-                />
-              )}
-            />
-            <Route
-              exact
-              path="/specials"
-              render={(props) => (
-                <MobileServices
-                  {...props}
-                  setMenu={setMenu}
-                  setNav={setNav}
-                  menu={menu}
-                  nav={nav}
-                />
-              )}
-            />
-            <Route
-              exact
-              path="/catering"
-              render={(props) => (
-                <DesignView
-                  {...props}
-                  setMenu={setMenu}
-                  setNav={setNav}
-                  menu={menu}
-                  nav={nav}
-                />
-              )}
-            />
-            <Route
-              exact
-              path="/directions"
-              render={(props) => (
-                <Contact
-                  {...props}
-                  setMenu={setMenu}
-                  setNav={setNav}
-                  menu={menu}
-                  nav={nav}
-                />
-              )}
-            />
-          </Switch>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={(props) => (
+              <Mobile
+                {...props}
+                setMenu={setMenu}
+                setNav={setNav}
+                menu={menu}
+                nav={nav}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/menu"
+            render={(props) => (
+              <MobileMenu
+                {...props}
+                setMenu={setMenu}
+                setNav={setNav}
+                menu={menu}
+                nav={nav}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/specials"
+            render={(props) => (
+              <MobileServices
+                {...props}
+                setMenu={setMenu}
+                setNav={setNav}
+                menu={menu}
+                nav={nav}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/catering"
+            render={(props) => (
+              <DesignView
+                {...props}
+                setMenu={setMenu}
+                setNav={setNav}
+                menu={menu}
+                nav={nav}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/directions"
+            render={(props) => (
+              <Contact
+                {...props}
+                setMenu={setMenu}
+                setNav={setNav}
+                menu={menu}
+                nav={nav}
+              />
+            )}
+          />
+        </Switch>
         <MobileNavFourButton setNav={setNav} setMenu={setMenu} />
       </Router>
     );

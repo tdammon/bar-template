@@ -3,7 +3,8 @@ import style from "./MobileMenu.module.css";
 import Header from "../Header/Header";
 import CallIcon from "@material-ui/icons/Call";
 import companyLogo from "../CompanyImages/FrenchPress.png";
-import homePicture from "../CompanyImages/cheese-and-bread.jpg";
+import homePicture from "../CompanyImages/Port507Bar.jpg";
+
 import Beer from "../CompanyImages/Beer.jpg";
 import BeerBottle from "../CompanyImages/BeerBottle.jpg";
 import Soda from "../CompanyImages/Soda.jpg";
@@ -24,166 +25,93 @@ import MenuNavigation from "./MenuNavigation";
 
 const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
   const loadMenu = () => {
-    switch (menu) {
-      case "beer":
-        return (
-          <div style={{ paddingTop: "33vh" }}>
-            <TapsMenu />
-          </div>
-        );
-        break;
-      case "wine":
-        return (
-          <div style={{ paddingTop: "33vh" }}>
-            <WineMenu />
-          </div>
-        );
-        break;
-      case "cocktails":
-        return (
-          <div style={{ paddingTop: "33vh" }}>
-            <HappyHourMenu />
-          </div>
-        );
-        break;
-      case "snacks":
-        return (
-          <div style={{ paddingTop: "33vh" }}>
-            <SnackMenu />
-          </div>
-        );
-        break;
-      case "drinks":
-        return (
-          <div style={{ paddingTop: "33vh" }}>
-            <CanMenu />
-          </div>
-        );
-        break;
-      case "extras":
-        return (
-          <div style={{ paddingTop: "33vh" }}>
-            <ExtrasMenu />
-          </div>
-        );
-        break;
-      case "nav":
-        return null;
-        break;
-    }
-  };
-
-  const loadImage = () => {
-    switch (menu) {
-      case "beer":
-        return (
-          <div className={style.menuHeader}>
-            <img
-              className={style.menuImage}
-              src={Beer}
-              alt="Bread and Cheese"
-            />
-            <div className={style.menuBanner}>TAPS</div>
-          </div>
-        );
-        break;
-      case "wine":
-        return (
-          <div className={style.menuHeader}>
-            <img
-              className={style.menuImage}
-              src={Wine}
-              alt="Bread and Cheese"
-            />
-            <div className={style.menuBanner}>WINE</div>
-          </div>
-        );
-        break;
-      case "cocktails":
-        return (
-          <div className={style.menuHeader}>
-            <img
-              className={style.menuImage}
-              src={Drinks}
-              alt="Bread and Cheese"
-            />
-            <div className={style.menuBanner}>SPECIALS</div>
-          </div>
-        );
-        break;
-      // case "snacks":
-      //   return (
-      //     <div className={style.menuHeader}>
-      //       <img
-      //         className={style.menuImage}
-      //         src={Dinner}
-      //         alt="Bread and Cheese"
-      //       />
-      //       <div className={style.menuBanner}>SNACKS</div>
-      //     </div>
-      //   );
-      //   break;
-      case "drinks":
-        return (
-          <div className={style.menuHeader}>
-            <img
-              className={style.menuImage}
-              src={BeerBottle}
-              alt="Bread and Cheese"
-            />
-            <div className={style.menuBanner}>{`BOTTLES & CANS`}</div>
-          </div>
-        );
-        break;
-      case "extras":
-        return (
-          <div className={style.menuHeader}>
-            <img
-              className={style.menuImage}
-              src={Soda}
-              alt="Bread and Cheese"
-            />
-            <div className={style.menuBanner}>{`EXTRAS`}</div>
-          </div>
-        );
-        break;
-      case "nav":
-        return null;
-        break;
+    if (nav) {
+      return (
+        <MenuNavigation
+          setMenu={setMenu}
+          setNav={setNav}
+          menu={menu}
+          nav={nav}
+        />
+      );
+    } else {
+      switch (menu) {
+        case "beer":
+          return (
+            <div>
+              <TapsMenu />
+            </div>
+          );
+          break;
+        case "wine":
+          return (
+            <div>
+              <WineMenu />
+            </div>
+          );
+          break;
+        case "cocktails":
+          return (
+            <div>
+              <HappyHourMenu />
+            </div>
+          );
+          break;
+        case "snacks":
+          return (
+            <div>
+              <SnackMenu />
+            </div>
+          );
+          break;
+        case "drinks":
+          return (
+            <div>
+              <CanMenu />
+            </div>
+          );
+          break;
+        case "extras":
+          return (
+            <div>
+              <ExtrasMenu />
+            </div>
+          );
+          break;
+        case "nav":
+          return null;
+          break;
+      }
     }
   };
 
   return (
-    <div className={style.app}>
-      {/* <div className={style.mobileHeader}>
-          <div className={style.logoBox}>
-            <img className={style.logoPicture} src={companyLogo} alt="French Press Logo" />
-          </div>
-          <div className={style.contactBox}>
-            <a className={style.phoneNumberLink} href="tel:+900300400">
-              Call Us!
-              <CallIcon style={{fontSize: "3rem"}}/>
-            </a>
-          </div>
-        </div> */}
-      {/* <div className={style.mobileHeader}>
-          <div style={{fontFamily: "Montserrat-Thin", margin: "1rem", height: "3rem", width: "3rem", color: "white", backgroundColor: "rgba(0, 0, 0, 0.9)", alignItems: "center", display: "flex", justifyContent:"center"}}>
-            Logo
-          </div>
-          <div style={{margin: "1.25rem", height: "2.5rem", width: "2.5rem", textAlign: "center"}}>
-            <img className={style.menuImage} src={hamburgerMenu} alt="hamburger menu icon" onClick={()=>{setNav(true); setMenu('nav')}}/>
-          </div>
-        </div> */}
-      <div className={style.mainContent}>
-        <div className={style.menuNav}>
-          <div>{loadImage()}</div>
-          {/* <div className={menu ==='breakfast' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('breakfast')}>Breakfast</div>
-                  <div className={menu ==='lunch' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('lunch')}>Lunch</div>
-                  <div className={menu ==='dinner' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('dinner')}>Dinner</div>
-                  <div className={menu ==='dessert' ? style.menuNavButtonActive : style.menuNavButton} onClick={()=>changeMenu('dessert')}>Dessert</div> */}
-        </div>
-        {loadMenu()}
-      </div>
+    <div
+      className={style.app}
+      style={{
+        backgroundImage: `url(${homePicture})`,
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      {/* <img className={style.textBlock} src={homePicture} /> */}
+      <div
+        className={style.textBlock}
+        style={{
+          backgroundImage: `url(${homePicture})`,
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+        }}
+      ></div>
+      <div className={style.mobileMenu}>{loadMenu()}</div>
+      <div
+        className={style.textBlockBottom}
+        style={{
+          backgroundImage: `url(${homePicture})`,
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+        }}
+      ></div>
     </div>
   );
 };
