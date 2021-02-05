@@ -10,11 +10,19 @@ const DessertMenu = () => {
       {/* Rework this section to map in items */}
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          {/* <div className={style.menuItemTitle}>{`WINE & SELTZER`}</div> */}
+          <div className={style.menuItemTitle}>{`Wine & Seltzer`}</div>
           {/* <div className={style.menuItemPrice}>$5.00 glass / $18.00 Bottle</div> */}
         </div>
         <div className={style.menuItemNotes}>
-          <span style={{ fontWeight: "bold" }}>Wines</span>
+          <span
+            style={{
+              fontWeight: "600",
+              fontSize: "1.4rem",
+              marginLeft: "-1rem",
+            }}
+          >
+            Wines
+          </span>
           <br></br>
           <br></br>
           Chardonnay<br></br>
@@ -22,7 +30,15 @@ const DessertMenu = () => {
           Moscato<br></br>
           Pinot grigio<br></br>
           <br></br>
-          <span style={{ fontWeight: "bold" }}>Seltzers</span>
+          <span
+            style={{
+              fontWeight: "600",
+              fontSize: "1.4rem",
+              marginLeft: "-1rem",
+            }}
+          >
+            Seltzers
+          </span>
           <br></br>
           <br></br>
           White Claw Black Cherry<br></br>

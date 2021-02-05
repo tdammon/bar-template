@@ -45,6 +45,7 @@ const App = () => {
             height: "100vh",
             width: "100vw",
             backgroundSize: "cover",
+            zIndex: "-999",
           }}
         >
           <Header setMenu={setMenu} setNav={setNav} menu={menu} nav={nav} />

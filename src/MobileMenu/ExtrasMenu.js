@@ -12,7 +12,7 @@ const ExtrasMenu = () => {
       {/* Rework this section to map in items */}
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          {/* <div className={style.menuItemTitle}>EXTRAS</div> */}
+          <div className={style.menuItemTitle}>Extras</div>
           {/* <div className={style.menuItemPrice}>$3.50</div> */}
         </div>
         <div className={style.menuItemNotes}>

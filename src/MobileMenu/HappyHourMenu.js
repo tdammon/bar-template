@@ -10,7 +10,7 @@ const HappyHourMenu = () => {
       {/* Rework this section to map in items */}
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          {/* <div className={style.menuItemTitle}>SPECIALS</div> */}
+          <div className={style.menuItemTitle}>Specials</div>
           <div className={style.menuItemPrice}>
             {/* Monday- Friday 2-7<br></br>sat and sun from 11-7 */}
           </div>

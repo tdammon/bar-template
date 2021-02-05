@@ -10,11 +10,19 @@ const CanMenu = () => {
       {/* Rework this section to map in items */}
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          {/* <div className={style.menuItemTitle}>{`BOTTLES & CANS`}</div> */}
+          <div className={style.menuItemTitle}>{`Bottles & Cans`}</div>
           {/* <div className={style.menuItemPrice}>$6.00</div> */}
         </div>
         <div className={style.menuItemNotes}>
-          <span style={{ fontWeight: "bold" }}>Bottles</span>
+          <span
+            style={{
+              fontWeight: "600",
+              fontSize: "1.4rem",
+              marginLeft: "-1rem",
+            }}
+          >
+            Bottles
+          </span>
           <br></br>
           <br></br>
           Bud Light <br></br>
@@ -31,7 +39,15 @@ const CanMenu = () => {
           High Life <br></br>
           Premium Grain Belt <br></br>
           <br></br>
-          <span style={{ fontWeight: "bold" }}>Cans</span>
+          <span
+            style={{
+              fontWeight: "600",
+              fontSize: "1.4rem",
+              marginLeft: "-1rem",
+            }}
+          >
+            Cans
+          </span>
           <br></br>
           <br></br>
           Busch Light <br></br>

@@ -18,7 +18,7 @@ const MenuNavigation = ({ setNav, setMenu }) => {
             history.push("/menu");
           }}
         >
-          TAPS
+          Taps
         </button>
       </div>
       <div>
@@ -30,7 +30,7 @@ const MenuNavigation = ({ setNav, setMenu }) => {
             history.push("/menu");
           }}
         >
-          {`BOTTLES & CANS`}
+          {`Bottles & Cans`}
         </button>
       </div>
       <div>
@@ -42,7 +42,7 @@ const MenuNavigation = ({ setNav, setMenu }) => {
             history.push("/menu");
           }}
         >
-          {`WINE & SELTZERS`}
+          {`Wine & Seltzers`}
         </button>
       </div>
       <div>
@@ -54,7 +54,7 @@ const MenuNavigation = ({ setNav, setMenu }) => {
             history.push("/menu");
           }}
         >
-          SPECIALS
+          Specials
         </button>
       </div>
       <div>
@@ -66,7 +66,7 @@ const MenuNavigation = ({ setNav, setMenu }) => {
             history.push("/menu");
           }}
         >
-          EXTRAS
+          Extras
         </button>
       </div>
     </div>

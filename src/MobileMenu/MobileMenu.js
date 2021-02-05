@@ -38,42 +38,42 @@ const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
       switch (menu) {
         case "beer":
           return (
-            <div>
+            <div className={style.mobileMenu}>
               <TapsMenu />
             </div>
           );
           break;
         case "wine":
           return (
-            <div>
+            <div className={style.mobileMenu}>
               <WineMenu />
             </div>
           );
           break;
         case "cocktails":
           return (
-            <div>
+            <div className={style.mobileMenu}>
               <HappyHourMenu />
             </div>
           );
           break;
         case "snacks":
           return (
-            <div>
+            <div className={style.mobileMenu}>
               <SnackMenu />
             </div>
           );
           break;
         case "drinks":
           return (
-            <div>
+            <div className={style.mobileMenu}>
               <CanMenu />
             </div>
           );
           break;
         case "extras":
           return (
-            <div>
+            <div className={style.mobileMenu}>
               <ExtrasMenu />
             </div>
           );
@@ -94,24 +94,7 @@ const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
         backgroundAttachment: "fixed",
       }}
     >
-      {/* <img className={style.textBlock} src={homePicture} /> */}
-      {/* <div
-        className={style.textBlock}
-        style={{
-          backgroundImage: `url(${homePicture})`,
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
-        }}
-      ></div> */}
-      <div className={style.mobileMenu}>{loadMenu()}</div>
-      {/* <div
-        className={style.textBlockBottom}
-        style={{
-          backgroundImage: `url(${homePicture})`,
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
-        }}
-      ></div> */}
+      <div>{loadMenu()}</div>
     </div>
   );
 };
