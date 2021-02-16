@@ -16,7 +16,6 @@ import MobileNavFourButton from "../MobileNavFourButton/MobileNavFourButton";
 import MobileNavFiveButton from "../MobileNavFiveButton/MobileNavFiveButton";
 import Desktop from "../Desktop/Desktop";
 import DesktopHeader from "../Desktop/DesktopHeader";
-import DesktopImage from "../Desktop/DesktopImage";
 import { useHistory } from "react-router-dom";
 import homePicture from "../CompanyImages/Port507Bar.jpg";
 

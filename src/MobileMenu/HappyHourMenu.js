@@ -22,99 +22,99 @@ const HappyHourMenu = () => {
 
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          <div className={style.menuItemTitle}>Monday 2-7 pm</div>
-          {/* <div className={style.menuItemPrice}>$7.50</div> */}
+          <div className={style.menuItemDay}>Monday</div>
+          <div className={style.menuItemTime}>2pm - 11 pm</div>
         </div>
-        <div className={style.menuItemNotes}>
-          $3.00 rail mixers, $2.50 domestic bottles, $3.00 22oz mich golden and
-          coors lt drafts
-        </div>
-        <br></br>
-        <div className={style.menuItemTitle}>9-1am</div>
-        <div className={style.menuItemNotes}>
-          $4.00 22oz rail mixers $3.00 22 oz mich/coors lt drafts
-        </div>
-      </div>
-
-      <div className={style.menuItem}>
-        <div className={style.menuItemHeader}>
-          <div className={style.menuItemTitle}>Tuesday 2-7 pm</div>
-          {/* <div className={style.menuItemPrice}>$9.00</div> */}
-        </div>
-        <div className={style.menuItemNotes}>
-          $3.00 rail mixers, $2.50 domestic bottles, $3.00 22oz mich golden and
-          coors lt drafts
+        <div className={style.menuItemNotes} style={{ marginLeft: "1rem" }}>
+          $3.00 rail mixers<br></br> $2.50 domestic bottles<br></br> $3.00 22oz
+          mich golden and coors lt drafts
         </div>
         <br></br>
-        <div className={style.menuItemTitle}>9pm - 1am</div>
-        <div className={style.menuItemNotes}>
-          $5.00 32oz rail pitchers, $3.00 32oz mich/coors lt pitchers
+        <div className={style.menuItemTime}>9pm - 1am</div>
+        <div className={style.menuItemNotes} style={{ marginLeft: "1rem" }}>
+          $4.00 22oz rail mixers<br></br> $3.00 22 oz mich/coors lt drafts
         </div>
       </div>
 
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          <div className={style.menuItemTitle}>Wednesday 2-7 pm</div>
-          {/* <div className={style.menuItemPrice}>$7.50</div> */}
+          <div className={style.menuItemDay}>Tuesday</div>
+          <div className={style.menuItemTime}>2pm - 7pm</div>
         </div>
         <div className={style.menuItemNotes}>
-          $3.00 rail mixers, $2.50 domestic bottles, $3.00 22oz mich golden and
-          coors lt drafts
+          $3.00 rail mixers<br></br> $2.50 domestic bottles<br></br> $3.00 22oz
+          mich golden and coors lt drafts
         </div>
         <br></br>
-        <div className={style.menuItemTitle}>9pm - close</div>
+        <div className={style.menuItemTime}>9pm - 1am</div>
         <div className={style.menuItemNotes}>
-          $10 96oz hopper coors/mich Holden $3 stoli mixers (naked, blueberry,
-          orange, raspberry)
+          $5.00 32oz rail pitchers<br></br> $3.00 32oz mich/coors lt pitchers
         </div>
       </div>
 
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          <div className={style.menuItemTitle}>Thursday 2-7 pm</div>
-          {/* <div className={style.menuItemPrice}>$7.50</div> */}
+          <div className={style.menuItemDay}>Wednesday</div>
+          <div className={style.menuItemTime}>2pm - 7pm</div>
         </div>
         <div className={style.menuItemNotes}>
-          $3.00 rail mixers, $2.50 domestic bottles, $3.00 22oz mich golden and
-          coors lt drafts
+          $3.00 rail mixers<br></br> $2.50 domestic bottles<br></br> $3.00 22oz
+          mich golden and coors lt drafts
         </div>
         <br></br>
-        <div className={style.menuItemTitle}>9pm - close</div>
+        <div className={style.menuItemTime}>9pm - close</div>
         <div className={style.menuItemNotes}>
-          $2.00 rail mixers, $3.00 22oz mich/coors lt drafts
+          $10 96oz hopper coors/mich Holden<br></br> $3 stoli mixers (naked,
+          blueberry, orange, raspberry)
         </div>
       </div>
 
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          <div className={style.menuItemTitle}>Friday 2-7 pm</div>
-          {/* <div className={style.menuItemPrice}>$7.50</div> */}
+          <div className={style.menuItemDay}>Thursday</div>
+          <div className={style.menuItemTime}>2pm - 7pm</div>
         </div>
         <div className={style.menuItemNotes}>
-          $3.00 rail mixers, $2.50 domestic bottles, $3.00 22oz mich golden and
-          coors lt drafts
+          $3.00 rail mixers<br></br> $2.50 domestic bottles<br></br> $3.00 22oz
+          mich golden and coors lt drafts
+        </div>
+        <br></br>
+        <div className={style.menuItemTime}>9pm - close</div>
+        <div className={style.menuItemNotes}>
+          $2.00 rail mixers<br></br> $3.00 22oz mich/coors lt drafts
         </div>
       </div>
 
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          <div className={style.menuItemTitle}>Saturday 11am-7pm</div>
-          {/* <div className={style.menuItemPrice}>$7.50</div> */}
+          <div className={style.menuItemDay}>Friday</div>
+          <div className={style.menuItemTime}>2pm - 7pm</div>
         </div>
         <div className={style.menuItemNotes}>
-          $3.00 rail mixers, $2.50 domestic bottles, $3.00 22oz mich golden and
-          coors lt drafts
+          $3.00 rail mixers<br></br> $2.50 domestic bottles<br></br> $3.00 22oz
+          mich golden and coors lt drafts
         </div>
       </div>
 
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
-          <div className={style.menuItemTitle}>Sunday 11am-7pm</div>
-          {/* <div className={style.menuItemPrice}>$7.50</div> */}
+          <div className={style.menuItemDay}>Saturday</div>
+          <div className={style.menuItemTime}>11am - 7pm</div>
         </div>
         <div className={style.menuItemNotes}>
-          $3.00 rail mixers, $2.50 domestic bottles, $3.00 22oz mich golden and
-          coors lt drafts
+          $3.00 rail mixers<br></br> $2.50 domestic bottles<br></br> $3.00 22oz
+          mich golden and coors lt drafts
+        </div>
+      </div>
+
+      <div className={style.menuItem}>
+        <div className={style.menuItemHeader}>
+          <div className={style.menuItemDay}>Sunday</div>
+          <div className={style.menuItemTime}>11am - 7pm</div>
+        </div>
+        <div className={style.menuItemNotes}>
+          $3.00 rail mixers<br></br> $2.50 domestic bottles<br></br> $3.00 22oz
+          mich golden and coors lt drafts
         </div>
       </div>
     </div>

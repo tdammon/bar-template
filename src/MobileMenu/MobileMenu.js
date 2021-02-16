@@ -20,7 +20,7 @@ import HappyHourMenu from "./HappyHourMenu";
 import SnackMenu from "./SnackMenu";
 import CanMenu from "./CanMenu";
 import ExtrasMenu from "./ExtrasMenu";
-
+import MobileMenuReusable from "../MobileMenuReusable/MobileMenuReusable";
 import MenuNavigation from "./MenuNavigation";
 
 const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
@@ -67,7 +67,7 @@ const MobileMenu = ({ menu, nav, setMenu, setNav }) => {
         case "drinks":
           return (
             <div className={style.mobileMenu}>
-              <CanMenu />
+              <MobileMenuReusable />
             </div>
           );
           break;

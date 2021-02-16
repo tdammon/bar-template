@@ -1,14 +1,9 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import style from "./MobileNavFourButton.module.css";
-import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import HomeIcon from "@material-ui/icons/Home";
 import ExploreIcon from "@material-ui/icons/Explore";
-import CreateIcon from "@material-ui/icons/Create";
-import RestaurantMenuOutlinedIcon from "@material-ui/icons/RestaurantMenuOutlined";
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
-import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
 import LocalBarIcon from "@material-ui/icons/LocalBar";
 
 const MobileNavFourButton = ({ setNav, setMenu }) => {

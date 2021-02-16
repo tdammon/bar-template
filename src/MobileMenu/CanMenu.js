@@ -7,11 +7,11 @@ import homePicture from "../CompanyImages/cheese-and-bread.jpg";
 const CanMenu = () => {
   return (
     <div className={style.menu}>
-      {/* Rework this section to map in items */}
+      
       <div className={style.menuItem}>
         <div className={style.menuItemHeader}>
           <div className={style.menuItemTitle}>{`Bottles & Cans`}</div>
-          {/* <div className={style.menuItemPrice}>$6.00</div> */}
+          
         </div>
         <div className={style.menuItemNotes}>
           <span

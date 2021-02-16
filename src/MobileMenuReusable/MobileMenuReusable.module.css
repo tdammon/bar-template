@@ -1,0 +1,26 @@
+.menu {
+    padding-bottom: 5rem;
+    width: 100%;
+}
+
+.menuItemTitle {
+    font-family: Montserrat-Regular, Geneva;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: black;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    text-align: center;
+    width: 100%;
+}
+
+.menuHeader {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-left: -1rem
+}
+
+.menuList {
+    margin: 1rem 0rem 1rem 0rem;
+
+}
