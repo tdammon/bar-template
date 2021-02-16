@@ -3,9 +3,24 @@ import style from "./MobileMenuReusable.module.css";
 
 const MobileMenuReusable = ({}) => {
   const currentMenu = [
-    { title: "Drinks", header: "Cans", item: "Blue Moon" },
-    { title: "Drinks", header: "Cans", item: "Blue " },
-    { title: "Drinks", header: "Bottles", item: " Moon" },
+    { title: "Drinks", header: "Cans", item: "Busch Light" },
+    { title: "Drinks", header: "Cans", item: "Coors Light" },
+    { title: "Drinks", header: "Cans", item: "Pabst Blue Ribbon" },
+    { title: "Drinks", header: "Cans", item: "Hamms" },
+    { title: "Drinks", header: "Cans", item: "Busch Light NA" },
+    { title: "Drinks", header: "Bottles", item: "Bud Light" },
+    { title: "Drinks", header: "Bottles", item: "Angry Orchard" },
+    { title: "Drinks", header: "Bottles", item: "Corona" },
+    { title: "Drinks", header: "Bottles", item: "Bud Light Platinum" },
+    { title: "Drinks", header: "Bottles", item: "Michelob Golden" },
+    { title: "Drinks", header: "Bottles", item: "Michelob Ultra" },
+    { title: "Drinks", header: "Bottles", item: "Coors Light" },
+    { title: "Drinks", header: "Bottles", item: "Miller Light" },
+    { title: "Drinks", header: "Bottles", item: "Busch Light" },
+    { title: "Drinks", header: "Bottles", item: "Miller 64" },
+    { title: "Drinks", header: "Bottles", item: "Budweiser" },
+    { title: "Drinks", header: "Bottles", item: "High Life" },
+    { title: "Drinks", header: "Bottles", item: "Premium Grain Belt" },
   ];
 
   const title = "Bottles & Cans";
