@@ -41,13 +41,13 @@ const HappyHourMenu = () => {
           <div className={style.menuItemDay}>Tuesday</div>
           <div className={style.menuItemTime}>2pm - 7pm</div>
         </div>
-        <div className={style.menuItemNotes}>
+        <div className={style.menuItemNotes} style={{ marginLeft: "1rem" }}>
           $3.00 rail mixers<br></br> $2.50 domestic bottles<br></br> $3.00 22oz
           mich golden and coors lt drafts
         </div>
         <br></br>
         <div className={style.menuItemTime}>9pm - 1am</div>
-        <div className={style.menuItemNotes}>
+        <div className={style.menuItemNotes} style={{ marginLeft: "1rem" }}>
           $5.00 32oz rail pitchers<br></br> $3.00 32oz mich/coors lt pitchers
         </div>
       </div>
@@ -57,13 +57,13 @@ const HappyHourMenu = () => {
           <div className={style.menuItemDay}>Wednesday</div>
           <div className={style.menuItemTime}>2pm - 7pm</div>
         </div>
-        <div className={style.menuItemNotes}>
+        <div className={style.menuItemNotes} style={{ marginLeft: "1rem" }}>
           $3.00 rail mixers<br></br> $2.50 domestic bottles<br></br> $3.00 22oz
           mich golden and coors lt drafts
         </div>
         <br></br>
         <div className={style.menuItemTime}>9pm - close</div>
-        <div className={style.menuItemNotes}>
+        <div className={style.menuItemNotes} style={{ marginLeft: "1rem" }}>
           $10 96oz hopper coors/mich Holden<br></br> $3 stoli mixers (naked,
           blueberry, orange, raspberry)
         </div>
@@ -74,13 +74,13 @@ const HappyHourMenu = () => {
           <div className={style.menuItemDay}>Thursday</div>
           <div className={style.menuItemTime}>2pm - 7pm</div>
         </div>
-        <div className={style.menuItemNotes}>
+        <div className={style.menuItemNotes} style={{ marginLeft: "1rem" }}>
           $3.00 rail mixers<br></br> $2.50 domestic bottles<br></br> $3.00 22oz
           mich golden and coors lt drafts
         </div>
         <br></br>
         <div className={style.menuItemTime}>9pm - close</div>
-        <div className={style.menuItemNotes}>
+        <div className={style.menuItemNotes} style={{ marginLeft: "1rem" }}>
           $2.00 rail mixers<br></br> $3.00 22oz mich/coors lt drafts
         </div>
       </div>
@@ -90,7 +90,7 @@ const HappyHourMenu = () => {
           <div className={style.menuItemDay}>Friday</div>
           <div className={style.menuItemTime}>2pm - 7pm</div>
         </div>
-        <div className={style.menuItemNotes}>
+        <div className={style.menuItemNotes} style={{ marginLeft: "1rem" }}>
           $3.00 rail mixers<br></br> $2.50 domestic bottles<br></br> $3.00 22oz
           mich golden and coors lt drafts
         </div>
@@ -101,7 +101,7 @@ const HappyHourMenu = () => {
           <div className={style.menuItemDay}>Saturday</div>
           <div className={style.menuItemTime}>11am - 7pm</div>
         </div>
-        <div className={style.menuItemNotes}>
+        <div className={style.menuItemNotes} style={{ marginLeft: "1rem" }}>
           $3.00 rail mixers<br></br> $2.50 domestic bottles<br></br> $3.00 22oz
           mich golden and coors lt drafts
         </div>
@@ -112,7 +112,7 @@ const HappyHourMenu = () => {
           <div className={style.menuItemDay}>Sunday</div>
           <div className={style.menuItemTime}>11am - 7pm</div>
         </div>
-        <div className={style.menuItemNotes}>
+        <div className={style.menuItemNotes} style={{ marginLeft: "1rem" }}>
           $3.00 rail mixers<br></br> $2.50 domestic bottles<br></br> $3.00 22oz
           mich golden and coors lt drafts
         </div>
