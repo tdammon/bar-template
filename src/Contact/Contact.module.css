@@ -1,13 +1,18 @@
 .app {
     /* background-color: green; */
+    height: calc(100vh - 8rem);
+    width: 100vw;
     background-size: cover;
-    position: fixed;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
 }
 
 .section {
     display: flex;
     justify-content: center;
+    background-color: transparent;
+    margin-top: 7rem;
 }
 
 .iframe {
