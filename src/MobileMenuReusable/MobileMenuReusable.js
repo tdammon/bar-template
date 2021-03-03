@@ -27,8 +27,22 @@ const MobileMenuReusable = ({
         break;
       }
     }
-    console.log(temp);
+    return temp;
+  };
 
+  const getTime = (menu, type) => {
+    let tempList = menu.filter((e) => e.group_type === type);
+    let temp = [];
+    for (let item of tempList) {
+      if (item.time) {
+        if (temp.indexOf(item.time) === -1) {
+          temp.push(item.time);
+        }
+      } else {
+        temp.push(null);
+        break;
+      }
+    }
     return temp;
   };
 
@@ -64,15 +78,28 @@ const MobileMenuReusable = ({
           {getGroupNames(menuList).map((group_type, index) => (
             <div key={index}>
               <div className={style.menuHeader}>{group_type}</div>
-              <div className={style.menuList}>
-                {filteredList
-                  .filter((e) => e.group_type === group_type)
-                  .map((item, ind) => (
-                    <div className={style.menuItem} key={ind}>
-                      {item.item}
-                    </div>
-                  ))}
-              </div>
+              {getTime(filteredList, group_type).map((time, index) => (
+                <div>
+                  {time ? <div className={style.time}>{time}</div> : null}
+                  <div className={style.menuList}>
+                    {time
+                      ? filteredList
+                      .filter((e) => (e.group_type === group_type && e.time === time))
+                      .map((item, ind) => (
+                        <div className={style.menuItem} key={ind}>
+                          {item.item}
+                        </div>
+                      ))
+                      : filteredList
+                          .filter((e) => e.group_type === group_type)
+                          .map((item, ind) => (
+                            <div className={style.menuItem} key={ind}>
+                              {item.item}
+                            </div>
+                          ))}
+                  </div>
+                </div>
+              ))}
             </div>
           ))}
         </div>

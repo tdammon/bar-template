@@ -5,6 +5,7 @@
     height: calc(100vh - 8rem);
     width: 100vw;
 }
+
 .menu {
     box-sizing: border-box;
     background-color: rgba(150, 150, 150, 0.8);
@@ -42,10 +43,15 @@
 .menuHeader {
     font-weight: 600;
     font-size: 1.4rem;
-    margin-left: -1rem
+    margin-left: -1rem;
 }
 
 .menuList {
     margin: 1rem 0rem 1rem 0rem;
+}
 
+.time {
+    font-size: 1.25rem;
+    padding-top: 0.5rem;
+    margin-left: -1rem;
 }
