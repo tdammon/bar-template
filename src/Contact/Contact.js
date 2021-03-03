@@ -1,10 +1,22 @@
 import React, { Component } from "react";
 import style from "./Contact.module.css";
+import MenuNavigation from "../MobileMenu/MenuNavigation";
 
-class DesignView extends Component {
-  render() {
-    return (
-      <div className={style.app}>
+const Directions = ({ nav, setMenu, setNav, setFilter, menuList }) => {
+  React.useEffect(() => {
+    console.log("hit", menuList);
+  }, []);
+  return (
+    <div className={style.app}>
+      {nav ? (
+        <MenuNavigation
+          setMenu={setMenu}
+          setNav={setNav}
+          menuList={menuList}
+          nav={nav}
+          setFilter={setFilter}
+        />
+      ) : (
         <div>
           <div className={style.section}>
             <iframe
@@ -17,9 +29,9 @@ class DesignView extends Component {
             ></iframe>
           </div>
         </div>
-      </div>
-    );
-  }
-}
+      )}
+    </div>
+  );
+};
 
-export default DesignView;
+export default Directions;

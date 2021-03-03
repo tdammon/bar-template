@@ -6,10 +6,10 @@ import {
   Switch,
 } from "react-router-dom";
 import { isMobile, isBrowser } from "react-device-detect";
-import Contact from "../Contact/Contact";
+import Directions from "../Contact/Contact";
 import Header from "../Header/Header";
 import Mobile from "../Mobile/Mobile";
-import MobileMenu from "../MobileMenu/MobileMenu";
+// import MobileMenu from "../MobileMenu/MobileMenu";
 import MobileServices from "../MobileServices/MobileServices";
 import MobileNavThreeButton from "../MobileNavThreeButton/MobileNavThreeButton";
 import MobileNavFourButton from "../MobileNavFourButton/MobileNavFourButton";
@@ -22,6 +22,8 @@ import homePicture from "../CompanyImages/Port507Bar.jpg";
 import DesignView from "../DesignView/DesignView";
 
 import ReactGA from "react-ga";
+import Axios from "axios";
+import MobileMenuReusable from "../MobileMenuReusable/MobileMenuReusable";
 ReactGA.pageview(window.location.pathname + window.location.search);
 const trackingId = "UA-167603833-1"; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId, {
@@ -30,8 +32,25 @@ ReactGA.initialize(trackingId, {
 
 const App = () => {
   const [menu, setMenu] = React.useState("beer");
+  const [menuList, setMenuList] = React.useState([]);
   const [nav, setNav] = React.useState(false);
+  const [filter, setFilter] = React.useState("");
   const history = useHistory();
+
+  React.useEffect(() => {
+    fetch(
+      "https://8pevqu8dyg.execute-api.us-east-1.amazonaws.com/default/get-evolv-mobile-data"
+    )
+      .then((res) => res.json())
+      .then(
+        (data) => {
+          setMenuList(data);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  }, []);
 
   if (isMobile) {
     return (
@@ -59,6 +78,8 @@ const App = () => {
                   setNav={setNav}
                   menu={menu}
                   nav={nav}
+                  menuList={menuList}
+                  setFilter={setFilter}
                 />
               )}
             />
@@ -66,12 +87,15 @@ const App = () => {
               exact
               path="/menu"
               render={(props) => (
-                <MobileMenu
+                <MobileMenuReusable
                   {...props}
                   setMenu={setMenu}
                   setNav={setNav}
                   menu={menu}
                   nav={nav}
+                  filter={filter}
+                  setFilter={setFilter}
+                  menuList={menuList}
                 />
               )}
             />
@@ -90,18 +114,21 @@ const App = () => {
             />
             <Route
               exact
-              path="/catering"
+              path="/directions"
               render={(props) => (
-                <DesignView
+                <Directions
                   {...props}
                   setMenu={setMenu}
                   setNav={setNav}
                   menu={menu}
                   nav={nav}
+                  filter={filter}
+                  setFilter={setFilter}
+                  menuList={menuList}
                 />
               )}
             />
-            <Route
+            {/* <Route
               exact
               path="/directions"
               render={(props) => (
@@ -113,7 +140,7 @@ const App = () => {
                   nav={nav}
                 />
               )}
-            />
+            /> */}
           </Switch>
           <MobileNavFourButton setNav={setNav} setMenu={setMenu} />
         </div>

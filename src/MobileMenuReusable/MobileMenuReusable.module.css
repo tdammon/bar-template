@@ -1,6 +1,31 @@
+.app {
+
+    background-size: cover;
+    background-attachment: fixed;
+    height: calc(100vh - 8rem);
+    width: 100vw;
+}
 .menu {
-    padding-bottom: 5rem;
+    box-sizing: border-box;
+    background-color: rgba(150, 150, 150, 0.8);
+    height: calc(100vh - 8rem);
     width: 100%;
+    z-index: 2;
+    padding: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    padding-top: 0rem;
+    overflow-x: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .menuItemTitle {

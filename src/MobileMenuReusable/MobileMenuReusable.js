@@ -1,60 +1,82 @@
 import React from "react";
 import style from "./MobileMenuReusable.module.css";
+import MenuNavigation from "../MobileMenu/MenuNavigation";
+import homePicture from "../CompanyImages/Port507Bar.jpg";
 
-const MobileMenuReusable = ({}) => {
-  const currentMenu = [
-    { title: "Drinks", header: "Cans", item: "Busch Light" },
-    { title: "Drinks", header: "Cans", item: "Coors Light" },
-    { title: "Drinks", header: "Cans", item: "Pabst Blue Ribbon" },
-    { title: "Drinks", header: "Cans", item: "Hamms" },
-    { title: "Drinks", header: "Cans", item: "Busch Light NA" },
-    { title: "Drinks", header: "Bottles", item: "Bud Light" },
-    { title: "Drinks", header: "Bottles", item: "Angry Orchard" },
-    { title: "Drinks", header: "Bottles", item: "Corona" },
-    { title: "Drinks", header: "Bottles", item: "Bud Light Platinum" },
-    { title: "Drinks", header: "Bottles", item: "Michelob Golden" },
-    { title: "Drinks", header: "Bottles", item: "Michelob Ultra" },
-    { title: "Drinks", header: "Bottles", item: "Coors Light" },
-    { title: "Drinks", header: "Bottles", item: "Miller Light" },
-    { title: "Drinks", header: "Bottles", item: "Busch Light" },
-    { title: "Drinks", header: "Bottles", item: "Miller 64" },
-    { title: "Drinks", header: "Bottles", item: "Budweiser" },
-    { title: "Drinks", header: "Bottles", item: "High Life" },
-    { title: "Drinks", header: "Bottles", item: "Premium Grain Belt" },
-  ];
+const MobileMenuReusable = ({
+  nav,
+  setMenu,
+  setNav,
+  setFilter,
+  menuList,
+  filter,
+}) => {
+  const [filteredList, setFilteredList] = React.useState([]);
 
-  const title = "Bottles & Cans";
-
-  const getHeaders = (menu) => {
+  const getGroupNames = (menu) => {
+    let tempList = menuList;
+    let newList = tempList.filter((e) => e.group_name === filter);
     let temp = [];
-    for (let item of menu) {
-      if (temp.indexOf(item.header) === -1) {
-        temp.push(item.header);
+    for (let item of newList) {
+      if (item.group_type) {
+        if (temp.indexOf(item.group_type) === -1) {
+          temp.push(item.group_type);
+        }
+      } else {
+        temp.push(null);
+        break;
       }
     }
+    console.log(temp);
+
     return temp;
-    // setResult([...temp]);
   };
 
-  React.useEffect(() => {}, currentMenu);
+  React.useEffect(() => {
+    let tempList = menuList;
+    let newList = tempList.filter((e) => e.group_name == filter);
+    setFilteredList(newList);
+    if (!filter) {
+      setNav(true);
+    }
+  }, [menuList, filter]);
 
   return (
-    <div className={style.menu}>
-      <div className={style.menuItemTitle}>{title}</div>
-      {getHeaders(currentMenu).map((header, index) => (
-        <div key={index}>
-          <div className={style.menuHeader}>{header}</div>
-          <div className={style.menuList}>
-            {currentMenu
-              .filter((e) => e.header === header)
-              .map((item, ind) => (
-                <div className={style.menuItem} key={ind}>
-                  {item.item}
-                </div>
-              ))}
-          </div>
+    <div
+      className={style.app}
+      style={{
+        backgroundImage: `url(${homePicture})`,
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      {nav ? (
+        <MenuNavigation
+          setMenu={setMenu}
+          setNav={setNav}
+          menuList={menuList}
+          nav={nav}
+          setFilter={setFilter}
+        />
+      ) : (
+        <div className={style.menu}>
+          <div className={style.menuItemTitle}>{filter}</div>
+          {getGroupNames(menuList).map((group_type, index) => (
+            <div key={index}>
+              <div className={style.menuHeader}>{group_type}</div>
+              <div className={style.menuList}>
+                {filteredList
+                  .filter((e) => e.group_type === group_type)
+                  .map((item, ind) => (
+                    <div className={style.menuItem} key={ind}>
+                      {item.item}
+                    </div>
+                  ))}
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
+      )}
     </div>
   );
 };

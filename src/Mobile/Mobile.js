@@ -7,7 +7,7 @@ import MenuNavigation from "../MobileMenu/MenuNavigation";
 
 //import companyLogo from "../CompanyImages/PortLogo.png"
 
-const Mobile = ({ nav, setNav, menu, setMenu }) => {
+const Mobile = ({ nav, setNav, menu, setMenu, menuList, setFilter }) => {
   const history = useHistory();
 
   React.useEffect(() => {}, [nav]);
@@ -32,6 +32,8 @@ const Mobile = ({ nav, setNav, menu, setMenu }) => {
           setNav={setNav}
           menu={menu}
           nav={nav}
+          menuList={menuList}
+          setFilter={setFilter}
         />
       ) : (
         <div className={style.mainContent}>
