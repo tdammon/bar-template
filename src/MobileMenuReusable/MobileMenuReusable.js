@@ -1,16 +1,8 @@
 import React from "react";
 import style from "./MobileMenuReusable.module.css";
-import MenuNavigation from "../MobileMenu/MenuNavigation";
-import homePicture from "../CompanyImages/Port507Bar.jpg";
+import MenuNavigation from "../MenuNavigation/MenuNavigation";
 
-const MobileMenuReusable = ({
-  nav,
-  setMenu,
-  setNav,
-  setFilter,
-  menuList,
-  filter,
-}) => {
+const MobileMenuReusable = ({ nav, setNav, setFilter, menuList, filter }) => {
   const [filteredList, setFilteredList] = React.useState([]);
 
   const getGroupNames = (menu) => {
@@ -56,17 +48,9 @@ const MobileMenuReusable = ({
   }, [menuList, filter]);
 
   return (
-    <div
-      className={style.app}
-      style={{
-        backgroundImage: `url(${homePicture})`,
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
-      }}
-    >
+    <div className={style.app}>
       {nav ? (
         <MenuNavigation
-          setMenu={setMenu}
           setNav={setNav}
           menuList={menuList}
           nav={nav}
@@ -79,17 +63,20 @@ const MobileMenuReusable = ({
             <div key={index}>
               <div className={style.menuHeader}>{group_type}</div>
               {getTime(filteredList, group_type).map((time, index) => (
-                <div>
+                <div key={index}>
                   {time ? <div className={style.time}>{time}</div> : null}
                   <div className={style.menuList}>
                     {time
                       ? filteredList
-                      .filter((e) => (e.group_type === group_type && e.time === time))
-                      .map((item, ind) => (
-                        <div className={style.menuItem} key={ind}>
-                          {item.item}
-                        </div>
-                      ))
+                          .filter(
+                            (e) =>
+                              e.group_type === group_type && e.time === time
+                          )
+                          .map((item, ind) => (
+                            <div className={style.menuItem} key={ind}>
+                              {item.item}
+                            </div>
+                          ))
                       : filteredList
                           .filter((e) => e.group_type === group_type)
                           .map((item, ind) => (

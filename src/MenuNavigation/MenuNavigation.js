@@ -1,8 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import style from "./MobileMenu.module.css";
+import style from "./MenuNavigation.module.css";
 
-const MenuNavigation = ({ setNav, setMenu, menuList, setFilter }) => {
+const MenuNavigation = ({ setNav, menuList, setFilter }) => {
   const history = useHistory();
 
   const getGroupNames = (menuList) => {
@@ -13,17 +13,15 @@ const MenuNavigation = ({ setNav, setMenu, menuList, setFilter }) => {
       }
     }
     return temp;
-    // setResult([...temp]);
   };
 
   return (
     <div className={style.navMenu}>
       {getGroupNames(menuList).map((groupName, index) => (
-        <div>
+        <div key={index}>
           <button
             className={style.navMenuButton}
             onClick={() => {
-              setMenu("drinks");
               setNav(false);
               setFilter(groupName);
               history.push("/menu");

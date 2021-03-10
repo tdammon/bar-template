@@ -1,7 +1,8 @@
 .app {
-
-    background-size: cover;
+    background-image: url('../CompanyImages/Port507Bar.jpg');
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     height: calc(100vh - 8rem);
     width: 100vw;
 }

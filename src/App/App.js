@@ -1,37 +1,20 @@
-import React, { Component } from "react";
-import {
-  HashRouter as Router,
-  Route,
-  Redirect,
-  Switch,
-} from "react-router-dom";
+import React from "react";
+import style from "./App.module.css";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { isMobile, isBrowser } from "react-device-detect";
-import Directions from "../Contact/Contact";
+import Directions from "../Directions/Directions";
 import Header from "../Header/Header";
 import Mobile from "../Mobile/Mobile";
-// import MobileMenu from "../MobileMenu/MobileMenu";
-import MobileServices from "../MobileServices/MobileServices";
 import MobileNavThreeButton from "../MobileNavThreeButton/MobileNavThreeButton";
 import MobileNavFourButton from "../MobileNavFourButton/MobileNavFourButton";
 import MobileNavFiveButton from "../MobileNavFiveButton/MobileNavFiveButton";
 import Desktop from "../Desktop/Desktop";
 import DesktopHeader from "../Desktop/DesktopHeader";
 import { useHistory } from "react-router-dom";
-import homePicture from "../CompanyImages/Port507Bar.jpg";
 
-import DesignView from "../DesignView/DesignView";
-
-import ReactGA from "react-ga";
-import Axios from "axios";
 import MobileMenuReusable from "../MobileMenuReusable/MobileMenuReusable";
-ReactGA.pageview(window.location.pathname + window.location.search);
-const trackingId = "UA-167603833-1"; // Replace with your Google Analytics tracking ID
-ReactGA.initialize(trackingId, {
-  debug: true,
-});
 
 const App = () => {
-  const [menu, setMenu] = React.useState("beer");
   const [menuList, setMenuList] = React.useState([]);
   const [nav, setNav] = React.useState(false);
   const [filter, setFilter] = React.useState("");
@@ -55,18 +38,8 @@ const App = () => {
   if (isMobile) {
     return (
       <Router>
-        <div
-          style={{
-            backgroundImage: `url(${homePicture})`,
-            backgroundRepeat: "no-repeat",
-            backgroundAttachment: "fixed",
-            height: "100vh",
-            width: "100vw",
-            backgroundSize: "cover",
-            zIndex: "-999",
-          }}
-        >
-          <Header setMenu={setMenu} setNav={setNav} menu={menu} nav={nav} />
+        <div className={style.app}>
+          <Header setNav={setNav} nav={nav} />
           <Switch>
             <Route
               exact
@@ -74,9 +47,7 @@ const App = () => {
               render={(props) => (
                 <Mobile
                   {...props}
-                  setMenu={setMenu}
                   setNav={setNav}
-                  menu={menu}
                   nav={nav}
                   menuList={menuList}
                   setFilter={setFilter}
@@ -89,9 +60,7 @@ const App = () => {
               render={(props) => (
                 <MobileMenuReusable
                   {...props}
-                  setMenu={setMenu}
                   setNav={setNav}
-                  menu={menu}
                   nav={nav}
                   filter={filter}
                   setFilter={setFilter}
@@ -101,26 +70,11 @@ const App = () => {
             />
             <Route
               exact
-              path="/specials"
-              render={(props) => (
-                <MobileServices
-                  {...props}
-                  setMenu={setMenu}
-                  setNav={setNav}
-                  menu={menu}
-                  nav={nav}
-                />
-              )}
-            />
-            <Route
-              exact
               path="/directions"
               render={(props) => (
                 <Directions
                   {...props}
-                  setMenu={setMenu}
                   setNav={setNav}
-                  menu={menu}
                   nav={nav}
                   filter={filter}
                   setFilter={setFilter}
@@ -142,7 +96,7 @@ const App = () => {
               )}
             /> */}
           </Switch>
-          <MobileNavFourButton setNav={setNav} setMenu={setMenu} />
+          <MobileNavFourButton setNav={setNav} setFilter={setFilter} />
         </div>
       </Router>
     );
