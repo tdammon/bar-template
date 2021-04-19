@@ -22,7 +22,7 @@ const App = () => {
 
   React.useEffect(() => {
     fetch(
-      "https://8pevqu8dyg.execute-api.us-east-1.amazonaws.com/default/get-evolv-mobile-data"
+      "https://ry8ufzi4hd.execute-api.us-east-1.amazonaws.com/default/get-restaraunt-data"
     )
       .then((res) => res.json())
       .then(
