@@ -1,0 +1,58 @@
+.app {
+    background-image: url('../CompanyImages/Port507Bar.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: calc(100vh - 8rem);
+    width: 100vw;
+}
+
+.menu {
+    box-sizing: border-box;
+    background-color: rgba(150, 150, 150, 0.8);
+    height: calc(100vh - 8rem);
+    width: 100%;
+    z-index: 2;
+    padding: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    padding-top: 0rem;
+    overflow-x: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.menuItemTitle {
+    font-family: Montserrat-Regular, Geneva;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: black;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    text-align: center;
+    width: 100%;
+}
+
+.menuHeader {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-left: -1rem;
+}
+
+.menuList {
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.time {
+    font-size: 1.25rem;
+    padding-top: 0.5rem;
+    margin-left: -1rem;
+}

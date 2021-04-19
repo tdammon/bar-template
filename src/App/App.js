@@ -1,52 +1,45 @@
-import React, { Component } from "react";
-import {
-  HashRouter as Router,
-  Route,
-  Redirect,
-  Switch,
-} from "react-router-dom";
+import React from "react";
+import style from "./App.module.css";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { isMobile, isBrowser } from "react-device-detect";
-import Contact from "../Contact/Contact";
+import Directions from "../Directions/Directions";
 import Header from "../Header/Header";
 import Mobile from "../Mobile/Mobile";
-import MobileMenu from "../MobileMenu/MobileMenu";
-import MobileServices from "../MobileServices/MobileServices";
 import MobileNavThreeButton from "../MobileNavThreeButton/MobileNavThreeButton";
 import MobileNavFourButton from "../MobileNavFourButton/MobileNavFourButton";
 import MobileNavFiveButton from "../MobileNavFiveButton/MobileNavFiveButton";
 import Desktop from "../Desktop/Desktop";
 import DesktopHeader from "../Desktop/DesktopHeader";
-import DesktopImage from "../Desktop/DesktopImage";
 import { useHistory } from "react-router-dom";
 
-import DesignView from "../DesignView/DesignView";
-
-import ReactGA from "react-ga";
-import MenuNavigation from "../MobileMenu/MenuNavigation";
-ReactGA.pageview(window.location.pathname + window.location.search);
-const trackingId = "UA-167603833-1"; // Replace with your Google Analytics tracking ID
-ReactGA.initialize(trackingId, {
-  debug: true,
-});
+import MobileMenuReusable from "../MobileMenuReusable/MobileMenuReusable";
 
 const App = () => {
-  const [menu, setMenu] = React.useState("beer");
+  const [menuList, setMenuList] = React.useState([]);
   const [nav, setNav] = React.useState(false);
+  const [filter, setFilter] = React.useState("");
   const history = useHistory();
+
+  React.useEffect(() => {
+    fetch(
+      "https://8pevqu8dyg.execute-api.us-east-1.amazonaws.com/default/get-evolv-mobile-data"
+    )
+      .then((res) => res.json())
+      .then(
+        (data) => {
+          setMenuList(data);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  }, []);
 
   if (isMobile) {
     return (
       <Router>
-        <Header setMenu={setMenu} setNav={setNav} menu={menu} nav={nav} />
-        {nav ? (
-          <MenuNavigation
-            setMenu={setMenu}
-            setNav={setNav}
-            menu={menu}
-            nav={nav}
-          />
-        ) : null}
-        <div style={{ marginTop: "5rem", marginBottom: "3rem" }}>
+        <div className={style.app}>
+          <Header setNav={setNav} nav={nav} />
           <Switch>
             <Route
               exact
@@ -54,10 +47,10 @@ const App = () => {
               render={(props) => (
                 <Mobile
                   {...props}
-                  setMenu={setMenu}
                   setNav={setNav}
-                  menu={menu}
                   nav={nav}
+                  menuList={menuList}
+                  setFilter={setFilter}
                 />
               )}
             />
@@ -65,42 +58,31 @@ const App = () => {
               exact
               path="/menu"
               render={(props) => (
-                <MobileMenu
+                <MobileMenuReusable
                   {...props}
-                  setMenu={setMenu}
                   setNav={setNav}
-                  menu={menu}
                   nav={nav}
+                  filter={filter}
+                  setFilter={setFilter}
+                  menuList={menuList}
                 />
               )}
             />
             <Route
               exact
-              path="/specials"
+              path="/directions"
               render={(props) => (
-                <MobileServices
+                <Directions
                   {...props}
-                  setMenu={setMenu}
                   setNav={setNav}
-                  menu={menu}
                   nav={nav}
+                  filter={filter}
+                  setFilter={setFilter}
+                  menuList={menuList}
                 />
               )}
             />
-            <Route
-              exact
-              path="/catering"
-              render={(props) => (
-                <DesignView
-                  {...props}
-                  setMenu={setMenu}
-                  setNav={setNav}
-                  menu={menu}
-                  nav={nav}
-                />
-              )}
-            />
-            <Route
+            {/* <Route
               exact
               path="/directions"
               render={(props) => (
@@ -112,10 +94,10 @@ const App = () => {
                   nav={nav}
                 />
               )}
-            />
+            /> */}
           </Switch>
+          <MobileNavFourButton setNav={setNav} setFilter={setFilter} />
         </div>
-        <MobileNavFourButton setNav={setNav} setMenu={setMenu} />
       </Router>
     );
   } else if (isBrowser) {
