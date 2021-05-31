@@ -13,6 +13,7 @@ import DesktopHeader from "../Desktop/DesktopHeader";
 import { useHistory } from "react-router-dom";
 
 import MobileMenuReusable from "../MobileMenuReusable/MobileMenuReusable";
+import AdminEditPage from "../Desktop/AdminEditPage/AdminEditPage";
 
 const App = () => {
   const [menuList, setMenuList] = React.useState([]);
@@ -20,19 +21,42 @@ const App = () => {
   const [filter, setFilter] = React.useState("");
   const history = useHistory();
 
-  React.useEffect(() => {
+  const fetchData = () => {
     fetch(
       "https://ry8ufzi4hd.execute-api.us-east-1.amazonaws.com/default/get-restaraunt-data"
     )
       .then((res) => res.json())
       .then(
         (data) => {
+          console.log(data);
           setMenuList(data);
         },
         (error) => {
           console.log(error);
         }
       );
+  };
+
+  const updateMenuItem = (editItem, editPrice, editId) => {
+    fetch(
+      `https://vuyz86rjhk.execute-api.us-east-1.amazonaws.com/default/updateEvolvMobileData?item=${editItem}&price=${editPrice}&id=${editId}`
+    ).then(() => fetchData());
+  };
+
+  const deleteMenuItem = (id, item) => {
+    fetch(
+      `https://kpx4fa4pfj.execute-api.us-east-1.amazonaws.com/default/deleteEvolvMobileData?id=${id}&item=${item}`
+    ).then(() => fetchData());
+  };
+
+  const addMenuItem = (item, price, category) => {
+    fetch(
+      `https://ct4apf1p5i.execute-api.us-east-1.amazonaws.com/default/add-restaraunt-data?restaurant_name=Test&group_name=${category}&group_type=null&item=${item}&price=${price}&description=null`
+    ).then(() => fetchData());
+  };
+
+  React.useEffect(() => {
+    fetchData();
   }, []);
 
   if (isMobile) {
@@ -106,25 +130,29 @@ const App = () => {
         <DesktopHeader />
         <Switch>
           {/* <Route exact path="/" component={DesktopImage} /> */}
-          <Route
+          {/* <Route
             path="/"
             component={() => {
               window.location.href = "https://www.facebook.com/Port507/";
               return null;
             }}
-          />
-          {/* <Route
-            path="/"
+          /> */}
+          <Route
+            path="/admin"
             render={(props) => (
-              <Desktop
+              <AdminEditPage
                 {...props}
-                setMenu={setMenu}
-                setNav={setNav}
-                menu={menu}
-                nav={nav}
+                menuList={menuList}
+                updateMenuItem={updateMenuItem}
+                deleteMenuItem={deleteMenuItem}
+                addMenuItem={addMenuItem}
               />
             )}
-          /> */}
+          />
+          <Route
+            path="/"
+            render={(props) => <Desktop {...props} nav={nav} />}
+          />
         </Switch>
       </Router>
     );

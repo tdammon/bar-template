@@ -1,0 +1,67 @@
+.app {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.editItem {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.formControl {
+  width: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.group {
+  margin: 1rem;
+}
+
+.groupName {
+  font-size: 2rem;
+}
+
+.itemGroup {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.menuItem {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  outline: none;
+  width: 300px;
+  height: 300px;
+  margin-top: -150px;
+  margin-left: -150px;
+}
+
+.modalForm {
+  background-color: white;
+  padding: 1rem;
+}
+
+.modalTitle {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.menuButton {
+  margin-right: 1rem;
+}
+
+.menuName {
+  margin-right: 1rem;
+}
+
+.menuPrice {
+}
