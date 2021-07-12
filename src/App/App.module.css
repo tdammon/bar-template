@@ -1,8 +1,18 @@
-.app {
-    background-image: url('../CompanyImages/Port507Bar.jpg');
+.mobileApp {
+    background-image: url('../CompanyImages/BackwaterBBQHome.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    z-index: -999;
+}
+
+.app {
+    background-image: url('../CompanyImages/BackwaterBBQDesktopHome.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* height: 100vh; */
     width: 100vw;
     background-size: cover;
     z-index: -999;

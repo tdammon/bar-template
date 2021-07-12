@@ -12,7 +12,12 @@ const Mobile = ({ nav, setNav, menuList, setFilter }) => {
           setFilter={setFilter}
         />
       ) : (
-        <div className={style.mainContent}></div>
+        <div className={style.mainContent}>
+          <div className={style.underConstruction}>
+            <div>Coming Soon</div>
+            <div> To Winona MN</div>
+          </div>
+        </div>
       )}
     </div>
   );

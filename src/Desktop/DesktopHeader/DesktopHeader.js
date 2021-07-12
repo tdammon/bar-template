@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import style from "./Desktop.module.css";
-import EvolvMobile from "../CompanyImages/EvolvLogoWhite.png";
+import style from "./DesktopHeader.module.css";
+import Logo from "../../CompanyImages/BackwaterBBQLogo.png";
 
 const DesktopHeader = ({ setNav, nav }) => {
   const history = useHistory();
@@ -14,8 +14,8 @@ const DesktopHeader = ({ setNav, nav }) => {
           history.push("/");
         }}
       >
-        <img className={style.menuImage} src={EvolvMobile} alt="company logo" />
-        <div style={{ whiteSpace: "nowrap" }}>Evolv Mobile</div>
+        <img className={style.menuImage} src={Logo} alt="company logo" />
+        <div style={{ whiteSpace: "nowrap" }}>Backwater BBQ</div>
       </div>
       <div className={style.desktopHeaderRoutes}>
         <button
@@ -28,20 +28,20 @@ const DesktopHeader = ({ setNav, nav }) => {
           className={style.desktopHeaderButton}
           onClick={() => history.push("/about-us")}
         >
-          About Us
+          Our Story
         </button>
         <button
           className={style.desktopHeaderButton}
-          onClick={() => history.push("/menu")}
+          onClick={() => history.push("/order")}
         >
-          Menu
+          Order Now
         </button>
-        <button
+        {/* <button
           className={style.desktopHeaderButton}
           onClick={() => history.push("/specials")}
         >
           Specials
-        </button>
+        </button> */}
       </div>
     </div>
   );

@@ -17,7 +17,12 @@ const Browser = () => {
 
   return (
     <BrowserView>
-      <div className={style.app}></div>
+      <div className={style.app}>
+        <div className={style.underConstruction}>
+          <div>Coming Soon</div>
+          <div>To Winona MN</div>
+        </div>
+      </div>
     </BrowserView>
   );
 };
