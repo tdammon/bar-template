@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import style from "./Desktop.module.css";
-import EvolvMobile from "../CompanyImages/EvolvLogoWhite.png";
+import style from "./DesktopHeader.module.css";
+import EvolvMobile from "../../CompanyImages/EvolvLogoWhite.png";
 
 const DesktopHeader = ({ setNav, nav }) => {
   const history = useHistory();

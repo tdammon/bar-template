@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./Directions.module.css";
-import MenuNavigation from "../MenuNavigation/MenuNavigation";
+import style from "./MobileDirections.module.css";
+import MenuNavigation from "../MobileMenuNavigation/MobileMenuNavigation";
 
 const Directions = ({ nav, setNav, setFilter, menuList }) => {
   return (

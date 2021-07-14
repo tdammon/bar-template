@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import style from "./MenuNavigation.module.css";
+import style from "./MobileMenuNavigation.module.css";
 
 const MenuNavigation = ({ setNav, menuList, setFilter }) => {
   const history = useHistory();

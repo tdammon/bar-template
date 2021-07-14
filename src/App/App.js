@@ -2,17 +2,17 @@ import React from "react";
 import style from "./App.module.css";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { isMobile, isBrowser } from "react-device-detect";
-import Directions from "../Directions/Directions";
-import Header from "../Header/Header";
-import Mobile from "../Mobile/Mobile";
-import MobileNavThreeButton from "../MobileNavThreeButton/MobileNavThreeButton";
-import MobileNavFourButton from "../MobileNavFourButton/MobileNavFourButton";
-import MobileNavFiveButton from "../MobileNavFiveButton/MobileNavFiveButton";
-import Desktop from "../Desktop/Desktop";
-import DesktopHeader from "../Desktop/DesktopHeader";
+import MobileDirections from "../Mobile/MobileDirections/MobileDirections";
+import MobileHeader from "../Mobile/MobileHeader/MobileHeader";
+import MobileHome from "../Mobile/MobileHome/MobileHome";
+import MobileNavThreeButton from "../Mobile/MobileBottomNav/MobileNavThreeButton/MobileNavThreeButton";
+import MobileNavFourButton from "../Mobile/MobileBottomNav/MobileNavFourButton/MobileNavFourButton";
+import MobileNavFiveButton from "../Mobile/MobileBottomNav/MobileNavFiveButton/MobileNavFiveButton";
+import DesktopHome from "../Desktop/DesktopHome/DesktopHome";
+import DesktopHeader from "../Desktop/DesktopHeader/DesktopHeader";
 import { useHistory } from "react-router-dom";
 
-import MobileMenuReusable from "../MobileMenuReusable/MobileMenuReusable";
+import MobileMenuReusable from "../Mobile/MobileMenuReusable/MobileMenuReusable";
 
 const App = () => {
   const [menuList, setMenuList] = React.useState([]);
@@ -38,14 +38,14 @@ const App = () => {
   if (isMobile) {
     return (
       <Router>
-        <div className={style.app}>
-          <Header setNav={setNav} nav={nav} />
+        <div className={style.appMobile}>
+          <MobileHeader setNav={setNav} nav={nav} />
           <Switch>
             <Route
               exact
               path="/"
               render={(props) => (
-                <Mobile
+                <MobileHome
                   {...props}
                   setNav={setNav}
                   nav={nav}
@@ -72,7 +72,7 @@ const App = () => {
               exact
               path="/directions"
               render={(props) => (
-                <Directions
+                <MobileDirections
                   {...props}
                   setNav={setNav}
                   nav={nav}
@@ -103,20 +103,21 @@ const App = () => {
   } else if (isBrowser) {
     return (
       <Router>
-        <DesktopHeader />
-        <Switch>
-          {/* <Route exact path="/" component={DesktopImage} /> */}
-          <Route
-            path="/"
-            component={() => {
-              window.location.href = "https://www.facebook.com/Port507/";
-              return null;
-            }}
-          />
-          {/* <Route
+        <div className={style.appDesktop}>
+          <DesktopHeader />
+          <Switch>
+            {/* <Route exact path="/" component={DesktopImage} /> */}
+            <Route
+              path="/"
+              component={() => {
+                window.location.href = "https://www.facebook.com/Port507/";
+                return null;
+              }}
+            />
+            {/* <Route
             path="/"
             render={(props) => (
-              <Desktop
+              <DesktopHome
                 {...props}
                 setMenu={setMenu}
                 setNav={setNav}
@@ -125,7 +126,8 @@ const App = () => {
               />
             )}
           /> */}
-        </Switch>
+          </Switch>
+        </div>
       </Router>
     );
   }

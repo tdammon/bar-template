@@ -1,4 +1,14 @@
-.app {
+.appMobile {
+    background-image: url('../CompanyImages/Port507Bar.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    z-index: -999;
+}
+
+.appDesktop{
     background-image: url('../CompanyImages/Port507Bar.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;

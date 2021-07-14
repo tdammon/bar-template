@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./MobileMenuReusable.module.css";
-import MenuNavigation from "../MenuNavigation/MenuNavigation";
+import MenuNavigation from "../MobileMenuNavigation/MobileMenuNavigation";
 
 const MobileMenuReusable = ({ nav, setNav, setFilter, menuList, filter }) => {
   const [filteredList, setFilteredList] = React.useState([]);

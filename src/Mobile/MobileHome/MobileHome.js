@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./Mobile.module.css";
-import MenuNavigation from "../MenuNavigation/MenuNavigation";
+import style from "./MobileHome.module.css";
+import MenuNavigation from "../MobileMenuNavigation/MobileMenuNavigation";
 
 const Mobile = ({ nav, setNav, menuList, setFilter }) => {
   return (
