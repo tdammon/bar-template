@@ -6,14 +6,16 @@
     width: 100vw;
     background-size: cover;
     z-index: -999;
+    font-family: "Agrandir-Wide"
 }
 
 .app {
-    background-image: url('../CompanyImages/BackwaterBBQDesktopHome.png');
+    background-image: url('../CompanyImages/Porkbutts.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     /* height: 100vh; */
     width: 100vw;
     background-size: cover;
     z-index: -999;
+    font-family: "Agrandir-Wide"
 }

@@ -10,6 +10,7 @@ import MobileNavFourButton from "../Mobile/MobileFooter/MobileNavFourButton/Mobi
 import MobileNavFiveButton from "../Mobile/MobileFooter/MobileNavFiveButton/MobileNavFiveButton";
 import Desktop from "../Desktop/DesktopHome/Desktop";
 import DesktopHeader from "../Desktop/DesktopHeader/DesktopHeader";
+import DesktopFooter from "../Desktop/DesktopFooter/DesktopFooter";
 import { useHistory } from "react-router-dom";
 
 import MobileMenuReusable from "../Mobile/MobileMenuReusable/MobileMenuReusable";
@@ -127,6 +128,7 @@ const App = () => {
               )}
             />
           </Switch>
+          <DesktopFooter />
         </div>
       </Router>
     );

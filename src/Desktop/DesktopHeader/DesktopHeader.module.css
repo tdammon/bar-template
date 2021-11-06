@@ -1,7 +1,7 @@
 .desktopHeader {
     width: 100%;
-    height: 4rem;
-    background-color: rgba(150, 150, 150, 0.6);
+    height: 8rem;
+    /* background-color: rgba(150, 150, 150, 0.6); */
     color: white;
     display: flex;
     align-items: center;
@@ -19,10 +19,11 @@
     height: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
-    border-right: 1px solid white;
+    /* border-right: 1px solid white; */
     outline: none;
+    font-family: "Agrandir-Wide";
 }
 
 .desktopHeaderButton:last-of-type {
@@ -34,9 +35,9 @@
 }
 
 .desktopHeaderLogo {
-    height: 4rem;
+    height: 7rem;
     display: flex;
-    line-height: 4rem;
+    line-height: 7rem;
     align-items: center;
 }
 
@@ -45,11 +46,11 @@
     height: 3rem;
     display: flex;
     justify-content: flex-end;
+    margin-right: 3rem;
 }
 
 .menuImage {
-    height: 3.5rem;
-    padding-top: -0.5rem;
+    height: 7rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }

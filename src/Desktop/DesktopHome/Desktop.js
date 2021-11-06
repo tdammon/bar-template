@@ -19,8 +19,8 @@ const Browser = () => {
     <BrowserView>
       <div className={style.app}>
         <div className={style.underConstruction}>
-          <div>Coming Soon</div>
-          <div>To Winona MN</div>
+          <div>Opening Soon</div>
+          <div>Winona, MN</div>
         </div>
       </div>
     </BrowserView>

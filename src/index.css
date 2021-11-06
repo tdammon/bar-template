@@ -1,5 +1,5 @@
 :root {
-    --global-font-family: Verdana, sans-serif;
+    --global-font-family: "Agrandir-Wide";
     --global-font-size: 0.8rem;
     --global-text-color: #222;
     --global-primary-title-size: 2rem;
@@ -17,9 +17,14 @@
 @font-face {
     font-family: 'Montserrat-Thin';
     src: url('./Font/Montserrat-Thin.ttf')
-}  
+}
 
 @font-face {
     font-family: 'Montserrat-Regular';
     src: url('./Font/Montserrat-Regular.ttf')
-}  
+}
+
+@font-face {
+    font-family: 'Agrandir-Wide';
+    src: url('./Font/Agrandir-WideLight.otf')
+}
