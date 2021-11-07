@@ -15,6 +15,7 @@ import DesktopFooter from "../Desktop/DesktopFooter/DesktopFooter";
 import { useHistory } from "react-router-dom";
 
 import MobileMenuReusable from "../Mobile/MobileMenuReusable/MobileMenuReusable";
+import MobileAboutUs from "../Mobile/MobileAboutUs/MobileAboutUs";
 
 const App = () => {
   const [menuList, setMenuList] = React.useState([]);
@@ -72,9 +73,9 @@ const App = () => {
             />
             <Route
               exact
-              path="/directions"
+              path="/about-us"
               render={(props) => (
-                <Directions
+                <MobileAboutUs
                   {...props}
                   setNav={setNav}
                   nav={nav}
@@ -84,19 +85,6 @@ const App = () => {
                 />
               )}
             />
-            {/* <Route
-              exact
-              path="/directions"
-              render={(props) => (
-                <Contact
-                  {...props}
-                  setMenu={setMenu}
-                  setNav={setNav}
-                  menu={menu}
-                  nav={nav}
-                />
-              )}
-            /> */}
           </Switch>
           <MobileNavTwoButton setNav={setNav} setFilter={setFilter} />
         </div>

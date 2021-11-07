@@ -28,3 +28,13 @@
     font-family: 'Agrandir-Wide';
     src: url('./Font/Agrandir-WideLight.otf')
 }
+
+@font-face {
+    font-family: 'Agrandir-Regular';
+    src: url('./Font/Agrandir-Regular.otf')
+}
+
+@font-face {
+    font-family: 'Open-Sans-Light';
+    src: url('./Font/OpenSans-Light.ttf')
+}

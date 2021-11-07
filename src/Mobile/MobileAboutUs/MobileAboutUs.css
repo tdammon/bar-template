@@ -1,0 +1,32 @@
+.app {
+    height: calc(100vh - 8rem);
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(204, 204, 204, 0.8);
+    margin-top: 5rem;
+    position: relative;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.mainContent {
+    margin: 0 0.75rem 0 0.75rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 0.85rem;
+    font-family: "Agrandir-Regular";
+}
+
+p {
+    font-family: "Open-Sans-Light";
+    font-size: 0.85rem;
+}
