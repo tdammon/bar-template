@@ -1,32 +1,28 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import style from "./Header.module.css";
+import "./Header.css";
 import hamburgerMenu from "../../CompanyImages/hamburgerMenu.png";
-import Logo from "../../CompanyImages/BackwaterBBQLogo.png";
+import Logo from "../../CompanyImages/BackwaterFacebookLogo.jpg";
 
 const Header = ({ setNav, nav }) => {
   const history = useHistory();
 
   return (
-    <div className={style.mobileHeader}>
+    <div className="mobileHeader">
       <div
-        className={style.mobileLogo}
+        className="mobileLogo"
         onClick={() => {
           history.push("/");
           setNav(false);
         }}
       >
-        <img className={style.menuImage} src={Logo} alt="company logo" />
+        <img className="menuImage" src={Logo} alt="company logo" />
       </div>
-      <div className={style.imageContainer}>
-        <img
-          className={style.menuImage}
-          src={hamburgerMenu}
-          alt="hamburger menu icon"
-          onClick={() => {
-            setNav(!nav);
-          }}
-        />
+      <div className="imageContainer">
+        <div id="mobilePhoneNumber">(507)-474-2220</div>
+        <div>1213 Gilmore Avenue #T-8</div>
+        <div> NW corner of Winona Mall</div>
+        <div>Winona, MN 55987</div>
       </div>
     </div>
   );

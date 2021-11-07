@@ -8,6 +8,7 @@ import Mobile from "../Mobile/MobileHome/Mobile";
 import MobileNavThreeButton from "../Mobile/MobileFooter/MobileNavThreeButton/MobileNavThreeButton";
 import MobileNavFourButton from "../Mobile/MobileFooter/MobileNavFourButton/MobileNavFourButton";
 import MobileNavFiveButton from "../Mobile/MobileFooter/MobileNavFiveButton/MobileNavFiveButton";
+import MobileNavTwoButton from "../Mobile/MobileFooter/MobileNavTwoButton/MobileNavTwoButton";
 import Desktop from "../Desktop/DesktopHome/Desktop";
 import DesktopHeader from "../Desktop/DesktopHeader/DesktopHeader";
 import DesktopFooter from "../Desktop/DesktopFooter/DesktopFooter";
@@ -97,7 +98,7 @@ const App = () => {
               )}
             /> */}
           </Switch>
-          <MobileNavFourButton setNav={setNav} setFilter={setFilter} />
+          <MobileNavTwoButton setNav={setNav} setFilter={setFilter} />
         </div>
       </Router>
     );

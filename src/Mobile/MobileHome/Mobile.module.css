@@ -23,7 +23,7 @@ body {
 }
 
 .underConstruction {
-    background-color: rgba(150, 150, 150, 0.8);
+    background-color: rgba(204, 204, 204, 0.8);
     font-weight: bold;
     font-size: 1.25rem;
     padding: 1.25rem;
