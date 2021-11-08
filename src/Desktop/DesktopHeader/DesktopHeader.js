@@ -1,23 +1,24 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import style from "./DesktopHeader.module.css";
+import "./DesktopHeader.css";
 import Logo from "../../CompanyImages/BackwaterFacebookLogo.jpg";
 
 const DesktopHeader = ({ setNav, nav }) => {
+  const [activeTab, setActiveTab] = React.useState("");
   const history = useHistory();
 
   return (
-    <div className={style.desktopHeader}>
+    <div className="desktopHeader">
       <div
-        className={style.desktopHeaderLogo}
+        className="desktopHeaderLogo"
         onClick={() => {
           history.push("/");
         }}
       >
-        <img className={style.menuImage} src={Logo} alt="company logo" />
+        <img className="menuImage" src={Logo} alt="company logo" />
         {/* <div style={{ whiteSpace: "nowrap" }}>Backwater BBQ</div> */}
       </div>
-      <div className={style.desktopHeaderRoutes}>
+      <div className="desktopHeaderRoutes">
         {/* <button
           className={style.desktopHeaderButton}
           onClick={() => history.push("/")}
@@ -25,13 +26,20 @@ const DesktopHeader = ({ setNav, nav }) => {
           Home
         </button> */}
         <button
-          className={style.desktopHeaderButton}
-          onClick={() => history.push("/about-us")}
+          className={
+            activeTab === "0"
+              ? "activeTab desktopHeaderButton"
+              : "desktopHeaderButton"
+          }
+          onClick={() => {
+            history.push("/about-us");
+            setActiveTab("0");
+          }}
         >
           Our Story
         </button>
         <button
-          className={style.desktopHeaderButton}
+          className="desktopHeaderButton"
           onClick={() => history.push("/order")}
         >
           Online Ordering

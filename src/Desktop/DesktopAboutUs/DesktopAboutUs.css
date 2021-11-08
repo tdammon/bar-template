@@ -1,0 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.aboutUs {
+    background-color: rgba(65, 65, 65, 0.6);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deaktopMainContent {
+    margin: 0 5rem 0 15rem;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 0.85rem;
+    font-family: "Agrandir-Regular";
+}
+
+p {
+    font-family: "Open-Sans-Light";
+    font-size: 0.85rem;
+}
+
+ul {
+    text-align: left;
+}
+
+li {
+    font-family: "Agrandir-Regular";
+}

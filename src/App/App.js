@@ -12,6 +12,7 @@ import MobileNavTwoButton from "../Mobile/MobileFooter/MobileNavTwoButton/Mobile
 import Desktop from "../Desktop/DesktopHome/Desktop";
 import DesktopHeader from "../Desktop/DesktopHeader/DesktopHeader";
 import DesktopFooter from "../Desktop/DesktopFooter/DesktopFooter";
+import DesktopAboutUs from "../Desktop/DesktopAboutUs/DesktopAboutUs";
 import { useHistory } from "react-router-dom";
 
 import MobileMenuReusable from "../Mobile/MobileMenuReusable/MobileMenuReusable";
@@ -96,14 +97,18 @@ const App = () => {
         <div className={style.app}>
           <DesktopHeader />
           <Switch>
-            {/* <Route exact path="/" component={DesktopImage} /> */}
-            {/* <Route
-            path="/"
-            component={() => {
-              window.location.href = "https://www.facebook.com/Port507/";
-              return null;
-            }}
-          /> */}
+            <Route
+              path="/about-us"
+              render={(props) => (
+                <DesktopAboutUs
+                  {...props}
+                  // setMenu={setMenu}
+                  setNav={setNav}
+                  // menu={menu}
+                  nav={nav}
+                />
+              )}
+            />
             <Route
               path="/"
               render={(props) => (

@@ -26,6 +26,12 @@
     font-family: "Agrandir-Wide";
 }
 
+.activeTab {
+    font-family: "Agrandir-Regular";
+    font-size: 1.6rem;
+    color: #ecc777
+}
+
 .desktopHeaderButton:last-of-type {
     border-right: none;
 }
