@@ -23,7 +23,7 @@ const MobileNavTwoButton = ({ setNav, setMenu }) => {
         className="NavButton"
         onClick={() =>
           window.open(
-            "https://www.clover.com/online-ordering/backwater-bbq-winonar"
+            "https://www.clover.com/online-ordering/backwater-bbq-winona"
           )
         }
       >

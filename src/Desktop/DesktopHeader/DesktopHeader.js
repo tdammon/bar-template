@@ -46,7 +46,7 @@ const DesktopHeader = ({ setNav, nav }) => {
           className="desktopHeaderButton"
           onClick={() =>
             window.open(
-              "https://www.clover.com/online-ordering/backwater-bbq-winonar"
+              "https://www.clover.com/online-ordering/backwater-bbq-winona"
             )
           }
         >
