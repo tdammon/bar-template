@@ -1,11 +1,16 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import "./DesktopHeader.css";
-import Logo from "../../CompanyImages/BackwaterFacebookLogo.jpg";
+import Logo from "../../CompanyImages/BackwaterLogo.jpg";
 
 const DesktopHeader = ({ setNav, nav }) => {
   const [activeTab, setActiveTab] = React.useState("");
   const history = useHistory();
+  let location = useLocation();
+
+  React.useEffect(() => {
+    console.log(location.pathname);
+  });
 
   return (
     <div className="desktopHeader">
@@ -27,20 +32,23 @@ const DesktopHeader = ({ setNav, nav }) => {
         </button> */}
         <button
           className={
-            activeTab === "0"
+            location.pathname === "/about-us"
               ? "activeTab desktopHeaderButton"
               : "desktopHeaderButton"
           }
           onClick={() => {
             history.push("/about-us");
-            setActiveTab("0");
           }}
         >
           Our Story
         </button>
         <button
           className="desktopHeaderButton"
-          onClick={() => history.push("/order")}
+          onClick={() =>
+            window.open(
+              "https://www.clover.com/online-ordering/backwater-bbq-winonar"
+            )
+          }
         >
           Online Ordering
         </button>

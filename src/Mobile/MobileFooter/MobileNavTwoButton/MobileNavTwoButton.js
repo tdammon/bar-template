@@ -21,10 +21,11 @@ const MobileNavTwoButton = ({ setNav, setMenu }) => {
       </div>
       <div
         className="NavButton"
-        onClick={() => {
-          history.push("/order");
-          setNav(false);
-        }}
+        onClick={() =>
+          window.open(
+            "https://www.clover.com/online-ordering/backwater-bbq-winonar"
+          )
+        }
       >
         <RestaurantIcon style={{ fontSize: "1.25rem", color: "#000000" }} />
         <div className="buttonText">Online Ordering</div>

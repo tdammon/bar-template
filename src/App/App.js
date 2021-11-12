@@ -98,7 +98,7 @@ const App = () => {
           <DesktopHeader />
           <Switch>
             <Route
-              path="/about-us"
+              path="/:id"
               render={(props) => (
                 <DesktopAboutUs
                   {...props}

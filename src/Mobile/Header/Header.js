@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./Header.css";
 import hamburgerMenu from "../../CompanyImages/hamburgerMenu.png";
-import Logo from "../../CompanyImages/BackwaterFacebookLogo.jpg";
+import Logo from "../../CompanyImages/BackwaterLogo.jpg";
 
 const Header = ({ setNav, nav }) => {
   const history = useHistory();
