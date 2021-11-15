@@ -18,6 +18,8 @@ html {
     text-align: center;
     overflow-y: scroll;
     height: calc(100vh - 12rem);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 h1 {
