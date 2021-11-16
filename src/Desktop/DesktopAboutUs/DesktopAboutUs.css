@@ -20,7 +20,7 @@ html {
     height: calc(100vh - 12rem);
     -ms-overflow-style: none;
     scrollbar-width: none;
-    padding: none;
+    padding: 0rem;
     width: 100%;
 }
 
