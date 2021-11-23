@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.aboutUs {
+.app {
     background-color: rgba(65, 65, 65, 0.6);
     background-size: cover;
     background-attachment: fixed;
@@ -14,49 +14,32 @@ html {
 
 }
 
-.deaktopMainContent {
+.mainContent {
     margin: 0 5rem 0 15rem;
     color: white;
     text-align: center;
-    /* overflow-y: scroll; */
     height: calc(100vh - 12rem);
     -ms-overflow-style: none;
     scrollbar-width: none;
     padding: 0rem;
     width: 100%;
     display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
     align-items: center;
-    justify-content: space-around;
+
 }
 
-h1 {
-    text-align: center;
+.menuImage {
+    height: calc(100vh - 12rem);
+    margin-top: auto;
+    object-fit: contain
 }
 
-h2 {
-    font-size: 0.85rem;
-    font-family: "Agrandir-Regular";
-}
-
-p {
-    font-family: "Open-Sans-Light";
-    font-size: 0.85rem;
-}
-
-ul {
-    text-align: left;
-}
-
-li {
-    font-family: "Agrandir-Regular";
-}
-
-.aboutUsImage {
-    height: 95%;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-.aboutUsLogo {
-    height: 15rem;
+.nextButton {
+    font-size: 5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white
 }

@@ -1,16 +1,22 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { BrowserView } from "react-device-detect";
+import AboutUs from "../../CompanyImages/OurStoryDesktop.jpg";
+import Logo from "../../CompanyImages/BackwaterFacebookLogo.jpg";
+
 import "./DesktopAboutUs.css";
 
-const Browser = () => {
+const DesktopAboutUs = () => {
   const history = useHistory();
 
   return (
     <BrowserView>
       <div className="aboutUs">
         <div className="deaktopMainContent">
-          <div>
+          <img className="aboutUsLogo" src={Logo} alt="logo" />
+          <img className="aboutUsImage" src={AboutUs} alt="About us text" />
+
+          {/* <div>
             <h2>Message from Lance Westby, Backwater BBQ owner:</h2>
             <p>
               Welcome to Backwater BBQ! I wasn’t always in the BBQ business, but
@@ -69,11 +75,11 @@ const Browser = () => {
                 </li>
               </ul>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </BrowserView>
   );
 };
 
-export default Browser;
+export default DesktopAboutUs;

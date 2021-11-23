@@ -1,0 +1,30 @@
+html,
+body {
+    margin: 0;
+    /* height: 100% */
+}
+
+.app {
+    height: calc(100vh - 8rem);
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContent {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underConstruction {
+    background-color: rgba(204, 204, 204, 0.8);
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 1.25rem;
+}

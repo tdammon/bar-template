@@ -1,10 +1,10 @@
 .desktopHeader {
     width: 100%;
-    height: 8rem;
-    /* background-color: rgba(150, 150, 150, 0.6); */
+    height: 6rem;
+    background-color: rgba(39, 33, 27, 0.8);
     color: white;
     display: flex;
-    align-items: center;
+    align-items: end;
     text-align: center;
     font-size: 2rem;
     position: fixed;
@@ -37,9 +37,8 @@
 }
 
 .desktopHeaderLogo {
-    height: 7rem;
+    height: 15rem;
     display: flex;
-    line-height: 7rem;
     align-items: center;
 }
 
@@ -52,8 +51,8 @@
 }
 
 .menuImage {
-    height: 7rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    height: 15rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     cursor: pointer;
 }

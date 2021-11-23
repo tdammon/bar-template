@@ -9,6 +9,7 @@ import MobileNavThreeButton from "../Mobile/MobileFooter/MobileNavThreeButton/Mo
 import MobileNavFourButton from "../Mobile/MobileFooter/MobileNavFourButton/MobileNavFourButton";
 import MobileNavFiveButton from "../Mobile/MobileFooter/MobileNavFiveButton/MobileNavFiveButton";
 import MobileNavTwoButton from "../Mobile/MobileFooter/MobileNavTwoButton/MobileNavTwoButton";
+import MobileConstruction from "../Mobile/Construction/MobileConstruction";
 import Desktop from "../Desktop/DesktopHome/Desktop";
 import DesktopHeader from "../Desktop/DesktopHeader/DesktopHeader";
 import DesktopFooter from "../Desktop/DesktopFooter/DesktopFooter";
@@ -17,6 +18,7 @@ import { useHistory } from "react-router-dom";
 
 import MobileMenuReusable from "../Mobile/MobileMenuReusable/MobileMenuReusable";
 import MobileAboutUs from "../Mobile/MobileAboutUs/MobileAboutUs";
+import DesktopMenu from "../Desktop/DesktopMenu/DesktopMenu";
 
 const App = () => {
   const [menuList, setMenuList] = React.useState([]);
@@ -58,7 +60,7 @@ const App = () => {
                 />
               )}
             />
-            <Route
+            {/* <Route
               exact
               path="/menu"
               render={(props) => (
@@ -71,12 +73,26 @@ const App = () => {
                   menuList={menuList}
                 />
               )}
-            />
+            /> */}
             <Route
               exact
               path="/about-us"
               render={(props) => (
                 <MobileAboutUs
+                  {...props}
+                  setNav={setNav}
+                  nav={nav}
+                  filter={filter}
+                  setFilter={setFilter}
+                  menuList={menuList}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/construction"
+              render={(props) => (
+                <MobileConstruction
                   {...props}
                   setNav={setNav}
                   nav={nav}
@@ -98,9 +114,21 @@ const App = () => {
           <DesktopHeader />
           <Switch>
             <Route
-              path="/:id"
+              path="/about-us"
               render={(props) => (
                 <DesktopAboutUs
+                  {...props}
+                  // setMenu={setMenu}
+                  setNav={setNav}
+                  // menu={menu}
+                  nav={nav}
+                />
+              )}
+            />
+            <Route
+              path="/menu"
+              render={(props) => (
+                <DesktopMenu
                   {...props}
                   // setMenu={setMenu}
                   setNav={setNav}
