@@ -73,7 +73,7 @@ const DesktopMenu = () => {
               onClick={() => updateImageUp()}
               className={style.nextButton}
             >
-              >
+              {">"}
             </button>
           )}
         </div>

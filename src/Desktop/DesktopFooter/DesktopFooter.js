@@ -12,9 +12,9 @@ const DesktopFooter = () => {
         (507)-474-2220
       </div>
       <div className="footerColumn">
-        <div>1213 Gilmore Avenue #T-8</div>
-        <div> NW corner of Winona Mall</div>
-        <div>Winona, MN 55987</div>
+        <div style={{ textAlign: "center" }}>1213 Gilmore Avenue #T-8</div>
+        <div style={{ textAlign: "center" }}> NW corner of Winona Mall</div>
+        <div style={{ textAlign: "center" }}>Winona, MN 55987</div>
       </div>
       <div className="footerColumn">
         <div id="evolv">
