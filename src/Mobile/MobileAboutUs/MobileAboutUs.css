@@ -7,8 +7,6 @@
     justify-content: center;
     background-color: rgba(204, 204, 204, 0.8);
     margin-top: 5rem;
-    position: fixed;
-    overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
