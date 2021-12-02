@@ -1,5 +1,7 @@
 import React from "react";
+import Logo from "../../CompanyImages/BackwaterFacebookLogo.jpg";
 import style from "./Mobile.module.css";
+
 // import MenuNavigation from "../MenuNavigation/MenuNavigation";
 
 const Mobile = ({ nav, setNav, menuList, setFilter }) => {
@@ -13,9 +15,10 @@ const Mobile = ({ nav, setNav, menuList, setFilter }) => {
         />
       ) : ( */}
       <div className={style.mainContent}>
+        <img className={style.mainLogo} src={Logo} alt="company logo" />
         <div className={style.underConstruction}>
           <div>Coming Soon</div>
-          <div> To Winona MN</div>
+          <div>Winona MN</div>
         </div>
       </div>
       {/* )} */}

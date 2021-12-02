@@ -2,9 +2,9 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import { BrowserView } from "react-device-detect";
 import style from "./DesktopMenu.module.css";
-import MenuRight from "../../CompanyImages/BBQMenuRight.jpg";
-import MenuLeft from "../../CompanyImages/BBQMenuLeft.jpg";
-import MenuCenter from "../../CompanyImages/BBQMenuCenter.jpg";
+import MenuCenter from "../../CompanyImages/BBQMenuRight.jpg";
+import MenuRight from "../../CompanyImages/BBQMenuLeft.jpg";
+import MenuLeft from "../../CompanyImages/BBQMenuCenter.jpg";
 
 const DesktopMenu = () => {
   const [imageDisplay, setImageDisplay] = React.useState(1);

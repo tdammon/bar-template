@@ -16,7 +16,7 @@ const MobileNavTwoButton = ({ setNav, setMenu }) => {
           setNav(true);
         }}
       >
-        <InfoIcon style={{ fontSize: "1.25rem", color: "#000000" }} />
+        <InfoIcon style={{ fontSize: "1.25rem", color: "white" }} />
         <div className="buttonText">Our Story</div>
       </div>
       <div
@@ -28,7 +28,7 @@ const MobileNavTwoButton = ({ setNav, setMenu }) => {
           // )
         }
       >
-        <RestaurantIcon style={{ fontSize: "1.25rem", color: "#000000" }} />
+        <RestaurantIcon style={{ fontSize: "1.25rem", color: "white" }} />
         <div className="buttonText">Online Ordering</div>
       </div>
     </div>

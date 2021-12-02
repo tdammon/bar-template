@@ -1,4 +1,5 @@
 import React from "react";
+import AboutUs from "../../CompanyImages/MobileOurStory.png";
 import "./MobileAboutUs.css";
 // import MenuNavigation from "../MenuNavigation/MenuNavigation";
 
@@ -12,7 +13,9 @@ const MobileAboutUs = ({ nav, setNav, menuList, setFilter }) => {
           setFilter={setFilter}
         />
       ) : ( */}
-      <div className="mainContent">
+      <img className="about-us-img" src={AboutUs} alt="about us text" />
+
+      {/* <div className="mainContent">
         <h1>Our Story</h1>
         <div>
           <h2>Message from Lance Westby, Backwater BBQ owner:</h2>
@@ -71,7 +74,7 @@ const MobileAboutUs = ({ nav, setNav, menuList, setFilter }) => {
             </ul>
           </p>
         </div>
-      </div>
+      </div> */}
       {/* )} */}
     </div>
   );
