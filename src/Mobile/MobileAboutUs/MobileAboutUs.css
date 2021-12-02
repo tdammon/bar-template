@@ -7,13 +7,13 @@
     justify-content: center;
     background-color: rgba(204, 204, 204, 0.8);
     margin-top: 5rem;
+    position: fixed;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
 .mainContent {
     margin: 0 0.75rem 0 0.75rem;
-    overflow-y: scroll;
 }
 
 .about-us-img {
