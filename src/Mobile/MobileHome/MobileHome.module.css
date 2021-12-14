@@ -1,0 +1,19 @@
+html,
+body {
+    margin: 0;
+    /* height: 100% */
+}
+
+.app {
+    height: calc(100vh - 8rem);
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContent {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5rem;
+}
