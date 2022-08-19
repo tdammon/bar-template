@@ -5,6 +5,7 @@ import { isMobile, isBrowser } from "react-device-detect";
 import Directions from "../Directions/Directions";
 import Header from "../Header/Header";
 import Mobile from "../Mobile/Mobile";
+import MobileNavTwoButton from "../MobileNavTwoButton/MobileNavTwoButton"
 import MobileNavThreeButton from "../MobileNavThreeButton/MobileNavThreeButton";
 import MobileNavFourButton from "../MobileNavFourButton/MobileNavFourButton";
 import MobileNavFiveButton from "../MobileNavFiveButton/MobileNavFiveButton";
@@ -96,7 +97,7 @@ const App = () => {
               )}
             /> */}
           </Switch>
-          <MobileNavFourButton setNav={setNav} setFilter={setFilter} />
+          <MobileNavTwoButton setNav={setNav} setFilter={setFilter} />
         </div>
       </Router>
     );
