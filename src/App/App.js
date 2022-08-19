@@ -2,18 +2,15 @@ import React from "react";
 import style from "./App.module.css";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { isMobile, isBrowser } from "react-device-detect";
-import Directions from "../Mobile/Directions/Directions";
-import Header from "../Mobile/Header/Header";
-import Mobile from "../Mobile/MobileHome/Mobile";
-import MobileNavThreeButton from "../Mobile/MobileFooter/MobileNavThreeButton/MobileNavThreeButton";
-import MobileNavFourButton from "../Mobile/MobileFooter/MobileNavFourButton/MobileNavFourButton";
-import MobileNavFiveButton from "../Mobile/MobileFooter/MobileNavFiveButton/MobileNavFiveButton";
-import MobileNavTwoButton from "../Mobile/MobileFooter/MobileNavTwoButton/MobileNavTwoButton";
-import MobileConstruction from "../Mobile/Construction/MobileConstruction";
-import Desktop from "../Desktop/DesktopHome/Desktop";
-import DesktopHeader from "../Desktop/DesktopHeader/DesktopHeader";
-import DesktopFooter from "../Desktop/DesktopFooter/DesktopFooter";
-import DesktopAboutUs from "../Desktop/DesktopAboutUs/DesktopAboutUs";
+import Directions from "../Directions/Directions";
+import Header from "../Header/Header";
+import Mobile from "../Mobile/Mobile";
+import MobileNavTwoButton from "../MobileNavTwoButton/MobileNavTwoButton"
+import MobileNavThreeButton from "../MobileNavThreeButton/MobileNavThreeButton";
+import MobileNavFourButton from "../MobileNavFourButton/MobileNavFourButton";
+import MobileNavFiveButton from "../MobileNavFiveButton/MobileNavFiveButton";
+import Desktop from "../Desktop/Desktop";
+import DesktopHeader from "../Desktop/DesktopHeader";
 import { useHistory } from "react-router-dom";
 
 import MobileMenuReusable from "../Mobile/MobileMenuReusable/MobileMenuReusable";

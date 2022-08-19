@@ -19,7 +19,7 @@ const Header = ({ setNav, nav }) => {
       >
         <img className={style.menuImage} src={Port507} alt="company logo" />
       </div>
-      <div className={style.imageContainer}>
+      {/* <div className={style.imageContainer}>
         <img
           className={style.menuImage}
           src={hamburgerMenu}
@@ -28,7 +28,7 @@ const Header = ({ setNav, nav }) => {
             setNav(!nav);
           }}
         />
-      </div>
+      </div> */}
     </div>
   );
 };
